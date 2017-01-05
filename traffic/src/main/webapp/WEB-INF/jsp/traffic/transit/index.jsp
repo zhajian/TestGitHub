@@ -142,7 +142,7 @@
 				<li class="active open hover highlight">
 					<a href="${ctx}/normal/index">
 						<i class="menu-icon fa fa-home"></i>
-						<span class="menu-text">首　页</span>
+						<span class="menu-text">首　页页</span>
 					</a>
 					<b class="arrow"></b>
 				</li>
