@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{DESC_}</title>
+	<fields>
+		<field name="DESC_" />
+		<field name="ID" alias="编号" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+		<button label="详细信息" action="openDevice" type="XHJ" idfield="ID" />
+		<button label="路口控制" action="openDevice" type="controlXHJ" idfield="ID"/>
+		<button label="故障受理" action="openDevice" type="repair_XHJ" idfield="ID"/>
+	</buttons>
+</configuration>

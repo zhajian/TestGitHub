@@ -1,0 +1,11 @@
+<configuration>
+	<type>busStation</type>
+	<drawtype>point</drawtype>
+	<showbuffer>false</showbuffer>
+	
+	<showconfirmwindow>true</showconfirmwindow>
+	<confirmwindow>
+		<title>添加公交站点</title>
+		<text>是否在此位置添加公交站点？</text>
+	</confirmwindow>
+</configuration>

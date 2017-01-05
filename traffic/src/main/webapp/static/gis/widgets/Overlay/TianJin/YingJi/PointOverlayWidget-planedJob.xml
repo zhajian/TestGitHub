@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<configuration>
+	<type>PlanedJob</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify></widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify></widgetclosenotify>
+	
+	<needzoom>true</needzoom>
+	<zoomscale>48000</zoomscale>
+	
+	<initvisible>false</initvisible>
+	
+	
+	<popupskinclass>天津计划任务</popupskinclass>
+	
+	<popup>
+		
+		<showzoomtobutton>false</showzoomtobutton>
+	</popup>
+	
+	<uniquevaluerenderer field="ifShigong" field2="ifZuduan" fielddelimiter=",">
+		<picturemarkersymbol url="assets/images/mapIcons/TianJin/jihuarenwu.png" yoffset="18"/>
+		
+		<uniquevalueinfo value="是,是">
+			<picturemarkersymbol url="assets/images/mapIcons/TianJin/jihuarenwu-shigong-zuduan.png" yoffset="18"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="是,否">
+			<picturemarkersymbol url="assets/images/mapIcons/TianJin/jihuarenwu-shigong.png" yoffset="18"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="否,是">
+			<picturemarkersymbol url="assets/images/mapIcons/TianJin/jihuarenwu-zuduan.png" yoffset="18"/>
+		</uniquevalueinfo>
+	</uniquevaluerenderer>
+	
+	<clickfunction>
+		<action>showInfoWindow</action>
+	</clickfunction>
+</configuration>

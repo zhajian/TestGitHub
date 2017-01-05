@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<configuration>
+	<layers>
+		<layer>
+			<type>诱导板</type>
+			<url>http://{serverip}/arcgis/rest/services/LiuPanShui/lps_device/MapServer/0</url>
+			<idfield>ID</idfield>
+		</layer>
+		<layer>
+			<type>摄像机</type>
+			<url>http://{serverip}/arcgis/rest/services/LiuPanShui/lps_device/MapServer/1</url>
+			<idfield>JIANYIBIAN</idfield>
+		</layer>
+		<layer>
+			<type>检测器</type>
+			<url>http://{serverip}/arcgis/rest/services/LiuPanShui/lps_device/MapServer/2</url>
+			<idfield>DEVICEID</idfield>
+		</layer>
+		<layer>
+			<type>电子警察</type>
+			<url>http://{serverip}/arcgis/rest/services/LiuPanShui/lps_device/MapServer/6</url>
+			<idfield>DEVICEID</idfield>
+		</layer>
+	</layers>
+</configuration>

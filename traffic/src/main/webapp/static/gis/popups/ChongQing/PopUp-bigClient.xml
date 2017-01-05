@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{UserName}</title>
+	<fields>
+		<field name="UserName" />
+		<field name="LineName" alias="线路名称" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+</configuration>

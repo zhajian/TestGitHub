@@ -1,0 +1,53 @@
+<configuration>
+	<type>YingJiShiJian</type>
+	
+	<showbuffersearch>true</showbuffersearch>
+	<showgraphicsearch>false</showgraphicsearch>
+	<showtextsearch>false</showtextsearch>
+	<showsendresult>true</showsendresult>
+	
+	<defaultbufferdistance>500</defaultbufferdistance>
+	
+	<layerinfo>
+<!-- 		<find> -->
+<!-- 			<url>http://{serverip}/arcgis/rest/services/wuhu/wuhu_search/MapServer</url> -->
+<!-- 			<fields>NAME,MC</fields> -->
+<!-- 		</find> -->
+
+		<uniquevaluerenderer field="layerName">
+			<simplemarkersymbol style="circle" color="0xFF0000" size="10"/>
+			
+			<uniquevalueinfo value="应急设施Overlay">
+				<picturemarkersymbol url="assets/images/mapIcons/WuHu/YingJiSheShi-blue.png" yoffset="18" />
+			</uniquevalueinfo>
+		</uniquevaluerenderer>
+
+		<popups>
+			<popup layername="default">
+				<title>{NAME}</title>
+				<fields>
+					<field name="NAME" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+			<popup layername="应急设施Overlay">
+				<title>{brief}</title>
+				<fields>
+					<field name="brief"/>
+					<field name="facType" alias="设施类型：" visible="true"/>
+					<field name="facName" alias="设施名称：" visible="true"/>
+					<field name="contactWay" alias="联系方式：" visible="true"/>
+					<field name="contactNumber" alias="联络号码：" visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</popups>
+	</layerinfo>
+	
+	<!-- 要搜索的动态数据 -->
+	<overlays>
+		<overlay name="应急设施Overlay" label="应急设施" titlefield="facName" idfield="facType" 
+				 defaultselected="true"/>
+	</overlays>
+</configuration>

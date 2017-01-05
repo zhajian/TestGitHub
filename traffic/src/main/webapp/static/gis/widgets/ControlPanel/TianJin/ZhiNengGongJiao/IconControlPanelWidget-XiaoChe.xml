@@ -1,0 +1,90 @@
+<configuration>
+	<layout direction="horizontal" gap="10" />
+	<groups>
+		<group>
+			<item id="sxj" name="摄像机" image="assets/images/buttons/TianJin/SheBei/SheXiangJi.png">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="SheXiangJiOverlay" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="fbd" name="发布段" image="assets/images/buttons/TianJin/SheBei/FaBuDuan.png">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="FaBuDuanOverlay" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="ShiJian" name="事件" image="assets/images/buttons/TianJin/ShiJian.png">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="ShiJianOverlay" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="LiuLiang" name="流量" image="assets/images/buttons/TianJin/LuKou.png">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="LiuLiangOverlay" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</group>
+		
+		<group>
+			<item id="XiaoCheZhanDian" name="校车站点" 
+				image="assets/images/buttons/TianJin/XiaoChe/XiaoCheZhanDian.png"  initstate="enable">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="XiaoCheZhanDianOverlay" />
+						</params>
+					</clickfunction>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="XiaoCheQiDianZhanOverlay" />
+						</params>
+					</clickfunction>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="XiaoCheZhongDianZhanOverlay" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="XiaoCheXianLu" name="校车线路" 
+				image="assets/images/buttons/TianJin/XiaoChe/XiaoCheXianLu.png"  initstate="enable">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="XiaoCheXianLuOverlay" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="XueXiao" name="学校" image="assets/images/buttons/TianJin/XiaoChe/XueXiao.png" >
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="XueXiaoOverlay" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</group>
+	</groups>
+</configuration>

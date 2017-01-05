@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<!-- 公共电话 -->
+<configuration>
+	<title>{GYDHHM}</title>
+	<fields>
+		<field name="GYDHHM" />
+		<field name="ADD_PCSMC" alias="派出所" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+</configuration>

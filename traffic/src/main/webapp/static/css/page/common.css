@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+/*校验提示*/
+.error {
+	color: #F00
+}
+/*日历*/
+/*.Wdate {
+	border: #999 1px solid;
+	height: 20px;
+	background: #fff url(datePicker.gif) no-repeat right;
+}
+*/
+.loading {
+	text-align: center;
+	padding: 20px 0;
+}
+
+.breadcrumb>li>span {
+	display: inline-block;
+	padding: 0 4px;
+}
+
+.pointer {
+	cursor: pointer;
+}

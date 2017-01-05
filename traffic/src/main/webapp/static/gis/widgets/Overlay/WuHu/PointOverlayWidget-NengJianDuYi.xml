@@ -1,0 +1,41 @@
+<!-- 能见度仪 -->
+<?xml version="1.0" ?>
+<configuration>
+	<type>NengJianDuYi</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify></widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify></widgetclosenotify>
+	
+	<initvisible>false</initvisible>
+	
+	<popup>
+		<title>能见度仪</title>
+		<fields>
+			<field name="name" alias="编号：" visible="true"/>
+			<field name="fintVisibility" alias="能见度：" visible="true"/>
+			<field name="fstrState" alias="状态：" visible="true"/>
+			<field name="fdtUpdatetime" alias="更新时间：" visible="true"/>
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+		<buttons>
+			<button label="详细信息" action="openDevice" type="NengJianDuYi"/>
+		</buttons>
+	</popup>
+	
+	<uniquevaluerenderer field="fstrState">
+		<picturemarkersymbol url="assets/images/mapIcons/WuHu/NengJianDuYi-grey.png" yoffset="18"/>
+		
+		<uniquevalueinfo value="连接">
+			<picturemarkersymbol url="assets/images/mapIcons/WuHu/NengJianDuYi-blue.png" yoffset="18" />
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="中断">
+			<picturemarkersymbol url="assets/images/mapIcons/WuHu/NengJianDuYi-red.png" yoffset="18" />
+		</uniquevalueinfo>
+	</uniquevaluerenderer>
+	
+	<clickfunction>
+		<action>showInfoWindow</action>
+	</clickfunction>
+</configuration>

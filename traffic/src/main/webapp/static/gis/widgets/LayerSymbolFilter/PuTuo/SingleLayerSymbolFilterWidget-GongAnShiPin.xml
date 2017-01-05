@@ -1,0 +1,65 @@
+<!--公安视频 -->
+<configuration>
+	<layer>http://{serverip}/arcgis/rest/services/putuo/pt_live/MapServer/3</layer>
+	
+	<refreshrate>0</refreshrate>
+	<refreshneedquery>false</refreshneedquery>
+	
+	<widgetvisible>false</widgetvisible>
+	
+	<clickfunction>
+		<action>showInfoWindow</action>
+	</clickfunction>
+	
+	<popup>
+		<title>{SXJMC}</title>
+		<fields>
+			<field name="SXJMC" />
+			<field name="IPAndTDH"/>
+			<field name="ADD_PCSMC" alias="派出所：" visible="true" />
+			<field name="LG_ID" alias="编号：" visible="true"/>
+			<field name="DH" alias="电话：" visible="true"/>
+			<field name="FX"/>
+			<field name="PICCOUNT"/>
+			<field name="PICTYPE"/>
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+		<buttons>
+			<button label="详细信息" action="showDevice" type="4" idfield="IPAndTDH" />
+		</buttons>
+	</popup>
+	
+	<popupskinclass>DeviceWithPic</popupskinclass>
+	
+	<classbreaksrenderer field="FX">
+		<picturemarkersymbol url="assets/images/building/gasp0.png"/>
+		
+		<classbreakinfo min="22.5000001" max="67.5">
+			<picturemarkersymbol url="assets/images/building/gasp1.png"/>
+		</classbreakinfo>
+		<classbreakinfo min="67.5000001" max="112.5">
+			<picturemarkersymbol url="assets/images/building/gasp2.png"/>
+		</classbreakinfo>
+		<classbreakinfo min="112.5000001" max="157.5">
+			<picturemarkersymbol url="assets/images/building/gasp3.png"/>
+		</classbreakinfo>
+		<classbreakinfo min="157.5000001" max="202.5">
+			<picturemarkersymbol url="assets/images/building/gasp4.png"/>
+		</classbreakinfo>
+		<classbreakinfo min="202.5000001" max="247.5">
+			<picturemarkersymbol url="assets/images/building/gasp5.png"/>
+		</classbreakinfo>
+		<classbreakinfo min="247.5000001" max="292.5">
+			<picturemarkersymbol url="assets/images/building/gasp6.png"/>
+		</classbreakinfo>
+		<classbreakinfo min="292.5000001" max="337.5">
+			<picturemarkersymbol url="assets/images/building/gasp7.png"/>
+		</classbreakinfo>
+		<classbreakinfo min="337.5000001" max="360">
+			<picturemarkersymbol url="assets/images/building/gasp8.png"/>
+		</classbreakinfo>
+		<classbreakinfo min="0.0000001" max="22.5">
+			<picturemarkersymbol url="assets/images/building/gasp8.png"/>
+		</classbreakinfo>
+	</classbreaksrenderer>
+</configuration>

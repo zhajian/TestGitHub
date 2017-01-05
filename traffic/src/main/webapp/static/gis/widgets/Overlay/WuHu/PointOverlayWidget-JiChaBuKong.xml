@@ -1,0 +1,37 @@
+<!-- 稽查布控-->
+<?xml version="1.0" ?>
+<configuration>
+	<type>JCBK</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify></widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify></widgetclosenotify>
+	
+	<initvisible>false</initvisible>
+	
+	<popupskinclass>advance</popupskinclass>
+	<popup>
+		<title>{hphm}</title>
+		<fields>
+			<field name="hphm"/>
+			<field name="ms" alias="设备描述：" visible="true"/>
+			<field name="jgsj" alias="经过时间：" visible="true"/>
+			<field name="img"/>
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+<!-- 		<buttons> -->
+<!-- 			<button label="实时视频" action="openDevice" type="SJJC_ShiShiShiPin"/> -->
+<!-- 		</buttons> -->
+		<medias>
+			 <media type="image" imagesourceurl="{img}"/>
+		</medias>
+	</popup>
+	
+	<simplerenderer>
+		<picturemarkersymbol url="assets/images/mapIcons/WuHu/GangDian-blue.png" yoffset="18" />
+	</simplerenderer>
+	
+	<clickfunction>
+		<action>showInfoWindow</action>
+	</clickfunction>
+</configuration>

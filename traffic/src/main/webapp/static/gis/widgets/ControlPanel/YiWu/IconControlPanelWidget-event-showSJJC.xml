@@ -1,0 +1,26 @@
+<configuration>
+	<layout direction="horizontal" gap="10" />
+	<groups>
+		<group>
+			<item id="dzjc" name="电子警察" image="assets/images/buttons/DianZiJingCha.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="电子警察" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="KaKou" name="断面" image="assets/images/buttons/KaKou.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="卡口" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</group>
+	</groups>
+</configuration>

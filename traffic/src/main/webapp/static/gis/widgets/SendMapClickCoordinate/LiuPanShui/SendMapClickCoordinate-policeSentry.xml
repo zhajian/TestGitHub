@@ -1,0 +1,17 @@
+<configuration>
+	<type>policeSentry</type>
+	
+	<!-- point/polyline/freeHandPolyline/polygon/freeHandPolygon/circle/ellipse -->
+	<drawtype>point</drawtype>
+	<showbuffer>false</showbuffer>
+	
+	<drawsymbol>
+		<picturemarkersymbol url="assets/images/mapIcons/GangDian-blue.png" yoffset="13" />
+	</drawsymbol>
+	
+	<showconfirmwindow>true</showconfirmwindow>
+	<confirmwindow>
+		<title>添加岗点</title>
+		<text>是否在此位置添加岗点？</text>
+	</confirmwindow>
+</configuration>

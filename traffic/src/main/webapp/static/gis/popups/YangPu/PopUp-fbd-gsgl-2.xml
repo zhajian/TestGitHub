@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{高速公路发布段_二级显示.LXMC}</title>
+	<fields>
+		<field name="高速公路发布段_二级显示.LXMC" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+<!-- 	<buttons> -->
+<!-- 		<button label="详细信息" action="openDevice" type="XHJ" idfield="devId" /> -->
+<!-- 	</buttons> -->
+</configuration>

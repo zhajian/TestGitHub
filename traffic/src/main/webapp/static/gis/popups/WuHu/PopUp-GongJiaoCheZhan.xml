@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{ROAD_NAME}-{NAME}</title>
+	<fields>
+		<field name="NAME"/>
+		<field name="ROAD_NAME"/>
+		<field name="BUS_NUM" alias="公交线路：" visible="true"/>
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+<!-- 	<buttons> -->
+<!-- 		<button label="详细信息" action="openDevice" type="XHJ" idfield="devId" /> -->
+<!-- 	</buttons> -->
+</configuration>

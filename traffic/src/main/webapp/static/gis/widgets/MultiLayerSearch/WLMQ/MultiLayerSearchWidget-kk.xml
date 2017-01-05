@@ -1,0 +1,42 @@
+<configuration>
+	<showbuffersearch>false</showbuffersearch>
+	<showgraphicsearch>true</showgraphicsearch>
+	<showtextsearch>false</showtextsearch>
+	<sendresult>true</sendresult>
+	
+	<layerinfo>
+		<find>
+			<url>http://{serverip}/arcgis/rest/services/wlmq/wlmq_device/MapServer</url>
+			<fields>NAMEC,JNAME,BYNAMEC</fields>
+			<layerids>4</layerids>
+		</find>
+
+		<uniquevaluerenderer field="layerName">
+			<simplemarkersymbol style="circle" color="0xFF0000" size="10"/>
+			
+			<uniquevalueinfo value="卡口">
+				<simplemarkersymbol style="circle" color="0xFF0000" size="10"/>
+			</uniquevalueinfo>
+		</uniquevaluerenderer>
+
+		<popups>
+			<popup layername="default">
+				<title>{NAME}</title>
+				<fields>
+					<field name="NAME" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+			<popup layername="卡口">
+				<title>{SBMC}</title>
+				<idfieldname>SBBH</idfieldname>
+				<fields>
+					<field name="SBMC" />
+					<field name="SBBH"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</popups>
+	</layerinfo>
+</configuration>

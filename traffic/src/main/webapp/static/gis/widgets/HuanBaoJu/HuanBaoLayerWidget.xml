@@ -1,0 +1,164 @@
+<?xml version="1.0" ?>
+<configuration>
+	<LayerList>
+		<group name="地图叠加">
+			<item id="在线监测" name="在线监测">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="专题图" />
+							<param name="LayerId" value="6"/>
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="工业企业" name="工业企业">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="专题图" />
+							<param name="LayerId" value="12"/>
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="污水处理厂" name="污水处理厂">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="专题图" />
+							<param name="LayerId" value="13"/>
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="水质监测点" name="水质断面">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="专题图" />
+							<param name="LayerId" value="18"/>
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="环境信用评价" name="环境信用评价">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="环境信用评价" />
+						</params>
+					</clickfunction>
+					
+				</clickfunctions>
+			</item>
+			
+			<item id="企业黑名单" name="企业黑名单">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="企业黑名单" />
+						</params>
+					</clickfunction>
+					
+				</clickfunctions>
+			</item>
+
+			<item id="骨干河网" name="骨干河网">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="专题图" />
+							<param name="LayerId" value="19"/>
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="工业区" name="工业区">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="专题图" />
+							<param name="LayerId" value="20"/>
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="噪声功能区" name="噪声功能区">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="专题图" />
+							<param name="LayerId" value="21"/>
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="水质功能区" name="水质功能区">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="专题图" />
+							<param name="LayerId" value="26"/>
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="大气功能区" name="大气功能区">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="专题图" />
+							<param name="LayerId" value="27"/>
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+
+
+			<item id="学校" name="学校">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="专题图" />
+							<param name="LayerId" value="34"/>
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="道路" name="道路">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="专题图" />
+							<param name="LayerId" value="47"/>
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="水系线" name="河道">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="专题图" />
+							<param name="LayerId" value="55"/>
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			
+		</group>
+	</LayerList>
+</configuration>

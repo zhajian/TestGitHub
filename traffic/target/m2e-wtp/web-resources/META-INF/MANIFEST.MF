@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+svn-committedRevision: 
+Build-Timestamp: 
+Implementation-Title: traffic
+Built-By: Administrator
+Build-basedir: E:\traffic\traffic
+svn-status: 
+Build-localRepository: E:\Program Files\Maven\Repositories
+Mode: development
+Implementation-Vendor-Id: com.hongguaninfo.wifiauth
+Project-Version: 1.0
+svn-mixedRevisions: 
+Specification-Title: traffic
+Implementation-Version: 1.0
+Build-os-name: Windows 7
+svn-committedDate: 
+Build-java-home: C:\Program Files\Java\jre7
+Created-By: Maven Integration for Eclipse
+Project-name: traffic
+svn-specialStatus: 
+svn-repository: 
+Build-os-version: 6.1
+Url: 
+Build-directory: E:\traffic\traffic\target
+svn-Revision: 
+SCM-Revision: 
+Build-Jdk: 1.7.0_71
+Build-M2_HOME: E:\Program Files\Maven\apache-maven-3.2.5
+DisableIBMJAXWSEngine: true
+Specification-Version: 1.0
+Build-os-arch: amd64
+

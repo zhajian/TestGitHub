@@ -1,0 +1,27 @@
+<!--标志 -->
+<configuration>
+	<layer>http://{serverip}/arcgis/rest/services/TianJin/tianjin_device/MapServer/7</layer>
+	
+	<refreshrate>0</refreshrate>
+	<refreshneedquery>false</refreshneedquery>
+	
+	<widgetvisible>false</widgetvisible>
+	
+	<clickfunction>
+		<action>showInfoWindow</action>
+	</clickfunction>
+	
+	<popup>
+		<title>{ITEMCODE}</title>
+		<fields>
+			<field name="ITEMCODE" />
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+	</popup>
+	
+	<popupskinclass>DeviceWithBlob</popupskinclass>
+	
+	<simplerenderer>
+		<simplemarkersymbol color="0xff830f" size="10"/>
+	</simplerenderer>
+</configuration>

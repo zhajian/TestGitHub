@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{DES}</title>
+	<fields>
+		<field name="DES" />
+		<field name="SECTIONID" alias="路段编号：" visible="true" />
+		<field name="所属道路" alias="所属道路：" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	
+</configuration>

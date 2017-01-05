@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<configuration>
+	<type>peoplePoint</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify></widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify></widgetclosenotify>
+	
+	<popup>
+		<title>{name}</title>
+		<fields>
+			<field name="name"/>
+			<field name="imgid"/>
+			<field name="age" alias="年龄" visible="true"/>
+			<field name="sex" alias="性别" visible="true"/>
+			<field name="card" alias="证件号" visible="true"/>
+			<field name="addr" alias="地址" visible="true"/>
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+	</popup>
+	
+	<uniquevaluerenderer field="imgid">
+		<uniquevalueinfo value="1">
+			<picturemarkersymbol url="assets/images/num_01.png" yoffset="14"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="2">
+			<picturemarkersymbol url="assets/images/num_02.png" yoffset="14"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="3">
+			<picturemarkersymbol url="assets/images/num_03.png" yoffset="14"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="4">
+			<picturemarkersymbol url="assets/images/num_04.png" yoffset="14"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="5">
+			<picturemarkersymbol url="assets/images/num_05.png" yoffset="14"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="6">
+			<picturemarkersymbol url="assets/images/num_06.png" yoffset="14"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="7">
+			<picturemarkersymbol url="assets/images/num_07.png" yoffset="14"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="8">
+			<picturemarkersymbol url="assets/images/num_08.png" yoffset="14"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="9">
+			<picturemarkersymbol url="assets/images/num_09.png" yoffset="14"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="10">
+			<picturemarkersymbol url="assets/images/num_10.png" yoffset="14"/>
+		</uniquevalueinfo>
+	</uniquevaluerenderer>
+</configuration>

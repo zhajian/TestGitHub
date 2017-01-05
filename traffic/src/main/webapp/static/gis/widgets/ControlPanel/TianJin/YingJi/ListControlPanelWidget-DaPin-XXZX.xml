@@ -1,0 +1,204 @@
+<?xml version="1.0" ?>
+<!-- 路况菜单 -->
+<configuration>
+	<menu>
+		<itemgroup label="业务图层">
+			<item label="发布段" initenable="false">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="发布段" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</itemgroup>
+		
+		<itemgroup label="设备图层">
+			<item label="情报板">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="情报板" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item label="摄像机" initenable="true">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="摄像机" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+<!-- 			<item label="线圈车检器"> -->
+<!-- 				<clickfunctions> -->
+<!-- 					<clickfunction name="ChangeLayer"> -->
+<!-- 						<params> -->
+<!-- 							<param name="ServiceName" value="线圈车检器"/> -->
+<!-- 						</params> -->
+<!-- 					</clickfunction> -->
+<!-- 				</clickfunctions> -->
+<!-- 			</item> -->
+			
+			<item label="车检器">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="车检器" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item label="气象站">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="气象站" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</itemgroup>
+		
+		<itemgroup label="设施图层">
+			<item label="桥梁">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="桥梁" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item label="护栏">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="护栏" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item label="标志">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="标志" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item label="标线">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="标线" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item label="收费站">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="收费站" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item label="服务区">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="服务区" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item label="治超站">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="治超站" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item label="交委单位">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="交委单位" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item label="仓库">
+				<clickfunctions>
+					<clickfunction name="ChangeOverlayVisible">
+						<params>
+							<param name="WidgetName" value="仓库" />
+							<param name="OverlayType" value="CangKu" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</itemgroup>
+		
+		<itemgroup label="功能">
+			<item label="测距">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="测距" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item label="标绘">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="标绘" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item label="搜索">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="搜索" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item label="桩号定位">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="桩号定位" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</itemgroup>
+	</menu>
+</configuration>

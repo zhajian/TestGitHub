@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<configuration>
+	<regionlayer >
+	    <url> http://{serverip}/arcgis/rest/services/ningxia_new/ningxia_region/MapServer/0</url>
+	    <namefield>NAME</namefield>
+	</regionlayer>
+	
+	<uniquevaluerenderer field="vehicleRegion">
+		<picturemarkersymbol url="assets/images/mapIcons/WuHu/JingChe-blue.png" yoffset="18" />
+		<uniquevalueinfo value="外地">
+			<picturemarkersymbol url="assets/images/mapIcons/WuHu/JingChe-yellow.png" yoffset="18" />
+		</uniquevalueinfo>
+	</uniquevaluerenderer>
+</configuration>

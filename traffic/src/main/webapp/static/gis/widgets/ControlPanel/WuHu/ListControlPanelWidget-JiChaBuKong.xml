@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<configuration>
+	<menu>
+		<itemgroup label="缉查布控">
+			<item label="稽查布控" initenable="true">
+				<clickfunctions>
+					<clickfunction name="ChangeOverlayVisible">
+						<params>
+							<param name="WidgetName" value="稽查布控Overlay"/>
+							<param name="OverlayType" value="JCBK" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			<item label="卡口" initenable="true">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="卡口"/>
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</itemgroup>
+	</menu>
+</configuration>
+	

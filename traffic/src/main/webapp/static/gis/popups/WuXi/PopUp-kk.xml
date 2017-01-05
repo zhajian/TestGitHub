@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{DES}</title>
+	<fields>
+		<field name="DES" />
+		<field name="CROSSNAME" alias="路口：" visible="true"/>
+		<field name="IP" alias="IP：" visible="true"/>
+		<field name="DIR" alias="方向：" visible="true"/>
+		<field name="type" alias="类型：" visible="true"/>
+		<field name="BRAND" alias="品牌：" visible="true"/>
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+<!-- 	<buttons> -->
+<!-- 		<button label="详细信息" action="openDevice" type="KK" idfield="devId" /> -->
+<!-- 	</buttons> -->
+</configuration>

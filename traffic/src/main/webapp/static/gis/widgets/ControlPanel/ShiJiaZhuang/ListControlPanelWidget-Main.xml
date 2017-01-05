@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<configuration>
+	<menu>
+		<itemgroup label="设备图层">
+			<item label="发布段" initenable="true">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="发布段" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item label="情报板">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="情报板" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item label="车检器">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="车检器" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</itemgroup>
+		
+		<itemgroup label="功能">
+			<item label="测距">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="测距" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</itemgroup>
+	</menu>
+</configuration>

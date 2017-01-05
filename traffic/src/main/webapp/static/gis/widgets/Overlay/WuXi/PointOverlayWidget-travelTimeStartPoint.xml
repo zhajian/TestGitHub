@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<!-- 行程时间起点图标 -->
+<configuration>
+	<type>travelTimeStartPoint</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify></widgetrunnotify>
+	<simplerenderer>
+		<picturemarkersymbol url="assets/images/yellowdot.png"/>
+	</simplerenderer>
+</configuration>

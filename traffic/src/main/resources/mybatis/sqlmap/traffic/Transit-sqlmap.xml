@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<!-- sqlmapper 层 -->
+<mapper namespace="cn.traffic.manage.ss.mapper.TransitMapper">
+
+	<select id="getBdxl1List" parameterType="cn.traffic.manage.ss.entity.Bdxl" resultType="cn.traffic.manage.ss.entity.Bdxl">
+		select to_char(t.timestamp, 'yyyymmdd hh24') dateByHour,sum(t.pf) countPf  
+		from tbl_15min_bdl_pf t  
+		<where>
+		   	<if test="sTime !=null and eTime != null" >
+				AND to_char(t.timestamp, 'yyyymmdd') between #{sTime} and #{eTime} 
+			</if>
+			<if test="lineId !=null ">
+				AND t.line_id = #{lineId} 
+			</if>
+			<if test="dir !=null ">
+				AND t.dir = #{dir} 
+			</if>
+			group by to_char(t.timestamp, 'yyyymmdd hh24') order by to_char(t.timestamp, 'yyyymmdd hh24')	
+		</where>
+	</select>
+	
+	<select id="getBdxl1List1" parameterType="cn.traffic.manage.ss.entity.Bdxl" resultType="Integer">
+		select sum(t.pf) countPf  
+		from tbl_15min_bdl_pf t  
+		<where>
+		   	<if test="sTime !=null and eTime != null" >
+				AND to_char(t.timestamp, 'yyyymmdd') between #{sTime} and #{eTime} 
+			</if>
+			<if test="lineId !=null ">
+				AND t.line_id = #{lineId} 
+			</if>
+			<if test="dir !=null ">
+				AND t.dir = #{dir} 
+			</if>
+			group by to_char(t.timestamp, 'yyyymmdd') order by to_char(t.timestamp, 'yyyymmdd')	
+		</where>
+	</select>
+	
+	<select id="getBsPFByHH" parameterType="cn.traffic.manage.ss.entity.BsPF" resultType="cn.traffic.manage.ss.entity.BsPF">
+		select t1.bs_name bsName, t1.s_pf pf, ROWNUM rown
+  			from (select t.bs_name, t.s_pf
+          		from tbl_hh_blds_pf t
+          <where>
+          	<if test="targetTime !=null " >
+          	 	AND to_char(t.timestamp, 'yyyymmdd hh24') = #{targetTime} 
+			</if>
+			<if test="lineName !=null ">
+				AND  t.line_name = #{lineName} 
+			</if>
+          	<if test="dir !=null ">
+				AND  t.l_dir = #{dir} 
+			</if>
+			order by t.s_pf desc) t1
+          </where>
+ 			where ROWNUM &lt;= 10
+	</select>
+
+</mapper>

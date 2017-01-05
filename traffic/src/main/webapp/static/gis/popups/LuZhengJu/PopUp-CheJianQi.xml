@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!-- 车检器 -->
+<configuration>
+	<title>{SDE.CJQ.sbbh}</title>
+	<fields>
+		<field name="SDE.CJQ.sbbh" />
+		<field name="SDE.CJQ.sbms" alias="详细描述：" visible="true" />
+		<field name="SDE.CJQ.azsj" alias="安装时间：" visible="true" />
+		<field name="SDE.CJQ.azdw" alias="安装单位：" visible="true" />
+		<field name="SDE.CJQ.whdw" alias="维护单位：" visible="true" />
+		<field name="SDE.CJQ.fzr" alias="负责人：" visible="true" />
+		<field name="SDE.CJQ.tel" alias="联系方式：" visible="true" />
+		<field name="SDE.CJQ.pp" alias="品牌：" visible="true" />
+		<field name="SDE.CJQ.xh" alias="型号：" visible="true" />
+		<field name="SDE.CJQ.jg" alias="价格：" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+		<button label="详细信息" action="openDevice" type="CJQ" idfield="SDE.CJQ.sbbh" />
+	</buttons>
+</configuration>

@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<configuration>
+    <type>roadOccupy</type>
+    <!-- 组件打开时通知页面 -->
+    <widgetrunnotify>onRoadOccupyOverlayRun</widgetrunnotify>
+    <!-- 组件关闭时通知页面 -->
+    <widgetclosenotify>onRoadOccupyOverlayClose</widgetclosenotify>
+    <popup>
+        <fields>
+            <field name="rocId" alias="施工ID" visible="true" />
+            <field name="reason" alias="施工原因" visible="true" />
+            <field name="startDate" alias="施工开始日期" visible="true" />
+            <field name="planEndDate" alias="计划完成日期" visible="true" />
+            <field name="corporation" alias="施工单位" visible="true" />
+            <field name="contactPerson" alias="负责人" visible="true" />
+            <field name="contactTel" alias="负责人电话" visible="true" />
+        </fields>
+        <showzoomtobutton>false</showzoomtobutton>
+        <buttons>
+            <button label="拥堵" action="openDevice" type="roadOccupyBlock" />
+            <button label="编辑" action="openDevice" type="roadOccupyEdit" idfield="rocId" />
+            <button label="结案" action="openDevice" type="roadOccupyOver" idfield="rocId" />
+        </buttons>
+    </popup>
+
+    <simplerenderer>
+        <picturemarkersymbol url="assets/images/mapIcons/ShiGong-red.png" yoffset="13"/>
+    </simplerenderer>
+    
+    <clickfunction>
+		<action>showInfoWindow</action>
+	</clickfunction>
+</configuration>

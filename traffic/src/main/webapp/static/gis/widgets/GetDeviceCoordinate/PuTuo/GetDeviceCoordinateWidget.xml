@@ -1,0 +1,465 @@
+<?xml version="1.0" ?>
+<configuration>
+	<showresult>true</showresult>
+	<layers>
+		<layer>
+			<type>社会视频</type>
+			<url>http://{serverip}/arcgis/rest/services/pt_live/MapServer/2</url>
+			<idfield>CA_ID</idfield>
+			<simplerenderer>
+				<picturemarkersymbol url="assets/images/building/shsp.png"/>
+			</simplerenderer>
+			<popup>
+				<title>{COMPANY}</title>
+				<fields>
+					<field name="COMPANY" />
+					<field name="ADDRESS" alias="地址" visible="true" />
+					<field name="ADD_JDMC" alias="街道" visible="true" />
+					<field name="ADD_PCSMC" alias="派出所" visible="true" />
+					<field name="PERSON" alias="监控人员" visible="true"/>
+					<field name="TEL" alias="联系电话" visible="true"/>
+					<field name="CA_ID"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>公安视频</type>
+			<url>http://{serverip}/arcgis/rest/services/pt_live/MapServer/3</url>
+			<idfield>LG_ID</idfield>
+			<classbreaksrenderer field="FX">
+				<picturemarkersymbol url="assets/images/building/gasp0.png"/>
+		
+				<classbreakinfo min="22.5000001" max="67.5">
+					<picturemarkersymbol url="assets/images/building/gasp1.png"/>
+				</classbreakinfo>
+				<classbreakinfo min="67.5000001" max="112.5">
+					<picturemarkersymbol url="assets/images/building/gasp2.png"/>
+				</classbreakinfo>
+				<classbreakinfo min="112.5000001" max="157.5">
+					<picturemarkersymbol url="assets/images/building/gasp3.png"/>
+				</classbreakinfo>
+				<classbreakinfo min="157.5000001" max="202.5">
+					<picturemarkersymbol url="assets/images/building/gasp4.png"/>
+				</classbreakinfo>
+				<classbreakinfo min="202.5000001" max="247.5">
+					<picturemarkersymbol url="assets/images/building/gasp5.png"/>
+				</classbreakinfo>
+				<classbreakinfo min="247.5000001" max="292.5">
+					<picturemarkersymbol url="assets/images/building/gasp6.png"/>
+				</classbreakinfo>
+				<classbreakinfo min="292.5000001" max="337.5">
+					<picturemarkersymbol url="assets/images/building/gasp7.png"/>
+				</classbreakinfo>
+				<classbreakinfo min="337.5000001" max="360">
+					<picturemarkersymbol url="assets/images/building/gasp8.png"/>
+				</classbreakinfo>
+				<classbreakinfo min="0.0000001" max="22.5">
+					<picturemarkersymbol url="assets/images/building/gasp8.png"/>
+				</classbreakinfo>
+			</classbreaksrenderer>
+			<popup>
+				<title>{SXJMC}</title>
+				<fields>
+					<field name="SXJMC" />
+					<field name="IPAndTDH"/>
+					<field name="ADD_PCSMC" alias="派出所：" visible="true" />
+					<field name="LG_ID" alias="编号：" visible="true"/>
+					<field name="DH" alias="电话：" visible="true"/>
+					<field name="FX"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>高清卡口</type>
+			<url>http://{serverip}/arcgis/rest/services/pt_live/MapServer/4</url>
+			<idfield>DWH</idfield>
+			<simplerenderer>
+				<picturemarkersymbol url="assets/images/building/gqkk.png"/>
+			</simplerenderer>
+			<popup>
+				<fields>
+					<field name="MC" />
+					<field name="DW" alias="位置" visible="true" />
+					<field name="FX" alias="方向" visible="true" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>市场</type>
+			<url>http://{serverip}/arcgis/rest/services/pt_live/MapServer/6</url>
+			<idfield>MARKET_ID</idfield>
+			<simplerenderer>
+				<picturemarkersymbol url="assets/images/building/sc.png"/>
+			</simplerenderer>
+			<popup>
+				<fields>
+					<field name="SCMC" />
+					<field name="MARKET_ID"/>
+					<field name="SCDZ" alias="地址" visible="true" />
+					<field name="ADD_JDMC" alias="街道" visible="true" />
+					<field name="ADD_PCSMC" alias="派出所" visible="true" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>ATM</type>
+			<url>http://{serverip}/arcgis/rest/services/pt_live/MapServer/7</url>
+			<idfield>KEYID</idfield>
+			<simplerenderer>
+				<picturemarkersymbol url="assets/images/building/ATM.png"/>
+			</simplerenderer>
+			<popup>
+				<title>{SSYHMC}</title>
+				<fields>
+					<field name="SSYHMC" />
+					<field name="KEYID"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>公共电话</type>
+			<url>http://{serverip}/arcgis/rest/services/pt_live/MapServer/8</url>
+			<idfield>KEYID</idfield>
+			<simplerenderer>
+				<picturemarkersymbol url="assets/images/building/ggdh.png"/>
+			</simplerenderer>
+			<popup>
+				<title>{GYDHHM}</title>
+				<fields>
+					<field name="GYDHHM" />
+					<field name="ADD_PCSMC" alias="派出所" visible="true" />
+					<field name="KEYID"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>消防栓</type>
+			<url>http://{serverip}/arcgis/rest/services/pt_live/MapServer/9</url>
+			<idfield>编号</idfield>
+			<simplerenderer>
+				<picturemarkersymbol url="assets/images/building/xfs.png"/>
+			</simplerenderer>
+			<popup>
+				<title>{地址}</title>
+				<fields>
+					<field name="地址" />
+					<field name="中队" visible="true" />
+					<field name="编号"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>加油气站</type>
+			<url>http://{serverip}/arcgis/rest/services/pt_live/MapServer/11</url>
+			<idfield>DWHH</idfield>
+			<simplerenderer>
+				<picturemarkersymbol url="assets/images/building/jyqz.png"/>
+			</simplerenderer>
+			<popup>
+				<title>{DWMC}</title>
+				<fields>
+					<field name="DWMC" />
+					<field name="DWDZ" alias="地址" visible="true" />
+					<field name="DWDH" alias="电话" visible="true" />
+					<field name="ADD_JDMC" alias="街道" visible="true" />
+					<field name="ADD_PCSMC" alias="派出所" visible="true" />
+					<field name="DWHH"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>医院</type>
+			<url>http://{serverip}/arcgis/rest/services/pt_live/MapServer/12</url>
+			<idfield>ID</idfield>
+			<simplerenderer>
+				<picturemarkersymbol url="assets/images/building/yy.png"/>
+			</simplerenderer>
+			<popup>
+				<title>{MC}</title>
+				<fields>
+					<field name="MC" />
+					<field name="DZ" alias="地址" visible="true" />
+					<field name="ADD_JDMC" alias="街道" visible="true" />
+					<field name="ADD_PCSMC" alias="派出所" visible="true" />
+					<field name="ID"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>大型商场</type>
+			<url>http://{serverip}/arcgis/rest/services/pt_live/MapServer/13</url>
+			<idfield>ID</idfield>
+			<simplerenderer>
+				<picturemarkersymbol url="assets/images/building/dxsc.png"/>
+			</simplerenderer>
+			<popup>
+				<title>{MC}</title>
+				<fields>
+					<field name="MC" />
+					<field name="ID" />
+					<field name="DZ" alias="地址" visible="true" />
+					<field name="ADD_JDMC" alias="街道" visible="true" />
+					<field name="ADD_PCSMC" alias="派出所" visible="true" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>金银饰品店</type>
+			<url>http://{serverip}/arcgis/rest/services/pt_live/MapServer/16</url>
+			<idfield>DWHH</idfield>
+			<simplerenderer>
+				<picturemarkersymbol url="assets/images/building/jyspd.png"/>
+			</simplerenderer>
+			<popup>
+				<title>{DWMC}</title>
+				<fields>
+					<field name="DWMC" />
+					<field name="DWDZ" alias="地址" visible="true" />
+					<field name="DWDH" alias="电话" visible="true" />
+					<field name="ADD_JDMC" alias="街道" visible="true" />
+					<field name="ADD_PCSMC" alias="派出所" visible="true" />
+					<field name="DDHH"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>24小时便利店</type>
+			<url>http://{serverip}/arcgis/rest/services/pt_live/MapServer/18</url>
+			<idfield>DWHH</idfield>
+			<simplerenderer>
+				<picturemarkersymbol url="assets/images/building/24xsbld.png"/>
+			</simplerenderer>
+			<popup>
+				<title>{DWMC}</title>
+				<fields>
+					<field name="DWMC" />
+					<field name="DWDZ" alias="地址" visible="true" />
+					<field name="DWDH" alias="电话" visible="true" />
+					<field name="ADD_JDMC" alias="街道" visible="true" />
+					<field name="ADD_PCSMC" alias="派出所" visible="true" />
+					<field name="DWHH"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>学校</type>
+			<url>http://{serverip}/arcgis/rest/services/pt_live/MapServer/19</url>
+			<idfield>ID</idfield>
+			<simplerenderer>
+				<picturemarkersymbol url="assets/images/building/xx.png"/>
+			</simplerenderer>
+			<popup>
+				<title>{MC}</title>
+				<fields>
+					<field name="MC" />
+					<field name="DZ" alias="地址" visible="true" />
+					<field name="ADD_JDMC" alias="街道" visible="true" />
+					<field name="ADD_PCSMC" alias="派出所" visible="true" />
+					<field name="ID"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>银行</type>
+			<url>http://{serverip}/arcgis/rest/services/pt_live/MapServer/20</url>
+			<idfield>ID</idfield>
+			<simplerenderer>
+				<picturemarkersymbol url="assets/images/building/yh.png"/>
+			</simplerenderer>
+			<popup>
+				<title>{MC}</title>
+				<fields>
+					<field name="MC" />
+					<field name="DZ" alias="地址" visible="true" />
+					<field name="ADD_JDMC" alias="街道" visible="true" />
+					<field name="ADD_PCSMC" alias="派出所" visible="true" />
+					<field name="ID"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>典当行</type>
+			<url>http://{serverip}/arcgis/rest/services/pt_live/MapServer/21</url>
+			<idfield>ID</idfield>
+			<simplerenderer>
+				<picturemarkersymbol url="assets/images/building/ddh.png"/>
+			</simplerenderer>
+			<popup>
+				<title>{MC}</title>
+				<fields>
+					<field name="MC" />
+					<field name="DZ" alias="地址" visible="true" />
+					<field name="ADD_JDMC" alias="街道" visible="true" />
+					<field name="ADD_PCSMC" alias="派出所" visible="true" />
+					<field name="ID"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>居委会</type>
+			<url>http://{serverip}/arcgis/rest/services/pt_live/MapServer/22</url>
+			<idfield>DM</idfield>
+			<simplefillsymbol color="0x3E6FBC" alpha="0.5" style="solid">
+				<outline color="0x3E6FBC" width="3" style="solid"/>
+			</simplefillsymbol>
+			<popup>
+				<fields>
+					<field name="MC" />
+					<field name="DM" />
+					<field name="DZ" alias="地址" visible="true" />
+					<field name="GXFW" alias="范围" visible="true" />
+					<field name="ADD_JDMC" alias="街道" visible="true" />
+					<field name="ADD_PCSMC" alias="派出所" visible="true" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>警务室</type>
+			<url>http://{serverip}/arcgis/rest/services/pt_live/MapServer/23</url>
+			<idfield>ID</idfield>
+			<simplerenderer>
+				<picturemarkersymbol url="assets/images/building/jws.png"/>
+			</simplerenderer>
+			<popup>
+				<title>{MC}</title>
+				<fields>
+					<field name="MC" />
+					<field name="DZ" alias="地址" visible="true" />
+					<field name="SQMJ" alias="社区民警" visible="true" />
+					<field name="ADD_PCSMC" alias="派出所" visible="true" />
+					<field name="ID"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>邮政</type>
+			<url>http://{serverip}/arcgis/rest/services/pt_live/MapServer/24</url>
+			<idfield>ID</idfield>
+			<simplerenderer>
+				<picturemarkersymbol url="assets/images/building/yz.png"/>
+			</simplerenderer>
+			<popup>
+				<title>{MC}</title>
+				<fields>
+					<field name="MC" />
+					<field name="DZ" alias="地址" visible="true" />
+					<field name="ADD_JDMC" alias="街道" visible="true" />
+					<field name="ADD_PCSMC" alias="派出所" visible="true" />
+					<field name="ID"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>证券</type>
+			<url>http://{serverip}/arcgis/rest/services/pt_live/MapServer/25</url>
+			<idfield>ID</idfield>
+			<simplerenderer>
+				<picturemarkersymbol url="assets/images/building/zq.png"/>
+			</simplerenderer>
+			<popup>
+				<title>{MC}</title>
+				<fields>
+					<field name="MC" />
+					<field name="DZ" alias="地址" visible="true" />
+					<field name="ADD_JDMC" alias="街道" visible="true" />
+					<field name="ADD_PCSMC" alias="派出所" visible="true" />
+					<field name="ID"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>保险</type>
+			<url>http://{serverip}/arcgis/rest/services/pt_live/MapServer/26</url>
+			<idfield>ID</idfield>
+			<simplerenderer>
+				<picturemarkersymbol url="assets/images/building/bx.png"/>
+			</simplerenderer>
+			<popup>
+				<title>{MC}</title>
+				<fields>
+					<field name="MC" />
+					<field name="DZ" alias="地址" visible="true" />
+					<field name="ADD_JDMC" alias="街道" visible="true" />
+					<field name="ADD_PCSMC" alias="派出所" visible="true" />
+					<field name="ID"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>小区</type>
+			<url>http://{serverip}/arcgis/rest/services/pt_live/MapServer/30</url>
+			<idfield>BH</idfield>
+			<simplefillsymbol color="0x3E6FBC" alpha="0.5" style="solid">
+				<outline color="0x3E6FBC" width="3" style="solid"/>
+			</simplefillsymbol>
+			<popup>
+				<title>{MC}</title>
+				<fields>
+					<field name="MC" />
+					<field name="DZ" alias="地址" visible="true" />
+					<field name="ADD_PCSMC" alias="派出所" visible="true" />
+					<field name="BH"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>大厦</type>
+			<url>http://{serverip}/arcgis/rest/services/pt_live/MapServer/32</url>
+			<idfield>ID</idfield>
+			<simplerenderer>
+				<picturemarkersymbol url="assets/images/building/building.png"/>
+			</simplerenderer>
+			<popup>
+				<title>{NAME}</title>
+				<fields>
+					<field name="NAME" />
+					<field name="ID" />
+					<field name="ADDRESS" alias="地址" visible="true" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+	</layers>
+</configuration>

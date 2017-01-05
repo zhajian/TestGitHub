@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{DEVDESC}</title>
+	<fields>
+		<field name="DEVDESC" />
+		<field name="DEVID" alias="编号" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+		<button label="详细信息" action="openDevice" type="CJQ" idfield="DEVID" />
+	</buttons>
+</configuration>

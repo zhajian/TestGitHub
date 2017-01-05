@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<!-- 大厦 -->
+<configuration>
+	<title>{NAME}</title>
+	<fields>
+		<field name="NAME" />
+		<field name="ID" />
+		<field name="ADDRESS" alias="地址" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+		<button label="详细信息" action="showDevice" type="3" idfield="ID" />
+	</buttons>
+</configuration>

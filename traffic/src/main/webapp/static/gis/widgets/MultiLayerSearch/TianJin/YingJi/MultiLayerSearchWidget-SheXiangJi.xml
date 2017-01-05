@@ -1,0 +1,45 @@
+<configuration>
+	<type>SheXiangJi</type>
+	
+	<showsearchresult>true</showsearchresult>
+	
+	<layerinfo>
+		<find>
+			<url>http://{serverip}/arcgis/rest/services/TianJin/tianjin_device/MapServer</url>
+			<layerids>2</layerids>
+		</find>
+
+		<uniquevaluerenderer field="layerName">
+			<picturemarkersymbol url="assets/images/i_pushpin_centered.png" />
+			
+			<uniquevalueinfo value="摄像机">
+				<picturemarkersymbol url="assets/images/mapIcons/TianJin/SheXiangJi.png"/>
+			</uniquevalueinfo>
+		</uniquevaluerenderer>
+
+		<popups>
+			<popup layername="default">
+				<title>{MC}</title>
+				<idfieldname>ID</idfieldname>
+				<fields>
+					<field name="MC"/>
+					<field name="ID" />
+					<field name="DZ" alias="地址" visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+
+			<popup layername="摄像机">
+				<title>{DEVICEDESC}</title>
+				<idfieldname>DEVICEID</idfieldname>
+				<fields>
+					<field name="DEVICEDESC" />
+					<field name="DEVICEID"/>
+					<field name="ROADNAME" alias="所属公路: " visible="true"/>
+					<field name="YANGHUDANWEI" alias="养护单位: " visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</popups>
+	</layerinfo>
+</configuration>

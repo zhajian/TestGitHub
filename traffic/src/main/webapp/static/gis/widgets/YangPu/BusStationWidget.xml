@@ -1,0 +1,129 @@
+<?xml version="1.0" ?>
+<configuration>
+	<layer>
+		<url>http://{serverip}/arcgis/rest/services/YangPu_device/MapServer/0</url>
+	</layer>
+	
+	<simplerenderer>
+		<picturemarkersymbol url="assets/images/mapIcons/TianJin/GongJiao/GongJiaoZhanDian.png" yoffset="13"/>
+	</simplerenderer>
+	
+	<popupskinclass>杨浦公交站点</popupskinclass>
+	<popup>
+		<title>{STATIONNAME}-{LINECOUNT}条线路</title>
+		<fields>
+			<field name="STATIONNAME" />
+			<field name="LINECOUNT"/>
+			<field name="LINENUMBER" alias="公交线路: " visible="true"/>
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+	</popup>
+	
+	<stations>
+         <station STOP_ID="巴士_0011" STOP_NAME="国和路（政通路）站" LINE_NAME="8" LINE_ID="000800" ZD_ID="4" DIRECTION="0" START_STOP="三门路市光路" END_STOP="松潘路杨树浦路" START_EARLYTIME="5:00" START_LATETIME="23:00"></station>
+         <station STOP_ID="巴士_0016" STOP_NAME="国定东路（创业园区）站" LINE_NAME="8" LINE_ID="000800" ZD_ID="5" DIRECTION="0" START_STOP="三门路市光路" END_STOP="松潘路杨树浦路" START_EARLYTIME="5:00" START_LATETIME="23:00"></station>
+         <station STOP_ID="巴士_0009" STOP_NAME="黄兴路（国顺路）站" LINE_NAME="8" LINE_ID="000800" ZD_ID="8" DIRECTION="1" START_STOP="松潘路杨树浦路" END_STOP="三门路市光路" START_EARLYTIME="5:00" START_LATETIME="23:00"></station>
+         <station STOP_ID="巴士_0015" STOP_NAME="国定东路（风情街）站" LINE_NAME="8" LINE_ID="000800" ZD_ID="9" DIRECTION="1" START_STOP="松潘路杨树浦路" END_STOP="三门路市光路" START_EARLYTIME="5:00" START_LATETIME="23:00"></station>
+         <station STOP_ID="巴士_0002" STOP_NAME="淞沪路（万达广场）站" LINE_NAME="55" LINE_ID="005500" ZD_ID="12" DIRECTION="0" START_STOP="世界路新江湾城" END_STOP="南浦大桥" START_EARLYTIME="5:30" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0008" STOP_NAME="四平路（五角场）站" LINE_NAME="55" LINE_ID="005500" ZD_ID="13" DIRECTION="0" START_STOP="世界路新江湾城" END_STOP="南浦大桥" START_EARLYTIME="5:30" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0001" STOP_NAME="淞沪路（百联又一城）站" LINE_NAME="55" LINE_ID="005500" ZD_ID="17" DIRECTION="1" START_STOP="南浦大桥" END_STOP="世界路新江湾城" START_EARLYTIME="5:30" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0003" STOP_NAME="翔殷路（大西洋百货）站" LINE_NAME="59" LINE_ID="005900" ZD_ID="20" DIRECTION="0" START_STOP="杨高中路民生路" END_STOP="凉城新村" START_EARLYTIME="4:45" START_LATETIME="23:00"></station>
+         <station STOP_ID="巴士_0006" STOP_NAME="邯郸路（国宾路）站" LINE_NAME="59" LINE_ID="005900" ZD_ID="21" DIRECTION="0" START_STOP="杨高中路民生路" END_STOP="凉城新村" START_EARLYTIME="4:45" START_LATETIME="23:00"></station>
+         <station STOP_ID="巴士_0007" STOP_NAME="邯郸路（财富广场）站" LINE_NAME="59" LINE_ID="005900" ZD_ID="8" DIRECTION="1" START_STOP="凉城新村" END_STOP="杨高中路民生路" START_EARLYTIME="4:50" START_LATETIME="23:00"></station>
+         <station STOP_ID="巴士_0004" STOP_NAME="翔殷路（合生国际广场）站" LINE_NAME="59" LINE_ID="005900" ZD_ID="9" DIRECTION="1" START_STOP="凉城新村" END_STOP="杨高中路民生路" START_EARLYTIME="4:50" START_LATETIME="23:00"></station>
+         <station STOP_ID="巴士_0014" STOP_NAME="国定路（三号湾）站" LINE_NAME="60" LINE_ID="006000" ZD_ID="8" DIRECTION="0" START_STOP="逸仙路政立路" END_STOP="定海桥" START_EARLYTIME="5:00" START_LATETIME="23:15"></station>
+         <station STOP_ID="巴士_0009" STOP_NAME="黄兴路（国顺路）站" LINE_NAME="60" LINE_ID="006000" ZD_ID="11" DIRECTION="1" START_STOP="定海桥" END_STOP="逸仙路政立路" START_EARLYTIME="5:30" START_LATETIME="23:15"></station>
+         <station STOP_ID="巴士_0012" STOP_NAME="国定路（黄兴路）站" LINE_NAME="60" LINE_ID="006000" ZD_ID="12" DIRECTION="1" START_STOP="定海桥" END_STOP="逸仙路政立路" START_EARLYTIME="5:30" START_LATETIME="23:15"></station>
+         <station STOP_ID="巴士_0013" STOP_NAME="国定路（政修路）站" LINE_NAME="60" LINE_ID="006000" ZD_ID="13" DIRECTION="1" START_STOP="定海桥" END_STOP="逸仙路政立路" START_EARLYTIME="5:30" START_LATETIME="23:15"></station>
+         <station STOP_ID="巴士_0002" STOP_NAME="淞沪路（万达广场）站" LINE_NAME="61" LINE_ID="006100" ZD_ID="13" DIRECTION="0" START_STOP="政悦路国伟路" END_STOP="吴淞路天潼路" START_EARLYTIME="4:30" START_LATETIME="23:15"></station>
+         <station STOP_ID="巴士_0001" STOP_NAME="淞沪路（百联又一城）站" LINE_NAME="61" LINE_ID="006100" ZD_ID="10" DIRECTION="1" START_STOP="吴淞路天潼路" END_STOP="政悦路国伟路" START_EARLYTIME="5:00" START_LATETIME="23:30"></station>
+         <station STOP_ID="巴士_0011" STOP_NAME="国和路（政通路）站" LINE_NAME="90" LINE_ID="009000" ZD_ID="20" DIRECTION="0" START_STOP="淞宝路淞青路（海军上海博览馆）" END_STOP="靖宇南路控江路" START_EARLYTIME="4:50" START_LATETIME="23:10"></station>
+         <station STOP_ID="巴士_0003" STOP_NAME="翔殷路（大西洋百货）站" LINE_NAME="90" LINE_ID="009000" ZD_ID="21" DIRECTION="0" START_STOP="淞宝路淞青路（海军上海博览馆）" END_STOP="靖宇南路控江路" START_EARLYTIME="4:50" START_LATETIME="23:10"></station>
+         <station STOP_ID="巴士_0005" STOP_NAME="黄兴路（东方商厦）站" LINE_NAME="90" LINE_ID="009000" ZD_ID="22" DIRECTION="0" START_STOP="淞宝路淞青路（海军上海博览馆）" END_STOP="靖宇南路控江路" START_EARLYTIME="4:50" START_LATETIME="23:10"></station>
+         <station STOP_ID="巴士_0009" STOP_NAME="黄兴路（国顺路）站" LINE_NAME="90" LINE_ID="009000" ZD_ID="4" DIRECTION="1" START_STOP="靖宇南路控江路" END_STOP="淞宝路淞青路（海军上海博览馆）" START_EARLYTIME="4:30" START_LATETIME="23:41"></station>
+         <station STOP_ID="巴士_0004" STOP_NAME="翔殷路（合生国际广场）站" LINE_NAME="90" LINE_ID="009000" ZD_ID="5" DIRECTION="1" START_STOP="靖宇南路控江路" END_STOP="淞宝路淞青路（海军上海博览馆）" START_EARLYTIME="4:30" START_LATETIME="23:41"></station>
+         <station STOP_ID="巴士_0007" STOP_NAME="邯郸路（财富广场）站" LINE_NAME="99" LINE_ID="009900" ZD_ID="17" DIRECTION="0" START_STOP="通南路新二路" END_STOP="三门路新江湾城" START_EARLYTIME="4:50" START_LATETIME="23:10"></station>
+         <station STOP_ID="巴士_0001" STOP_NAME="淞沪路（百联又一城）站" LINE_NAME="99" LINE_ID="009900" ZD_ID="18" DIRECTION="0" START_STOP="通南路新二路" END_STOP="三门路新江湾城" START_EARLYTIME="4:50" START_LATETIME="23:10"></station>
+         <station STOP_ID="巴士_0002" STOP_NAME="淞沪路（万达广场）站" LINE_NAME="99" LINE_ID="009900" ZD_ID="4" DIRECTION="1" START_STOP="三门路新江湾城" END_STOP="通南路新二路" START_EARLYTIME="4:30" START_LATETIME="23:10"></station>
+         <station STOP_ID="巴士_0006" STOP_NAME="邯郸路（国宾路）站" LINE_NAME="99" LINE_ID="009900" ZD_ID="5" DIRECTION="1" START_STOP="三门路新江湾城" END_STOP="通南路新二路" START_EARLYTIME="4:30" START_LATETIME="23:10"></station>
+         <station STOP_ID="巴士_0004" STOP_NAME="翔殷路（合生国际广场）站" LINE_NAME="133" LINE_ID="013300" ZD_ID="10" DIRECTION="0" START_STOP="凉城路丰镇路" END_STOP="国顺东路沙岗路" START_EARLYTIME="5:30" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0007" STOP_NAME="邯郸路（财富广场）站" LINE_NAME="133" LINE_ID="013300" ZD_ID="9" DIRECTION="0" START_STOP="凉城路丰镇路" END_STOP="国顺东路沙岗路" START_EARLYTIME="5:30" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0003" STOP_NAME="翔殷路（大西洋百货）站" LINE_NAME="133" LINE_ID="013300" ZD_ID="7" DIRECTION="1" START_STOP="国顺东路沙岗路" END_STOP="凉城路丰镇路" START_EARLYTIME="5:30" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0007" STOP_NAME="邯郸路（财富广场）站" LINE_NAME="139" LINE_ID="013900" ZD_ID="8" DIRECTION="0" START_STOP="虹口足球场(花园路)" END_STOP="嫩江路白城路" START_EARLYTIME="5:00" START_LATETIME="23:30"></station>
+         <station STOP_ID="巴士_0002" STOP_NAME="淞沪路（万达广场）站" LINE_NAME="168" LINE_ID="016800" ZD_ID="12" DIRECTION="0" START_STOP="国江路淞行路" END_STOP="复旦大学" START_EARLYTIME="5:00" START_LATETIME="23:30"></station>
+         <station STOP_ID="巴士_0006" STOP_NAME="邯郸路（国宾路）站" LINE_NAME="168" LINE_ID="016800" ZD_ID="13" DIRECTION="0" START_STOP="国江路淞行路" END_STOP="复旦大学" START_EARLYTIME="5:00" START_LATETIME="23:30"></station>
+         <station STOP_ID="巴士_0007" STOP_NAME="邯郸路（财富广场）站" LINE_NAME="168" LINE_ID="016800" ZD_ID="2" DIRECTION="1" START_STOP="复旦大学" END_STOP="国江路淞行路" START_EARLYTIME="5:30" START_LATETIME="23:55"></station>
+         <station STOP_ID="巴士_0001" STOP_NAME="淞沪路（百联又一城）站" LINE_NAME="168" LINE_ID="016800" ZD_ID="3" DIRECTION="1" START_STOP="复旦大学" END_STOP="国江路淞行路" START_EARLYTIME="5:30" START_LATETIME="23:55"></station>
+         <station STOP_ID="巴士_0002" STOP_NAME="淞沪路（万达广场）站" LINE_NAME="307" LINE_ID="030703" ZD_ID="3" DIRECTION="0" START_STOP="三门路新江湾城" END_STOP="中山东二路新开河路" START_EARLYTIME="23:20" START_LATETIME="3:20"></station>
+         <station STOP_ID="巴士_0008" STOP_NAME="四平路（五角场）站" LINE_NAME="307" LINE_ID="030703" ZD_ID="4" DIRECTION="0" START_STOP="三门路新江湾城" END_STOP="中山东二路新开河路" START_EARLYTIME="23:20" START_LATETIME="3:20"></station>
+         <station STOP_ID="巴士_0001" STOP_NAME="淞沪路（百联又一城）站" LINE_NAME="307" LINE_ID="030703" ZD_ID="14" DIRECTION="1" START_STOP="中山东二路新开河路" END_STOP="三门路新江湾城" START_EARLYTIME="22:50" START_LATETIME="4:00"></station>
+         <station STOP_ID="巴士_0004" STOP_NAME="翔殷路（合生国际广场）站" LINE_NAME="325" LINE_ID="032503" ZD_ID="10" DIRECTION="0" START_STOP="闸殷路军工路" END_STOP="平凉路大连路" START_EARLYTIME="0:00" START_LATETIME="4:00"></station>
+         <station STOP_ID="巴士_0003" STOP_NAME="翔殷路（大西洋百货）站" LINE_NAME="325" LINE_ID="032503" ZD_ID="13" DIRECTION="1" START_STOP="平凉路大连路" END_STOP="闸殷路军工路" START_EARLYTIME="0:00" START_LATETIME="4:00"></station>
+         <station STOP_ID="巴士_0008" STOP_NAME="四平路（五角场）站" LINE_NAME="325" LINE_ID="032503" ZD_ID="14" DIRECTION="1" START_STOP="平凉路大连路" END_STOP="闸殷路军工路" START_EARLYTIME="0:00" START_LATETIME="4:00"></station>
+         <station STOP_ID="巴士_0002" STOP_NAME="淞沪路（万达广场）站" LINE_NAME="329" LINE_ID="032903" ZD_ID="9" DIRECTION="0" START_STOP="工农新村" END_STOP="上海火车站（南广场）" START_EARLYTIME="0:30" START_LATETIME="4:15"></station>
+         <station STOP_ID="巴士_0001" STOP_NAME="淞沪路（百联又一城）站" LINE_NAME="329" LINE_ID="032903" ZD_ID="14" DIRECTION="1" START_STOP="上海火车站（南广场）" END_STOP="工农新村" START_EARLYTIME="1:17" START_LATETIME="3:32"></station>
+         <station STOP_ID="巴士_0003" STOP_NAME="翔殷路（大西洋百货）站" LINE_NAME="405" LINE_ID="040500" ZD_ID="18" DIRECTION="0" START_STOP="博兴路柳埠路" END_STOP="曲阳新村" START_EARLYTIME="5:30" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0008" STOP_NAME="四平路（五角场）站" LINE_NAME="405" LINE_ID="040500" ZD_ID="19" DIRECTION="0" START_STOP="博兴路柳埠路" END_STOP="曲阳新村" START_EARLYTIME="5:30" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0013" STOP_NAME="国定路（政修路）站" LINE_NAME="405" LINE_ID="040500" ZD_ID="20" DIRECTION="0" START_STOP="博兴路柳埠路" END_STOP="曲阳新村" START_EARLYTIME="5:30" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0014" STOP_NAME="国定路（三号湾）站" LINE_NAME="405" LINE_ID="040500" ZD_ID="8" DIRECTION="1" START_STOP="曲阳新村" END_STOP="博兴路柳埠路" START_EARLYTIME="5:30" START_LATETIME="23:35"></station>
+         <station STOP_ID="巴士_0004" STOP_NAME="翔殷路（合生国际广场）站" LINE_NAME="405" LINE_ID="040500" ZD_ID="9" DIRECTION="1" START_STOP="曲阳新村" END_STOP="博兴路柳埠路" START_EARLYTIME="5:30" START_LATETIME="23:35"></station>
+         <station STOP_ID="巴士_0003" STOP_NAME="翔殷路（大西洋百货）站" LINE_NAME="406" LINE_ID="040600" ZD_ID="21" DIRECTION="0" START_STOP="东靖路金京路" END_STOP="国定路政立路" START_EARLYTIME="5:30" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0004" STOP_NAME="翔殷路（合生国际广场）站" LINE_NAME="406" LINE_ID="040600" ZD_ID="4" DIRECTION="1" START_STOP="国定路政立路" END_STOP="东靖路金京路" START_EARLYTIME="5:30" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0002" STOP_NAME="淞沪路（万达广场）站" LINE_NAME="538" LINE_ID="053800" ZD_ID="14" DIRECTION="0" START_STOP="淞沪路殷行路" END_STOP="松潘路杨树浦路" START_EARLYTIME="5:30" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0005" STOP_NAME="黄兴路（东方商厦）站" LINE_NAME="538" LINE_ID="053800" ZD_ID="15" DIRECTION="0" START_STOP="淞沪路殷行路" END_STOP="松潘路杨树浦路" START_EARLYTIME="5:30" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0009" STOP_NAME="黄兴路（国顺路）站" LINE_NAME="538" LINE_ID="053800" ZD_ID="8" DIRECTION="1" START_STOP="松潘路杨树浦路" END_STOP="淞沪路殷行路" START_EARLYTIME="5:30" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0001" STOP_NAME="淞沪路（百联又一城）站" LINE_NAME="538" LINE_ID="053800" ZD_ID="9" DIRECTION="1" START_STOP="松潘路杨树浦路" END_STOP="淞沪路殷行路" START_EARLYTIME="5:30" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0007" STOP_NAME="邯郸路（财富广场）站" LINE_NAME="559" LINE_ID="055900" ZD_ID="10" DIRECTION="0" START_STOP="青石路国权北路" END_STOP="虬江码头" START_EARLYTIME="5:30" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0005" STOP_NAME="黄兴路（东方商厦）站" LINE_NAME="559" LINE_ID="055900" ZD_ID="11" DIRECTION="0" START_STOP="青石路国权北路" END_STOP="虬江码头" START_EARLYTIME="5:30" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0009" STOP_NAME="黄兴路（国顺路）站" LINE_NAME="559" LINE_ID="055900" ZD_ID="11" DIRECTION="1" START_STOP="虬江码头" END_STOP="青石路国权北路" START_EARLYTIME="5:30" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0006" STOP_NAME="邯郸路（国宾路）站" LINE_NAME="559" LINE_ID="505900" ZD_ID="12" DIRECTION="1" START_STOP="虬江码头" END_STOP="青石路国权北路" START_EARLYTIME="5:30" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0005" STOP_NAME="黄兴路（东方商厦）站" LINE_NAME="713" LINE_ID="071300" ZD_ID="20" DIRECTION="0" START_STOP="淞南新村" END_STOP="锦西路打虎山路" START_EARLYTIME="5:30" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0009" STOP_NAME="黄兴路（国顺路）站" LINE_NAME="713" LINE_ID="071300" ZD_ID="8" DIRECTION="1" START_STOP="锦西路打虎山路" END_STOP="淞南新村" START_EARLYTIME="5:30" START_LATETIME="23:00"></station>
+         <station STOP_ID="巴士_0006" STOP_NAME="邯郸路（国宾路）站" LINE_NAME="713" LINE_ID="071300" ZD_ID="9" DIRECTION="1" START_STOP="锦西路打虎山路" END_STOP="淞南新村" START_EARLYTIME="5:30" START_LATETIME="23:00"></station>
+         <station STOP_ID="巴士_0007" STOP_NAME="邯郸路（财富广场）站" LINE_NAME="749" LINE_ID="074900" ZD_ID="17" DIRECTION="0" START_STOP="虎林路（共江路）" END_STOP="三门路新江湾城" START_EARLYTIME="5:30" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0001" STOP_NAME="淞沪路（百联又一城）站" LINE_NAME="749" LINE_ID="074900" ZD_ID="18" DIRECTION="0" START_STOP="虎林路（共江路）" END_STOP="三门路新江湾城" START_EARLYTIME="5:30" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0002" STOP_NAME="淞沪路（万达广场）站" LINE_NAME="749" LINE_ID="074900" ZD_ID="3" DIRECTION="1" START_STOP="三门路新江湾城" END_STOP="虎林路（共江路）" START_EARLYTIME="5:30" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0006" STOP_NAME="邯郸路（国宾路）站" LINE_NAME="749" LINE_ID="074900" ZD_ID="4" DIRECTION="1" START_STOP="三门路新江湾城" END_STOP="虎林路（共江路）" START_EARLYTIME="5:30" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0007" STOP_NAME="邯郸路（财富广场）站" LINE_NAME="812" LINE_ID="081200" ZD_ID="18" DIRECTION="0" START_STOP="共和新路长江西路" END_STOP="周家嘴路军工路" START_EARLYTIME="5:30" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0004" STOP_NAME="翔殷路（合生国际广场）站" LINE_NAME="812" LINE_ID="081200" ZD_ID="19" DIRECTION="0" START_STOP="共和新路长江西路" END_STOP="周家嘴路军工路" START_EARLYTIME="5:30" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0003" STOP_NAME="翔殷路（大西洋百货）站" LINE_NAME="812" LINE_ID="081200" ZD_ID="11" DIRECTION="1" START_STOP="周家嘴路军工路" END_STOP="共和新路长江西路" START_EARLYTIME="5:30" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0006" STOP_NAME="邯郸路（国宾路）站" LINE_NAME="812" LINE_ID="081200" ZD_ID="12" DIRECTION="1" START_STOP="周家嘴路军工路" END_STOP="共和新路长江西路" START_EARLYTIME="5:30" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0001" STOP_NAME="淞沪路（百联又一城）站" LINE_NAME="817" LINE_ID="081700" ZD_ID="15" DIRECTION="0" START_STOP="上海火车站（北广场）" END_STOP="开鲁新村" START_EARLYTIME="5:30" START_LATETIME="23:30"></station>
+         <station STOP_ID="巴士_0003" STOP_NAME="翔殷路（大西洋百货）站" LINE_NAME="817" LINE_ID="081700" ZD_ID="10" DIRECTION="1" START_STOP="开鲁新村" END_STOP="上海火车站（北广场）" START_EARLYTIME="5:30" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0002" STOP_NAME="淞沪路（万达广场）站" LINE_NAME="817" LINE_ID="081700" ZD_ID="" DIRECTION="" START_STOP="" END_STOP="" START_EARLYTIME="" START_LATETIME=""></station>
+         <station STOP_ID="巴士_0009" STOP_NAME="黄兴路（国顺路）站" LINE_NAME="819" LINE_ID="081900" ZD_ID="25" DIRECTION="0" START_STOP="东绣路锦和路" END_STOP="吉浦路仁德路" START_EARLYTIME="6:20" START_LATETIME="19:30"></station>
+         <station STOP_ID="巴士_0006" STOP_NAME="邯郸路（国宾路）站" LINE_NAME="819" LINE_ID="081900" ZD_ID="26" DIRECTION="0" START_STOP="东绣路锦和路" END_STOP="吉浦路仁德路" START_EARLYTIME="6:20" START_LATETIME="19:30"></station>
+         <station STOP_ID="巴士_0005" STOP_NAME="黄兴路（东方商厦）站" LINE_NAME="819" LINE_ID="081900" ZD_ID="9" DIRECTION="1" START_STOP="吉浦路仁德路" END_STOP="东绣路锦和路" START_EARLYTIME="6:00" START_LATETIME="19:00"></station>
+         <station STOP_ID="巴士_0003" STOP_NAME="翔殷路（大西洋百货）站" LINE_NAME="842" LINE_ID="084200" ZD_ID="11" DIRECTION="0" START_STOP="工农新村" END_STOP="提篮桥" START_EARLYTIME="6:00" START_LATETIME="18:30"></station>
+         <station STOP_ID="巴士_0005" STOP_NAME="黄兴路（东方商厦）站" LINE_NAME="842" LINE_ID="084200" ZD_ID="12" DIRECTION="0" START_STOP="工农新村" END_STOP="提篮桥" START_EARLYTIME="6:00" START_LATETIME="18:30"></station>
+         <station STOP_ID="巴士_0009" STOP_NAME="黄兴路（国顺路）站" LINE_NAME="842" LINE_ID="084200" ZD_ID="12" DIRECTION="1" START_STOP="提篮桥" END_STOP="工农新村" START_EARLYTIME="6:20" START_LATETIME="19:00"></station>
+         <station STOP_ID="巴士_0004" STOP_NAME="翔殷路（合生国际广场）站" LINE_NAME="842" LINE_ID="084200" ZD_ID="13" DIRECTION="1" START_STOP="提篮桥" END_STOP="工农新村" START_EARLYTIME="6:20" START_LATETIME="19:00"></station>
+         <station STOP_ID="巴士_0006" STOP_NAME="邯郸路（国宾路）站" LINE_NAME="850" LINE_ID="085000" ZD_ID="1" DIRECTION="0" START_STOP="政通路淞沪路" END_STOP="共康六村" START_EARLYTIME="6:00" START_LATETIME="21:00"></station>
+         <station STOP_ID="巴士_0010" STOP_NAME="政通路（国宾路）站" LINE_NAME="850" LINE_ID="085000" ZD_ID="16" DIRECTION="1" START_STOP="共康六村" END_STOP="政通路淞沪路" START_EARLYTIME="5:45" START_LATETIME="20:00"></station>
+         <station STOP_ID="巴士_0001" STOP_NAME="淞沪路（百联又一城）站" LINE_NAME="937" LINE_ID="093700" ZD_ID="36" DIRECTION="0" START_STOP="绥德路（未来岛高新园区）" END_STOP="三门路淞沪路" START_EARLYTIME="5:30" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0002" STOP_NAME="淞沪路（万达广场）站" LINE_NAME="937" LINE_ID="093700" ZD_ID="4" DIRECTION="1" START_STOP="三门路淞沪路" END_STOP="绥德路（未来岛高新园区）" START_EARLYTIME="5:30" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0007" STOP_NAME="邯郸路（财富广场）站" LINE_NAME="942" LINE_ID="094200" ZD_ID="12" DIRECTION="0" START_STOP="上海火车站（北广场）" END_STOP="殷行路中原路" START_EARLYTIME="5:30" START_LATETIME="23:30"></station>
+         <station STOP_ID="巴士_0001" STOP_NAME="淞沪路（百联又一城）站" LINE_NAME="942" LINE_ID="094200" ZD_ID="13" DIRECTION="0" START_STOP="上海火车站（北广场）" END_STOP="殷行路中原路" START_EARLYTIME="5:30" START_LATETIME="23:30"></station>
+         <station STOP_ID="巴士_0002" STOP_NAME="淞沪路（万达广场）站" LINE_NAME="942" LINE_ID="094200" ZD_ID="10" DIRECTION="1" START_STOP="殷行路中原路" END_STOP="上海火车站（北广场）" START_EARLYTIME="5:30" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0006" STOP_NAME="邯郸路（国宾路）站" LINE_NAME="942" LINE_ID="094200" ZD_ID="11" DIRECTION="1" START_STOP="殷行路中原路" END_STOP="上海火车站（北广场）" START_EARLYTIME="5:30" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0007" STOP_NAME="邯郸路（财富广场）站" LINE_NAME="991" LINE_ID="10504" ZD_ID="2273116161" DIRECTION="0" START_STOP="鲁迅公园" END_STOP="思凡小区" START_EARLYTIME="6:00" START_LATETIME="21:31"></station>
+         <station STOP_ID="巴士_0005" STOP_NAME="黄兴路（东方商厦）站" LINE_NAME="991" LINE_ID="10504" ZD_ID="2290024452" DIRECTION="0" START_STOP="鲁迅公园" END_STOP="思凡小区" START_EARLYTIME="6:00" START_LATETIME="21:31"></station>
+         <station STOP_ID="巴士_0009" STOP_NAME="黄兴路（国顺路）站" LINE_NAME="991" LINE_ID="10504" ZD_ID="2273312771" DIRECTION="1" START_STOP="思凡小区" END_STOP="鲁迅公园" START_EARLYTIME="4:15" START_LATETIME="19:30"></station>
+         <station STOP_ID="巴士_0006" STOP_NAME="邯郸路（国宾路）站" LINE_NAME="991" LINE_ID="10504" ZD_ID="2289958913" DIRECTION="1" START_STOP="思凡小区" END_STOP="鲁迅公园" START_EARLYTIME="4:15" START_LATETIME="19:30"></station>
+         <station STOP_ID="巴士_0004" STOP_NAME="翔殷路（合生国际广场）站" LINE_NAME="大桥五线" LINE_ID="10514" ZD_ID="2290024450" DIRECTION="0" START_STOP="国顺路邯郸路（复旦大学）" END_STOP="栖山路德平路" START_EARLYTIME="5:30" START_LATETIME="23:00"></station>
+         <station STOP_ID="巴士_0007" STOP_NAME="邯郸路（财富广场）站" LINE_NAME="大桥五线" LINE_ID="10514" ZD_ID="2290024453" DIRECTION="0" START_STOP="国顺路邯郸路（复旦大学）" END_STOP="栖山路德平路" START_EARLYTIME="5:30" START_LATETIME="23:00"></station>
+         <station STOP_ID="巴士_0003" STOP_NAME="翔殷路（大西洋百货）站" LINE_NAME="大桥五线" LINE_ID="10514" ZD_ID="2290024451" DIRECTION="1" START_STOP="栖山路德平路" END_STOP="国顺路邯郸路（复旦大学）" START_EARLYTIME="6:00" START_LATETIME="22:35"></station>
+         <station STOP_ID="巴士_0003" STOP_NAME="翔殷路（大西洋百货）站" LINE_NAME="453" LINE_ID="10532" ZD_ID="2290024450" DIRECTION="0" START_STOP="五角场翔殷路" END_STOP="港城路地铁站" START_EARLYTIME="6:15" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0004" STOP_NAME="翔殷路（合生国际广场）站" LINE_NAME="453" LINE_ID="10532" ZD_ID="2290024450" DIRECTION="1" START_STOP="港城路地铁站" END_STOP="五角场翔殷路" START_EARLYTIME="5:30" START_LATETIME="23:50"></station>
+         <station STOP_ID="巴士_0016" STOP_NAME="国定东路（创业园区）站" LINE_NAME="453" LINE_ID="10532" ZD_ID="2290089984" DIRECTION="1" START_STOP="港城路地铁站" END_STOP="五角场翔殷路" START_EARLYTIME="5:30" START_LATETIME="23:50"></station>
+         <station STOP_ID="巴士_0003" STOP_NAME="翔殷路（大西洋百货）站" LINE_NAME="大桥三线" LINE_ID="501900" ZD_ID="6" DIRECTION="0" START_STOP="国和新村" END_STOP="黄山新村" START_EARLYTIME="4:55" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0005" STOP_NAME="黄兴路（东方商厦）站" LINE_NAME="大桥三线" LINE_ID="501900" ZD_ID="7" DIRECTION="0" START_STOP="国和新村" END_STOP="黄山新村" START_EARLYTIME="4:55" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0004" STOP_NAME="翔殷路（合生国际广场）站" LINE_NAME="大桥三线" LINE_ID="501900" ZD_ID="10" DIRECTION="1" START_STOP="黄山新村" END_STOP="国和新村" START_EARLYTIME="5:30" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0009" STOP_NAME="黄兴路（国顺路）站" LINE_NAME="大桥三线" LINE_ID="501900" ZD_ID="9" DIRECTION="1" START_STOP="黄山新村" END_STOP="国和新村" START_EARLYTIME="5:30" START_LATETIME="22:30"></station>
+         <station STOP_ID="巴士_0006" STOP_NAME="邯郸路（国宾路）站" LINE_NAME="机场四线" LINE_ID="" ZD_ID="" DIRECTION="" START_STOP="" END_STOP="" START_EARLYTIME="" START_LATETIME=""></station>
+         <station STOP_ID="巴士_0001" STOP_NAME="淞沪路（百联又一城）站" LINE_NAME="854" LINE_ID="" ZD_ID="" DIRECTION="" START_STOP="" END_STOP="" START_EARLYTIME="" START_LATETIME=""></station>
+         <station STOP_ID="巴士_0002" STOP_NAME="淞沪路（万达广场）站" LINE_NAME="854" LINE_ID="" ZD_ID="" DIRECTION="" START_STOP="" END_STOP="" START_EARLYTIME="" START_LATETIME=""></station>
+         <station STOP_ID="巴士_0005" STOP_NAME="黄兴路（东方商厦）站" LINE_NAME="机场四线" LINE_ID="" ZD_ID="" DIRECTION="" START_STOP="" END_STOP="" START_EARLYTIME="" START_LATETIME=""></station>
+         <station STOP_ID="巴士_0003" STOP_NAME="翔殷路（大西洋百货）站" LINE_NAME="854" LINE_ID="" ZD_ID="" DIRECTION="" START_STOP="" END_STOP="" START_EARLYTIME="" START_LATETIME=""></station>
+   </stations>
+</configuration>

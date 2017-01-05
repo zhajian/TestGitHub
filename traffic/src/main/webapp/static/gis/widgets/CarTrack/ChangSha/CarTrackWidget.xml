@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<configuration>
+	<simmovepointtype>carTrack</simmovepointtype>
+	<speed>200</speed>
+	<devicelayer>
+		<url>http://{serverip}/arcgis/rest/services/changsha/changsha_device/MapServer/2</url>
+		<idfield>DEVICEID</idfield>
+	</devicelayer>
+</configuration>

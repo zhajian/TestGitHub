@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<configuration>
+	<menu>
+		<itemgroup label="车检器">
+			<item label="车检器" initenable="true">
+				<clickfunctions>
+					<clickfunction name="ChangeOverlayVisible">
+						<params>
+							<param name="WidgetName" value="车检器Overlay"/>
+							<param name="OverlayType" value="CheJianQi" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</itemgroup>
+	</menu>
+</configuration>
+	

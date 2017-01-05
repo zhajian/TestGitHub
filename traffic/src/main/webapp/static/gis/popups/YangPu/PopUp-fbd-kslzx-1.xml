@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{快速路网主线_一级显示.DES}</title>
+	<fields>
+		<field name="快速路网主线_一级显示.DES" />
+		<field name="快速路网主线_一级显示.所属道路" alias="所属道路: " visible="true"/>
+		<field name="快速路网主线_一级显示.所属区域" alias="所属区域: " visible="true"/>
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+<!-- 	<buttons> -->
+<!-- 		<button label="详细信息" action="openDevice" type="XHJ" idfield="devId" /> -->
+<!-- 	</buttons> -->
+</configuration>

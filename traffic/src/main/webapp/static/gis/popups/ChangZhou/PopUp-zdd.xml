@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{ZDD_ChangZhou.DES}</title>
+	<fields>
+		<field name="ZDD_ChangZhou.DES" />
+		<field name="ZDD_ChangZhou.SDEVICEID" alias="编号" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+		<button label="详细信息" action="openDevice" type="ZDD" idfield="ZDD_ChangZhou.SDEVICEID" />
+	</buttons>
+</configuration>

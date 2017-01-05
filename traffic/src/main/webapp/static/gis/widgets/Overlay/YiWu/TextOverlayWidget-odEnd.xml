@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<configuration>
+	<type>odEnd</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify></widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify></widgetclosenotify>
+	
+	<textsymbol>
+		<!-- The text alpha -->
+		<alpha>0.8</alpha>
+		<!-- The angle of the TextSymbol -->
+		<angle></angle>
+		<!-- Specifies whether the text field has a background fill. -->
+		<background>true</background>
+		<!-- The background color of the text field. -->
+		<backgroundcolor>0x20b575</backgroundcolor>
+		<!-- Specifies whether the text field has a border. -->
+		<border>false</border>
+		<!-- The color of the text field border. -->
+		<bordercolor></bordercolor>
+		<!-- The text color -->
+		<color>0xFFFFFF</color>
+		<!-- The text placement, above/below/start/end/middle -->
+		<placement>middle</placement>
+		<!-- The X offset value in pixels. -->
+		<xoffset></xoffset>
+		<!-- The Y offset value in pixels. -->
+		<yoffset>-20</yoffset>
+		<fontname></fontname>
+		<fontsize>14</fontsize>
+	</textsymbol>
+	
+	<!-- 发光效果 -->
+	<glowfilter>
+		<alpha>1</alpha>
+		<blurx>4</blurx>
+		<blury>4</blury>
+		<strength>80</strength>
+		<color>0xFFFFFF</color>
+		<!-- 内发光 -->
+		<inner>false</inner>
+		<!-- 镂空 -->
+		<knockout>false</knockout>
+	</glowfilter>
+</configuration>

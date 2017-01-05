@@ -1,0 +1,117 @@
+<?xml version="1.0" ?>
+<configuration>
+<!-- 	<uniquevaluerenderer field="HouseType"> -->
+<!-- 		<simplefillsymbol color="0xfd8600" alpha="0.8"/> -->
+	
+<!-- 		<uniquevalueinfo value="公租房"> -->
+<!-- 			<simplefillsymbol color="0xff210f" alpha="0.8"/> -->
+<!-- 		</uniquevalueinfo> -->
+	
+<!-- 		<uniquevalueinfo value="廉租房"> -->
+<!-- 			<simplefillsymbol color="0xfd8600" alpha="0.8"/> -->
+<!-- 		</uniquevalueinfo> -->
+	
+<!-- 		<uniquevalueinfo value="动迁安置房"> -->
+<!-- 			<simplefillsymbol color="0xffd100" alpha="0.8"/> -->
+<!-- 		</uniquevalueinfo> -->
+	
+<!-- 		<uniquevalueinfo value="共有产权房"> -->
+<!-- 			<simplefillsymbol color="0x3eff00" alpha="0.8"/> -->
+<!-- 		</uniquevalueinfo> -->
+	
+<!-- 		<uniquevalueinfo value="旧房改造房"> -->
+<!-- 			<simplefillsymbol color="0x22ccff" alpha="0.8"/> -->
+<!-- 		</uniquevalueinfo> -->
+<!-- 	</uniquevaluerenderer> -->
+	
+	<uniquevaluerenderer field="HouseType">
+		<simplemarkersymbol color="0x999999" size="10"/>
+	
+		<uniquevalueinfo value="公租房">
+			<simplemarkersymbol color="0xff210f" size="10"/>
+		</uniquevalueinfo>
+	
+		<uniquevalueinfo value="廉租房">
+			<simplemarkersymbol color="0xfd8600" size="10"/>
+		</uniquevalueinfo>
+	
+		<uniquevalueinfo value="动迁安置房">
+			<simplemarkersymbol color="0xffd100" size="10"/>
+		</uniquevalueinfo>
+	
+		<uniquevalueinfo value="共有产权房">
+			<simplemarkersymbol color="0x3eff00" size="10"/>
+		</uniquevalueinfo>
+	
+		<uniquevalueinfo value="旧房改造房">
+			<simplemarkersymbol color="0x22ccff" size="10"/>
+		</uniquevalueinfo>
+	</uniquevaluerenderer>
+		
+	<!-- 项目 -->
+	<project>
+		<layer>http://{serverip}/arcgis/rest/services/songjiang/SongJiang_FangWu/MapServer/2</layer>
+		<idfield>ProjectApplyId</idfield>
+		<namefield>ProjectName</namefield>
+		<typefield>HouseType</typefield>
+		<statefield>ProjectState</statefield>
+		<popup>
+			<title>{ProjectName}</title>
+			<fields>
+				<field name="ProjectName" />
+				<field name="LandPlace" alias="位置：" visible="false" />
+				<field name="ProjectArea" alias="面积(公顷)：" visible="true">
+					<format precision="2"/>
+				</field>
+				<field name="HouseType" alias="房屋类型：" visible="true" />
+				<field name="ProjectState" alias="项目状态：" visible="true" />
+				<field name="NumHouses" alias="房屋总数：" visible="true" />
+				<field name="BuildDepart" alias="建设单位：" visible="true" />
+			</fields>
+			<showzoomtobutton>false</showzoomtobutton>
+		</popup>
+		
+	</project>
+	
+	<!-- 地块 -->
+	<land>
+		<layer>http://{serverip}/arcgis/rest/services/songjiang/SongJiang_FangWu/MapServer/1</layer>
+		<idfield>LandId</idfield>
+		<namefield>LandName</namefield>
+		<!-- 地块所属项目id -->
+		<projectidfield>ProjectApplyId</projectidfield>
+		<popup>
+			<title>{LandName}</title>
+			<fields>
+				<field name="LandName" />
+				<field name="LandPlace" alias="位置：" visible="false" />
+				<field name="LandArea" alias="面积(公顷)：" visible="true">
+					<format precision="2"/>
+				</field>
+				<field name="LandType" alias="土地类型：" visible="true" />
+				<field name="LandYear" alias="年份：" visible="true" />
+			</fields>
+			<showzoomtobutton>false</showzoomtobutton>
+		</popup>
+	</land>
+	
+	<!-- 小区 -->
+	<community>
+		<layer>http://{serverip}/arcgis/rest/services/songjiang/SongJiang_FangWu/MapServer/0</layer>
+		<idfield>CommunityId</idfield>
+		<namefield>CommunityName</namefield>
+		<!-- 小区所属地块id -->
+		<landidfield>PublicLandId</landidfield>
+		<popup>
+			<title>{CommunityName}</title>
+			<fields>
+				<field name="CommunityName" />
+				<field name="CommunityPlace" alias="位置：" visible="false" />
+				<field name="CommunityArea" alias="面积(公顷)：" visible="true">
+					<format precision="2"/>
+				</field>
+			</fields>
+			<showzoomtobutton>false</showzoomtobutton>
+		</popup>
+	</community>
+</configuration>

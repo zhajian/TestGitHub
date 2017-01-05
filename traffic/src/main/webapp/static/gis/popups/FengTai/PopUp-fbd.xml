@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{issueId}</title>
+	<fields>
+		<field name="issueId"/>
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+	   <button label="人工发布" action="openDevice" type="FBD" idfield="issueId" />
+	</buttons>
+</configuration>

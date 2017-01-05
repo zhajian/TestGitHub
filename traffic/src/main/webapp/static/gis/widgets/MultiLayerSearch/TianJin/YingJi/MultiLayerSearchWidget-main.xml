@@ -1,0 +1,68 @@
+<configuration>
+	<type>RoadAndPOI</type>
+	
+	<showbuffersearch>false</showbuffersearch>
+	<showgraphicsearch>true</showgraphicsearch>
+	<showtextsearch>true</showtextsearch>
+	<showsendresult>false</showsendresult>
+	
+	<defaultbufferdistance>500</defaultbufferdistance>
+	
+	<layerinfo>
+		<find>
+			<url>http://{serverip}/arcgis/rest/services/TianJin/tianjin_search/MapServer</url>
+			<fields>DEVICEID,NAME,ROADNAME</fields>
+		</find>
+
+		<uniquevaluerenderer field="layerName">
+			<simplemarkersymbol style="circle" color="0xFF0000" size="10"/>
+			
+			<uniquevalueinfo value="情报板">
+				<picturemarkersymbol url="assets/images/mapIcons/WuHu/QingBaoBan-blue.png" yoffset="18" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="气象站">
+				<picturemarkersymbol url="assets/images/mapIcons/WuHu/QiXiangZhan-blue.png" yoffset="18" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="摄像机">
+				<picturemarkersymbol url="assets/images/mapIcons/WuHu/SheXiangJi-blue.png" yoffset="18" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="线圈车检器">
+				<picturemarkersymbol url="assets/images/mapIcons/WuHu/NengJianDuYi-blue.png" yoffset="18" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="车检器">
+				<picturemarkersymbol url="assets/images/mapIcons/WuHu/ShiPinShiJian-blue.png" yoffset="18" />
+			</uniquevalueinfo>
+		</uniquevaluerenderer>
+
+		<popups>
+			<popup layername="default">
+				<title>{NAME}</title>
+				<fields>
+					<field name="NAME" />
+					<field name="ROADNAME" alias="所属公路：" visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+			<popup layername="路口">
+				<title>{CODE}/{DESCRIPTION}</title>
+				<fields>
+					<field name="DESCRIPTION"/>
+					<field name="CODE"/>
+					<field name="POSITION_" alias="位置：" visible="true"/>
+					<field name="TYPE_JC" alias="交叉形式：" visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</popups>
+	</layerinfo>
+	
+	<!-- 要搜索的动态数据 -->
+	<overlays>
+		
+	</overlays>
+</configuration>

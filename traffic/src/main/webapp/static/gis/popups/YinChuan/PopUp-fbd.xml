@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{NAME}</title>
+	<fields>
+		<field name="NAME" />
+		<field name="发布段ID" alias="编号" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+		<button label="人工发布" action="openDevice" type="FBD" idfield="发布段ID" />
+	</buttons>
+</configuration>

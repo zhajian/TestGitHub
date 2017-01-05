@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<!-- 新增岗点时显示当前在编辑的点 -->
+<configuration>
+	<type>createPoliceSentry</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify>onCreatePoliceSentryOverlayRun</widgetrunnotify>
+	<simplerenderer>
+		<picturemarkersymbol url="assets/images/mapIcons/GangDian-blue.png" yoffset="13" />
+	</simplerenderer>
+</configuration>

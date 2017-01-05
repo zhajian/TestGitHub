@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{DEVDESC}</title>
+	<fields>
+		<field name="DEVDESC" />
+		<field name="DEVICEID" alias="编号" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+</configuration>

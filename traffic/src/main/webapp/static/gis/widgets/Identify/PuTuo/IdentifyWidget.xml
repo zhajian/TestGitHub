@@ -1,0 +1,10 @@
+<configuration>
+	<layerinfo>
+		<find>
+			<id>1</id>
+			<url>http://{serverip}/arcgis/rest/services/putuo/pt_live/MapServer</url>
+			<fields>编码</fields>
+		</find>
+	</layerinfo>
+	
+</configuration>

@@ -1,0 +1,63 @@
+<!-- 抓拍事件 -->
+<?xml version="1.0" ?>
+<configuration>
+	<type>ZPSJ</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify></widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify></widgetclosenotify>
+	
+	<initvisible>false</initvisible>
+	
+	<popupskinclass>advanced</popupskinclass>
+	<popup>
+		<title>{detectorName}</title>
+		<fields>
+			<field name="detectorName"/>
+			<field name="eventTypeName" alias="事件类型：" visible="true"/>
+			<field name="eventTime" alias="发生时间：" visible="true"/>
+			<field name="sjzt"/>
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+		<buttons>
+			<button label="详细信息" action="openDevice" type="ZPSJ"/>
+			<button label="实时视频" action="openDevice" type="ZPSJ_ShiShiShiPin"/>
+		</buttons>
+	</popup>
+	
+	<uniquevaluerenderer field="sjzt">
+		<picturemarkersymbol url="assets/images/mapIcons/WuHu/ShiPinShiJian-grey.png" yoffset="18"/>
+		
+		<uniquevalueinfo value="0" label="未处置">
+			<picturemarkersymbol url="assets/images/mapIcons/WuHu/ShiPinShiJian-yellow.png" yoffset="18" />
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="1" label="已处置">
+			<picturemarkersymbol url="assets/images/mapIcons/WuHu/ShiPinShiJian-blue.png" yoffset="18" />
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="2" label="误报">
+			<picturemarkersymbol url="assets/images/mapIcons/WuHu/ShiPinShiJian-grey.png" yoffset="18" />
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="3" label="已查看">
+			<picturemarkersymbol url="assets/images/mapIcons/WuHu/ShiPinShiJian-red.png" yoffset="18" />
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="4" label="超时">
+			<picturemarkersymbol url="assets/images/mapIcons/WuHu/ShiPinShiJian-red.png" yoffset="18" />
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="5" label="新事件">
+			<picturemarkersymbol url="assets/images/Red_glow.swf" xoffset="-15" yoffset="15"/>
+		</uniquevalueinfo>
+	</uniquevaluerenderer>
+	
+<!-- 	<simplerenderer> -->
+<!-- 		<picturemarkersymbol url="assets/images/mapIcons/WuHu/GangDian-blue.png" yoffset="18" /> -->
+<!-- 	</simplerenderer> -->
+	
+	<clickfunction>
+		<action>showInfoWindow</action>
+	</clickfunction>
+</configuration>

@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<configuration>
+	<componentType>playStop</componentType>
+	<simmovepointtype>greenWaveBandRoute</simmovepointtype>
+	<!-- 距离模拟点多少米距离内的信号灯需要变绿 -->
+	<nearlength>200</nearlength>
+	<greenwavebandlayer>
+		<url>http://{serverip}/arcgis/rest/services/yiwu/YiWu-GreenWaveBand/MapServer/1</url>
+		<idfield>DEVID</idfield>
+		<namefield>DEVNAME</namefield>
+		<visible>true</visible>
+	</greenwavebandlayer>
+	
+	<xhdlayer>
+		<url>http://{serverip}/arcgis/rest/services/yiwu/YiWu-GreenWaveBand/MapServer/0</url>
+		<bandidfield>lvboid</bandidfield>
+		<idfield>devid</idfield>
+		<namefield>devdesc</namefield>
+		
+		<uniquevaluerenderer field="state">
+			<picturemarkersymbol url="assets/images/mapIcons/XinHaoDeng-green.png" yoffset="11"/>
+			
+			<uniquevalueinfo value="green">
+				<picturemarkersymbol url="assets/images/mapIcons/XinHaoDeng-green.png" yoffset="11"/>
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="yellow">
+				<picturemarkersymbol url="assets/images/mapIcons/XinHaoDeng-yellow.swf" yoffset="11"/>
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="red">
+				<picturemarkersymbol url="assets/images/mapIcons/XinHaoDeng-red.png" yoffset="11"/>
+			</uniquevalueinfo>
+		</uniquevaluerenderer>
+	</xhdlayer>
+</configuration>

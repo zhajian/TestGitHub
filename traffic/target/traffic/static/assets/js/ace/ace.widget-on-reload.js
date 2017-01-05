@@ -1,0 +1,1 @@
+(function(a,b){a(document).on("reload.ace.widget",".widget-box",function(c){var d=a(this);setTimeout(function(){d.trigger("reloaded.ace.widget")},parseInt(Math.random()*1000+1000))})})(window.jQuery);

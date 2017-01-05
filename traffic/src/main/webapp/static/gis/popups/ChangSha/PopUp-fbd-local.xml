@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{发布段双线.NAME}</title>
+	<fields>
+		<field name="发布段双线.NAME" />
+		<field name="发布段双线.issueid" alias="编号" visible="true" />
+		<field name="发布段双线.车道数" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+		<button label="人工发布" action="openDevice" type="FBD" idfield="发布段双线.issueid" />
+	</buttons>
+</configuration>

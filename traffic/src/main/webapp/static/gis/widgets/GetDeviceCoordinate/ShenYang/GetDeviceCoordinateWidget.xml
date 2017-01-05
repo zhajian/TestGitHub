@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<configuration>
+	<needzoom>true</needzoom>
+	<needzoomeffect>true</needzoomeffect>
+	<popupskinclass>MultiLayer</popupskinclass>
+	
+	<layers>
+		<layer>
+			<type>发布段</type>
+			<url>http://{serverip}/arcgis/rest/services/shenyang/fbd_all/MapServer/1</url>
+			<idfield>ID1</idfield>
+			<zoomscale>24000</zoomscale>
+			<simplelinesymbol color="0x3E6FBC" width="4"/>
+			<popup>
+				<title>{MC}</title>
+				<fields>
+					<field name="MC" />
+					<field name="QDZ" alias="起点: " visible="true" />
+					<field name="ZDZ" alias="终点: " visible="true" />
+<!-- 					<field name="FSTRSPEED" alias="车速: " visible="true"/> -->
+<!-- 					<field name="FSTRINDEXRAW" alias="指数: " visible="true"/> -->
+<!-- 					<field name="FSTRSTATEDESC" alias="状态: " visible="true"/> -->
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>行政区</type>
+			<url>http://{serverip}/arcgis/rest/services/shenyang/ShenYang-IndexRegion-XZQ/MapServer/0</url>
+			<idfield>SDE.xzq.BH</idfield>
+			<popup>
+				<title>{SDE.xzq.MC}</title>
+				<fields>
+					<field name="SDE.xzq.MC"/>
+					<field name="FSTRINDEXRAW" alias="指数: " visible="true"/>
+					<field name="FSTRSPEED" alias="车速: " visible="true"/>
+					<field name="FSTRSTATEDESC" alias="状态: " visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>热点区</type>
+			<url>http://{serverip}/arcgis/rest/services/shenyang/ShenYang-IndexRegion-RD/MapServer/0</url>
+			<idfield>SDE.rd.BH</idfield>
+			<popup>
+				<title>{SDE.rd.MC}</title>
+				<fields>
+					<field name="SDE.rd.MC"/>
+					<field name="FSTRINDEXRAW" alias="指数: " visible="true"/>
+					<field name="FSTRSPEED" alias="车速: " visible="true"/>
+					<field name="FSTRSTATEDESC" alias="状态: " visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+	</layers>
+</configuration>

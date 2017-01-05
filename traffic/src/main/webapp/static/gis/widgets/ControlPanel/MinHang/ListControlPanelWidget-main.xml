@@ -1,0 +1,94 @@
+<?xml version="1.0" ?>
+<configuration>
+	<menu>
+		<itemgroup label="业务图层">
+			<item label="发布段" initenable="true">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<param name="ServiceName" value="发布段"/>
+					</clickfunction>
+					<clickfunction name="ChangeLayer">
+						<param name="ServiceName" value="device"/>
+						<param name="LayerId" value="6" />
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</itemgroup>
+		
+		<itemgroup label="设备图层">
+			<item label="摄像机">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="摄像机"/>
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item label="SCATS">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="SCATS"/>
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item label="诱导板">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="诱导板"/>
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item label="车检器">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="device"/>
+							<param name="LayerId" value="4" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item label="WIFI">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="WIFI"/>
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</itemgroup>
+		
+		<itemgroup label="功能">
+			<item label="测距">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="测距" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+<!-- 			<item label="搜索" initenable="true"> -->
+<!-- 				<clickfunctions> -->
+<!-- 					<clickfunction name="ChangeWidget"> -->
+<!-- 						<params> -->
+<!-- 							<param name="WidgetName" value="搜索"/> -->
+<!-- 							<param name="WidgetState" value="minimized"/> -->
+<!-- 						</params> -->
+<!-- 					</clickfunction> -->
+<!-- 				</clickfunctions> -->
+<!-- 			</item> -->
+		</itemgroup>
+	</menu>
+</configuration>

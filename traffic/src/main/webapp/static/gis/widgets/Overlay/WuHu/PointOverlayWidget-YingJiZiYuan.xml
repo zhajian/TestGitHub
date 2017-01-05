@@ -1,0 +1,35 @@
+<!-- 应急资源 -->
+<?xml version="1.0" ?>
+<configuration>
+	<type>YingJiZiYuan</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify></widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify></widgetclosenotify>
+	
+	<initvisible>false</initvisible>
+	
+	<popupskinclass>advanced</popupskinclass>
+	<popup>
+		<title>{ckmc}</title>
+		<fields>
+			<field name="ckmc"/>
+			<field name="ckdz" alias="仓库地址：" visible="true"/>
+			<field name="ssdw" alias="所属单位：" visible="true"/>
+			<field name="zrr" alias="责任人：" visible="true"/>
+			<field name="lxdh" alias="联系电话：" visible="true"/>
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+<!-- 		<buttons> -->
+<!-- 			<button label="拨号" action="openDevice" type="callPoliceCarPDA"/> -->
+<!-- 		</buttons> -->
+	</popup>
+	
+	<simplerenderer>
+		<picturemarkersymbol url="assets/images/mapIcons/WuHu/GangDian-blue.png" yoffset="18" />
+	</simplerenderer>
+	
+	<clickfunction>
+		<action>showInfoWindow</action>
+	</clickfunction>
+</configuration>

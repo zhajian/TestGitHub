@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!-- 清扫车 -->
+<configuration>
+	<type>QingSaoChe</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify>onQingSaoCheOverlayRun</widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify>onQingSaoCheOverlayClose</widgetclosenotify>
+	
+	<popup>
+		<title>{车牌号}</title>
+		<fields>
+			<field name="车牌号" />
+			<field name="设备类型"/>
+			<field name="设备号" alias="设备号： " visible="true"/>
+<!-- 			<field name="服务器ip" alias="服务器ip: " visible="true"/> -->
+<!-- 			<field name="服务器端口" alias="服务器端口: " visible="true"/> -->
+<!-- 			<field name="通道号" alias="通道号: " visible="true"/> -->
+<!-- 			<field name="维护单位" alias="维护单位: " visible="true"/> -->
+<!-- 			<field name="设备详细描述" alias="设备描述: " visible="true"/> -->
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+		<buttons>
+			<button label="视频" action="openDevice" type="QingSaoCheVideo"/>
+		</buttons>
+	</popup>
+	
+<!-- 	<simplerenderer> -->
+<!-- 		<picturemarkersymbol url="assets/images/mapIcons/JingChe-blue.png" yoffset="13"/> -->
+<!-- 	</simplerenderer> -->
+	
+	<uniquevaluerenderer field="设备类型">
+		<defaultlabel>未知</defaultlabel>
+		<picturemarkersymbol url="assets/images/mapIcons/JingChe-blue.png" yoffset="13" />
+
+		<uniquevalueinfo value="清扫车">
+			<picturemarkersymbol url="assets/images/mapIcons/JingChe-blue.png" yoffset="13" />
+		</uniquevalueinfo>
+
+		<uniquevalueinfo value="巡查车">
+			<picturemarkersymbol url="assets/images/mapIcons/JingChe-yellow.png" yoffset="13" />
+		</uniquevalueinfo>
+	</uniquevaluerenderer>
+	
+	<clickfunction>
+		<action>showInfoWindow</action>
+	</clickfunction>
+</configuration>

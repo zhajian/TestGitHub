@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<!-- 公安视频 -->
+<configuration>
+	<title>{SXJMC}</title>
+	<fields>
+		<field name="SXJMC" />
+		<field name="IPAndTDH"/>
+		<field name="ADD_PCSMC" alias="派出所" visible="true" />
+		<field name="LG_ID" alias="编号" visible="true"/>
+		<field name="DH" alias="电话" visible="true"/>
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+		<button label="详细信息" action="showDevice" type="4" idfield="IPAndTDH" />
+	</buttons>
+</configuration>

@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{ROAD_NAME}</title>
+	<fields>
+		<field name="ROAD_NAME" />
+		<field name="CONTENT" alias="内容：" visible="true"/>
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+<!-- 	<buttons> -->
+<!-- 		<button label="详细信息" action="openDevice" type="XHJ" idfield="devId" /> -->
+<!-- 	</buttons> -->
+</configuration>

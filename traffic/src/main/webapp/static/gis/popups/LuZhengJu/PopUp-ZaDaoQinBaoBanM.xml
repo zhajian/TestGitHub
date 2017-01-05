@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!-- 匝道M板 -->
+<configuration>
+	<title>{SDE.AMQBB.sbbh}</title>
+	<fields>
+		<field name="SDE.AMQBB.sbbh" />
+		<field name="SDE.AMQBB.sbms" alias="详细描述：" visible="true" />
+		<field name="SDE.AMQBB.azsj" alias="安装时间：" visible="true" />
+		<field name="SDE.AMQBB.azdw" alias="安装单位：" visible="true" />
+		<field name="SDE.AMQBB.whdw" alias="维护单位：" visible="true" />
+		<field name="SDE.AMQBB.fzr" alias="负责人：" visible="true" />
+		<field name="SDE.AMQBB.tel" alias="联系方式：" visible="true" />
+		<field name="SDE.AMQBB.pp" alias="品牌：" visible="true" />
+		<field name="SDE.AMQBB.xh" alias="型号：" visible="true" />
+		<field name="SDE.AMQBB.jg" alias="价格：" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+		<button label="详细信息" action="openDevice" type="ZMQBB" idfield="SDE.AMQBB.sbbh" />
+	</buttons>
+</configuration>

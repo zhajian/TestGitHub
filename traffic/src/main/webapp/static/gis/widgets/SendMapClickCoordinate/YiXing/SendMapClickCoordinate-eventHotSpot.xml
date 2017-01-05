@@ -1,0 +1,8 @@
+<configuration>
+	<type>eventHotSpot</type>
+	<showconfirmwindow>true</showconfirmwindow>
+	<confirmwindow>
+		<title>添加警情热点</title>
+		<text>是否添加警情热点？</text>
+	</confirmwindow>
+</configuration>

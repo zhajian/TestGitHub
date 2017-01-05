@@ -1,0 +1,33 @@
+<!-- 情报板 -->
+<?xml version="1.0" ?>
+<configuration>
+	<type>QingBaoBan</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify></widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify></widgetclosenotify>
+
+	<initvisible>false</initvisible>
+	<url>http://128.64.151.223:8080/tcdp/qbb/createQbbPic.htm</url>
+
+	<popup>
+		<title>{qbbDesc}</title>
+		<fields>
+			<field name="qbbDesc" />
+			<field name="qbbId" alias="编号：" visible="true" />
+			<field name="showTypeDesc" alias="类型：" visible="true" />
+			<field name="regionDesc" alias="区域：" visible="true" />
+			<field name="txunitTypeDesc" alias="规格：" visible="true" />
+			<field name="qbbState" alias="通讯状态：" visible="true" />
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+		<buttons>
+			<button label="详细信息" action="openDevice" type="QingBaoBan" />
+		</buttons>
+	</popup>
+	
+	
+	<clickfunction>
+		<action>showInfoWindow</action>
+	</clickfunction>
+</configuration>

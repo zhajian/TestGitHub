@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{ISSUE_TYPE_nameS_}</title>
+	<fields>
+		<field name="ISSUE_TYPE_nameS_" />
+		<field name="ACCUSED_NAME_" alias="投诉对象：" visible="true" />
+		<field name="PETITION_DATE_" alias="投诉时间: " visible="true"/>
+		<field name="ACCUSER_NAME_" alias="投诉人：" visible="true" />
+		<field name="person_num_" alias="人数：" visible="true" />
+		<field name="PETITION_TYPE_NAME_" alias="信访方式：" visible="true" />
+		<field name="ISSUE_UNIT_ADDRESS_" alias="投诉地址：" visible="true" />
+		<field name="ACCUSED_INDUSTRY_NAMES_" alias="所属行业：" visible="true" />
+		<field name="ISSUE_CONTENT_BLOB_" alias="投诉内容：" visible="true" />
+		<field name="RETURN_CONTENT_" alias="回复内容：" visible="true"/>
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<showrelatedrecords>false</showrelatedrecords>
+	<showattachments>false</showattachments>
+<!-- 	<buttons> -->
+<!-- 		<button label="搜索污染源" action="buffersearch" type="" idfield=""  widgetName=""  -->
+<!-- 	 			queryLayerUrl="http://192.168.130.17:6080/arcgis/rest/services/HuanBaoJu/XinFangDian/MapServer/1"   -->
+<!-- 	 			geometryServiceUrl="http://192.168.130.17:6080/arcgis/rest/services/Utilities/Geometry/GeometryServer"/>  -->
+<!-- 	</buttons> -->
+<!-- 	<buttons> -->
+<!-- 		<button label="搜索污染源" action="buffersearch" type="" idfield=""  widgetName=""  -->
+<!-- 	 			queryLayerUrl="http://10.101.59.118:8399/arcgis/rest/services/shhbgis/MapServer/12"   -->
+<!-- 	 			geometryServiceUrl="http://192.168.130.17:6080/arcgis/rest/services/Utilities/Geometry/GeometryServer"/>  -->
+<!-- 	</buttons>  -->
+</configuration>

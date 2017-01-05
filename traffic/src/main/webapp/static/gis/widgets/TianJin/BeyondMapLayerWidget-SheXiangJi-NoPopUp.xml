@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<configuration>
+	<layertype>point</layertype>
+	<layerurl>http://{beyondserverip}/gisapi/rest/featureservice/SP_SXJ/simplequery?token=BF833A1145CB44669FB387DEA62AC464&needGeometry=true</layerurl>
+<!-- 	<layerurl>http://121.40.217.126:81/gisapi/rest/featureservice/SP_ZCZ/simplequery?token=BF833A1145CB44669FB387DEA62AC464&needGeometry=true</layerurl> -->
+	<idfield>BM</idfield>
+	<featuretype>摄像机</featuretype>
+	
+	<popupskinclass>天津设备</popupskinclass>
+	
+	<popup>
+		<showzoomtobutton>false</showzoomtobutton>
+	</popup>
+	
+	<uniquevaluerenderer field="SPJR">
+		<picturemarkersymbol url="assets/images/mapIcons/SheXiangJi-grey.png" yoffset="13"/>
+		
+		<uniquevalueinfo value="1">
+			<picturemarkersymbol url="assets/images/mapIcons/SheXiangJi-blue.png" yoffset="13" />
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="0">
+			<picturemarkersymbol url="assets/images/mapIcons/SheXiangJi-yellow.png" yoffset="13" />
+		</uniquevalueinfo>
+	</uniquevaluerenderer>
+	
+	<clickfunction>
+		<action>openDevice</action>
+		<type>SheXiangJi</type>
+	</clickfunction>
+</configuration>

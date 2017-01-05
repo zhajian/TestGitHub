@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{scats_mh.DES}</title>
+	<fields>
+		<field name="scats_mh.DES" />
+		<field name="scats_mh.BM_CODE" alias="设备编号：" visible="true"/>
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+		<button label="详细信息" action="openDevice" type="XHJ" idfield="scats_mh.BM_CODE" />
+	</buttons>
+</configuration>

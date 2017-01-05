@@ -1,0 +1,56 @@
+<configuration>
+	<layout direction="horizontal" gap="10" />
+	<groups>
+		<group>
+			<item id="fbd" name="发布段" image="assets/images/buttons/FaBuDuan.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="发布段" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="qbb" name="诱导板" image="assets/images/buttons/QingBaoBan.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="诱导板" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="kk" name="卡口" image="assets/images/buttons/DianZiJingCha.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="卡口" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="sxj" name="摄像机" image="assets/images/buttons/SheXiangJi.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="摄像机" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="lkj" name="路口机" image="assets/images/buttons/XinHaoJi.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="路口机" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</group>
+	</groups>
+</configuration>

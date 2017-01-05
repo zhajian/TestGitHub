@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{DeviceName}</title>
+	<fields>
+		<field name="DeviceName"/>
+		<field name="DeviceID"/>
+		<field name="DeviceState" alias="设备状态：" visible="true"/>
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+	   <button label="详细信息" action="openDevice" type="QBB" idfield="DeviceID" />
+	</buttons>
+</configuration>

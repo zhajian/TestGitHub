@@ -1,0 +1,62 @@
+<!-- 占道施工 -->
+<?xml version="1.0" ?>
+<configuration>
+	<type>ZhanDaoShiGong</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify></widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify></widgetclosenotify>	
+	
+	<initvisible>false</initvisible>
+	
+	<popupskinclass>ZhanDaoShiGong</popupskinclass>
+	
+	<popup>
+		<title>{projectName}</title>
+		<fields>
+			<field name="projectName"/>
+			<field name="taskSourceId" alias="任务源Id：" visible="false" />
+			<field name="constructionStartTime" alias="开始时间" visible="true" />
+			<field name="constructionEndTime" alias="结束时间" visible="true" />			
+			<field name="constructionUnit" alias="施工单位" visible="true"/>			
+			<field name="contactPerson" alias="联系人" visible="true"/>			
+			<field name="contactPhone" alias="联系电话" visible="true"/>
+			<field name="constructionPlace" alias="施工地点" visible="true"/>
+			<field name="constructionReason" alias="施工原因" visible="true"/>
+			<field name="stateId" alias="状态Id" visible="false"/>
+			<field name="canView"/>
+			<field name="canEdit"/>
+			<field name="canLocate"/>
+			<field name="canApply"/>
+			<field name="canApproval"/>
+			<field name="canAcceptApply"/>
+			<field name="canAccept"/>
+			<field name="canUntread"/>
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+		<buttons>
+			<button label="查看" action="openDevice" type="ZhanDaoShiGong" idfield="taskSourceId" />
+		</buttons>
+	</popup>	
+	<uniquevaluerenderer field="stateId">
+		<picturemarkersymbol url="assets/images/mapIcons/ShiGong-blue.png" yoffset="13"/>		
+		<uniquevalueinfo value="0">
+			<picturemarkersymbol url="assets/images/mapIcons/ShiGong-blue.png" yoffset="13"/>
+		</uniquevalueinfo>
+		<uniquevalueinfo value="1">
+			<picturemarkersymbol url="assets/images/mapIcons/ShiGong-blue.png" yoffset="13"/>
+		</uniquevalueinfo>
+		<uniquevalueinfo value="2">
+			<picturemarkersymbol url="assets/images/mapIcons/ShiGong-blue.png" yoffset="13"/>
+		</uniquevalueinfo>
+		<uniquevalueinfo value="3">
+			<picturemarkersymbol url="assets/images/mapIcons/ShiGong-blue.png" yoffset="13"/>
+		</uniquevalueinfo>
+		<uniquevalueinfo value="4">
+			<picturemarkersymbol url="assets/images/mapIcons/ShiGong-blue.png"/>
+		</uniquevalueinfo>
+	</uniquevaluerenderer>	
+	<clickfunction>
+		<action>showInfoWindow</action>
+	</clickfunction>
+</configuration>

@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{SDE.sb_lc.FSTR_DESC}</title>
+	<fields>
+		<field name="SDE.sb_lc.FSTR_DESC" />
+		<field name="SDE.sb_lc.DEVICEID" alias="设备编号：" visible="true" />
+		<field name="SDE.sb_lc.ROADNAME" alias="道路名称：" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+	   <button label="详细信息" action="openDevice" type="CDKZ" idfield="SDE.sb_lc.DEVICEID" />
+	</buttons>
+</configuration>

@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{市道发布段_三级显示.名称}</title>
+	<fields>
+		<field name="市道发布段_三级显示.名称" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+<!-- 	<buttons> -->
+<!-- 		<button label="详细信息" action="openDevice" type="XHJ" idfield="devId" /> -->
+<!-- 	</buttons> -->
+</configuration>

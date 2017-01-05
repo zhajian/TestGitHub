@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<configuration>
+	<type>XingZhengShenPi</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify></widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify></widgetclosenotify>
+	
+	<needzoom>false</needzoom>
+	
+	<ismercator>false</ismercator>
+	
+	<initvisible>false</initvisible>
+	
+	<popupskinclass>天津大屏行政审批</popupskinclass>
+	
+	<popup>
+		<fields>
+			
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+<!-- 		<buttons> -->
+<!-- 			<button label="视频" action="openDevice" type="QingSaoCheVideo"/> -->
+<!-- 		</buttons> -->
+	</popup>
+	
+	<simplerenderer>
+		<picturemarkersymbol url="assets/images/mapIcons/WuHu/GangDian-blue.png" yoffset="18"/>
+	</simplerenderer>
+	
+	<clickfunction>
+		<action>showInfoWindow</action>
+	</clickfunction>
+</configuration>

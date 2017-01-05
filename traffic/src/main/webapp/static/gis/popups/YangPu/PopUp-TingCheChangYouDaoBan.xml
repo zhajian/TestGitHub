@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{ROADNAME}-{DIRECTION}</title>
+	<fields>
+<!-- 		<field name="ROADNAME" /> -->
+<!-- 		<field name="DIRECTION"/> -->
+<!-- 		<field name="DEVICENAME"/> -->
+		<field name="ADDRESS" alias="地址: " visible="true"/>
+		<field name="DEVICETYPE" alias="类型: " visible="true"/>
+<!-- 		<field name="IMAGESRC_N"/> -->
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+<!-- 	<buttons> -->
+<!-- 		<button label="详细信息" action="openDevice" type="TingCheChangYouDaoBan" idfield="DEVICENAME" /> -->
+<!-- 	</buttons> -->
+	<medias>
+		<media type="image" imagesource="{IMAGESRC_N}"/>
+	</medias>
+</configuration>

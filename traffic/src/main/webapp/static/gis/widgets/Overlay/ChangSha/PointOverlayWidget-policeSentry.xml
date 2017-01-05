@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<!-- 岗点 -->
+<configuration>
+    <type>policeSentry</type>
+    <!-- 组件打开时通知页面 -->
+    <widgetrunnotify>onPoliceSentryOverlayRun</widgetrunnotify>
+    <!-- 组件关闭时通知页面 -->
+    <widgetclosenotify>onPoliceSentryOverlayClose</widgetclosenotify>
+    
+    <popupskinclass>ChangShaGangDian</popupskinclass>
+    
+    <popup>
+        <title>{spotName}({spotStatus})</title>
+        <fields>
+            <field name="spotName" />
+			<field name="deptName" alias="所属单位：" visible="true" />
+			<field name="spotType" alias="岗点类型：" visible="true"/>
+			<field name="taskPeriod" alias="当前班次：" visible="true"/>
+			<field name="spotId" />
+			<field name="policeName"/>
+			<field name="policeState"/>
+			<field name="policeId"/>
+			<field name="colorState"/>
+			<field name="spotStatus"/>
+        </fields>
+        <showzoomtobutton>false</showzoomtobutton>
+		<showdetaillink>true</showdetaillink>
+    </popup>
+    
+    <uniquevaluerenderer field="colorState">
+		<picturemarkersymbol url="assets/images/mapIcons/WuHu/GangDian-grey.png" yoffset="18"/>
+		
+		<uniquevalueinfo value="1">
+			<picturemarkersymbol url="assets/images/mapIcons/WuHu/GangDian-blue.png" yoffset="18" />
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="2">
+			<picturemarkersymbol url="assets/images/mapIcons/WuHu/GangDian-yellow.png" yoffset="18" />
+		</uniquevalueinfo>
+	</uniquevaluerenderer>
+    
+    <clickfunction>
+		<action>showInfoWindow</action>
+	</clickfunction>
+</configuration>

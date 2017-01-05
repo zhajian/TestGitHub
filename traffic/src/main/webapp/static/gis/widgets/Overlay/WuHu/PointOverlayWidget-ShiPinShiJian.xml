@@ -1,0 +1,30 @@
+<!-- 视频事件 -->
+<?xml version="1.0" ?>
+<configuration>
+	<type>ShiPinShiJian</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify></widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify></widgetclosenotify>
+	
+	<initvisible>false</initvisible>
+	
+	<popup>
+		<title>{address}</title>
+		<fields>
+			<field name="address"/>
+			<field name="eventType" alias="事件类型：" visible="true"/>
+			<field name="time" alias="事件时间：" visible="true"/>
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+		<buttons>
+			<button label="详细信息" action="openDevice" type="ShiPinShiJian"/>
+		</buttons>
+	</popup>
+	
+	<simplerenderer>
+		<picturemarkersymbol url="assets/images/mapIcons/WuHu/ShiPinShiJian-blue.png" yoffset="18" />
+	</simplerenderer>
+	
+	
+</configuration>

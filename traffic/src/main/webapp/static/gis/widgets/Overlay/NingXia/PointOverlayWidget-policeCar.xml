@@ -1,0 +1,47 @@
+<!-- 警车 -->
+<?xml version="1.0" ?>
+<configuration>
+	<type>policeCar</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify>onPoliceCarOverlayRun</widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify>onPoliceCarOverlayClose</widgetclosenotify>
+	
+	<initvisible>false</initvisible>
+	
+	<popupskinclass>advanced</popupskinclass>
+	<popup>
+		<title>{policeCarSn}</title>
+		<fields>
+			<field name="policeCarSn" />
+			<field name="deptName" alias="所属单位：" visible="true"/>
+			<field name="gpsState" alias="GPS状态：" visible="true"/>
+			<field name="acquisitionTime" alias="同步时间：" visible="true"/>
+			<field name="policeCarId" alias="警车ID："/>
+			<field name="stateColor"/>
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+		<showdetaillink>true</showdetaillink>
+		<buttons>
+			<button label="呼叫" action="openDevice" type="callPoliceCarPDA"/>
+			<button label="短信" action="openDevice" type="sendPoliceCarMessage"/>
+			<button label="查看轨迹" action="openDevice" type="gpsPoliceCarTrack"/>
+		</buttons>
+	</popup>
+	
+	<uniquevaluerenderer field="stateColor">
+		<picturemarkersymbol url="assets/images/mapIcons/WuHu/JingChe-grey.png" yoffset="18"/>
+		
+		<uniquevalueinfo value="1">
+			<picturemarkersymbol url="assets/images/mapIcons/WuHu/JingChe-blue.png" yoffset="18" />
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="2">
+			<picturemarkersymbol url="assets/images/mapIcons/WuHu/JingChe-yellow.png" yoffset="18" />
+		</uniquevalueinfo>
+	</uniquevaluerenderer>	
+	
+	<clickfunction>
+		<action>showInfoWindow</action>
+	</clickfunction>
+</configuration>

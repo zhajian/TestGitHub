@@ -1,0 +1,33 @@
+<!-- 六合一小区 -->
+<?xml version="1.0" ?>
+<configuration>
+	<type>LHYXQ</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify></widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify></widgetclosenotify>
+	
+	<initvisible>false</initvisible>
+	
+	<popup>
+		<title>{xqmc}(共{intcount}辆)</title>
+		<fields>
+			<field name="xqmc"/>
+			<field name="intcount"/>
+			<field name="xqdz" alias="地址：" visible="true"/>
+			<field name="xqyb" alias="邮编：" visible="true"/>
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+		<buttons>
+			<button label="详细信息" action="openDevice" type="LHYXQ"/>
+		</buttons>
+	</popup>
+	
+	<simplerenderer>
+		<picturemarkersymbol url="assets/images/i_police.png" yoffset="20"/>
+	</simplerenderer>
+	
+	<clickfunction>
+		<action>showInfoWindow</action>
+	</clickfunction>
+</configuration>

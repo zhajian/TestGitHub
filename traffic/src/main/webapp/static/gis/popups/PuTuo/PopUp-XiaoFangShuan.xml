@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<!-- 消防栓 -->
+<configuration>
+	<title>{地址}</title>
+	<fields>
+		<field name="地址" />
+		<field name="中队" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+</configuration>

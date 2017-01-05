@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<configuration>
+	<componentType>lockUnlock</componentType>
+	<nearlength>100</nearlength>
+	<movespeed>200</movespeed>
+	<greenwavebandlayer>
+		<url>http://{serverip}/arcgis/rest/services/LiuPanShui/lps_greenWave/MapServer/1</url>
+		<idfield>BANDID</idfield>
+		<namefield>BANDNAME</namefield>
+		<visible>false</visible>
+<!-- 		<simplelinesymbol style="solid" color="0x30b100" alpha="1" width="6"/> -->
+	</greenwavebandlayer>
+	
+	<xhdlayer>
+		<url>http://{serverip}/arcgis/rest/services/LiuPanShui/lps_greenWave/MapServer/0</url>
+		<bandidfield>BANDID</bandidfield>
+		<idfield>POINTID</idfield>
+		<namefield>POINTNAME</namefield>
+		<statefield>INITSTATE</statefield>
+		<initvisible>true</initvisible>
+		<changeinterval>10</changeinterval>
+		
+		<uniquevaluerenderer field="state">
+			<picturemarkersymbol url="assets/images/mapIcons/XinHaoDeng-green.png" yoffset="11"/>
+			
+			<uniquevalueinfo value="green">
+				<picturemarkersymbol url="assets/images/mapIcons/XinHaoDeng-green.png" yoffset="11"/>
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="yellow">
+				<picturemarkersymbol url="assets/images/mapIcons/XinHaoDeng-yellow.swf" yoffset="11"/>
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="red">
+				<picturemarkersymbol url="assets/images/mapIcons/XinHaoDeng-red.png" yoffset="11"/>
+			</uniquevalueinfo>
+		</uniquevaluerenderer>
+	</xhdlayer>
+</configuration>

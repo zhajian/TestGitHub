@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<configuration>
+	<locators>
+		<locator name="渝中区" type="polygon">
+			<extent>106.51177760939936 29.52251767108621 106.60882680168078 29.583743846467517</extent>
+		</locator>
+		<locator name="沙坪坝区" type="polygon">
+			<extent>106.26238552359155 29.53012340715843 106.45648390815438 29.652575757921046</extent>
+		</locator>
+		<locator name="大渡口区" type="polygon">
+			<extent>106.35137263563647 29.385614421786418 106.5454710201993 29.508066772549032</extent>
+		</locator>
+		<locator name="九龙坡区" type="polygon">
+			<extent>106.21583841882965 29.378388972517836 106.60403518795535 29.623293674043058</extent>
+		</locator>
+		<locator name="西勇" type="polygon">
+			<extent>106.26010380276992 29.524875449268627 106.45420218733275 29.647327800031242</extent>
+		</locator>
+	</locators>
+</configuration>

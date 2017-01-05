@@ -1,0 +1,32 @@
+<!-- 卡口 -->
+<?xml version="1.0" ?>
+<configuration>
+	<type>KaKou</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify></widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify></widgetclosenotify>
+	
+	<initvisible>false</initvisible>
+	
+	<popupskinclass>advanced</popupskinclass>
+	<popup>
+		<title>{KKMC}</title>
+		<fields>
+			<field name="KKDM" alias="设备ID：" visible="true"/>
+			<field name="KKMC" alias="位置描述：" visible="true"/>
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+		<buttons>
+			<button label="卡口实时" action="openDevice" type="KaKou"/>
+		</buttons>
+	</popup>
+	
+	<simplerenderer>
+		<picturemarkersymbol url="assets/images/mapIcons/KaKou-blue.png" yoffset="13"/>
+	</simplerenderer>
+	
+	<clickfunction>
+		<action>showInfoWindow</action>
+	</clickfunction>
+</configuration>

@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<!-- ATM -->
+<configuration>
+	<title>{SSYHMC}</title>
+	<fields>
+		<field name="SSYHMC" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+</configuration>

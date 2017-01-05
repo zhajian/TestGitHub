@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<!--
+///////////////////////////////////////////////////////////////////////////
+// Copyright (c) 2008-2013 Esri. All Rights Reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//    http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+///////////////////////////////////////////////////////////////////////////
+ -->
+<configuration>
+	<maxscale></maxscale>
+	<minscale></minscale>
+	<isShow>true</isShow>
+<!--     <layers> -->
+<!--         <layer> -->
+<!--             <name>Earthquakes HeatMap</name> -->
+<!--         <url>http://{serverip}/arcgis/rest/services/yixing/yixing_jingqing/MapServer/0</url> -->
+<!--             <outFields>JJBH,JJYXM</outFields> -->
+<!--             <useproxy>false</useproxy> -->
+<!--             <useamf>true</useamf> -->
+<!--             <defaultquery>1=1</defaultquery> -->
+<!--             <querytemplate>Magnitude &gt; REPLACE_STR</querytemplate> -->
+<!--             <types>2,4,6,8</types> -->
+<!--             <type_descs>Mag &gt; 2,Mag &gt; 4,Mag &gt; 6,Mag &gt; 8</type_descs> -->
+<!--         </layer> -->
+<!--     </layers> -->
+
+    <ui>
+        <widget_dimensions>
+            <width>410</width>
+            <height>250</height>
+        </widget_dimensions>
+        <icons>
+            <base_url>assets/images/</base_url>
+            <main_icon>i_rainbow.png</main_icon>
+            <main_label>警情选项</main_label>
+            <result_icon>i_table.png</result_icon>
+            <result_label>警情列表</result_label>
+        </icons>
+        <refresh_label>查询警情中...</refresh_label>
+        <query>
+            <comp_label>Earthquake Magnitude:</comp_label>
+            <heatmapquery_prompt>default selection</heatmapquery_prompt>
+            <featurecount_label> 个警情</featurecount_label>
+        </query>
+        <timeslider>
+            <enabled_by_default>false</enabled_by_default>
+            <loop>true</loop>
+            <thumbcount>2</thumbcount>
+            <thumbmovingrate>1200</thumbmovingrate>
+            <dateformat>yyyy-MM-dd</dateformat>
+        </timeslider>
+        <transparency>
+            <comp_label>透明度:</comp_label>
+            <defaulttransparency>0.8</defaulttransparency>
+        </transparency>
+        <density>
+            <comp_label>热点半径:</comp_label>
+            <defaultdensity>25</defaultdensity>
+        </density>
+        <symbol>
+            <comp_label>颜色:</comp_label>
+            <defaulttheme>RAINBOW</defaulttheme>
+            <customtheme>0xEBED95,0xEDB019,0xD24F0B,0xD21813,0xBA5B6D</customtheme>
+        </symbol>
+    </ui>
+    
+    <popup layername="宜兴警情">
+		<title>{sfdd}</title>
+		<idfieldname>jjbh</idfieldname>
+		<fields>
+			<field name="sfdd"/>
+			<field name="jjbh"/>
+			<field name="jjr" alias="接警员姓名：" visible="true"/>
+			<field name="bjnr" alias="报警内容：" visible="true"/>
+			<field name="ejjsrxm" alias="二级接警姓名：" visible="true"/>
+			<field name="ejjsdwmc" alias="二级接警单位：" visible="true"/>
+			<field name="sjjsrxm" alias="三级接警姓名：" visible="true"/>
+			<field name="sjjswmc" alias="三级接警单位：" visible="true"/>
+			<field name="fdt_postime" alias="定位时间：" visible="true"/>
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+	</popup>
+</configuration>

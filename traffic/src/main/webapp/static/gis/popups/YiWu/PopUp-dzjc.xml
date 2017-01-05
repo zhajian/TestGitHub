@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{devdesc}</title>
+	<fields>
+		<field name="devdesc" />
+		<field name="devid" alias="编号：" visible="true"/>
+		<field name="carmeraIP" alias="IP：" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+		<button label="详细信息" action="openDevice" type="DZJC" idfield="devid" />
+	</buttons>
+</configuration>

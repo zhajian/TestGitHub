@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<configuration>
+	<type>vidicon</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify>onVidiconOverlayRun</widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify>onVidiconOverlayClose</widgetclosenotify>
+	<popup>
+		<title>设备</title>
+		<fields>
+			<field name="zcbh" alias="资产编号" visible="true"/>
+			<field name="zcmc" alias="资产名称" visible="true"/>
+			<field name="zcms" alias="资产描述" visible="true"/>
+			<field name="zcpp" alias="品牌" visible="true"/>
+			<field name="zcsj" alias="资产时间" visible="true"/>
+		</fields>
+		<initvisible>true</initvisible>
+		<showzoomtobutton>false</showzoomtobutton>
+		<buttons>
+			<button label="编辑" action="openDevice" type="sendMessage" idfield="policeId" />
+		</buttons>
+	</popup>
+	<uniquevaluerenderer field="flag">
+		<picturemarkersymbol url="/arcGis/assets/images/mapIcons/FaBuDuan-red..png" yoffset="13"/>
+		
+		<uniquevalueinfo value="0">
+			<picturemarkersymbol url="/plugins/Icon/images/green/0.gif" yoffset="13" />
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="1">
+			<picturemarkersymbol url="/plugins/Icon/images/green/1.gif" yoffset="13" />
+		</uniquevalueinfo>
+	</uniquevaluerenderer>
+    <clickfunction>
+		<action>showInfoWindow</action>
+	</clickfunction>
+</configuration>

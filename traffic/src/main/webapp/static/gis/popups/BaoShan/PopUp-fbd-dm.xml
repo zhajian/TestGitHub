@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{NAME}({BLUDUAN}-{ELUDUAN})</title>
+	<fields>
+		<field name="NAME" />
+		<field name="BLUDUAN" />
+		<field name="ELUDUAN" />
+		<field name="SECTIONID" alias="编号" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+		<button label="详细信息" action="openDevice" type="FBD_DM" idfield="SECTIONID" />
+	</buttons>
+</configuration>

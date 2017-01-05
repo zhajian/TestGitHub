@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<configuration>
+	<zoomscale>32000</zoomscale>
+	
+<!-- 	<ksllayer> -->
+<!-- 		<url>http://{serverip}/arcgis/rest/services/pudong/pd_fbd_morph/MapServer/3</url> -->
+<!-- 		<idfield>SECTIONID</idfield> -->
+<!-- 		<maxscale>8001</maxscale> -->
+<!-- 		<popup> -->
+<!-- 			<title>{DES}</title> -->
+<!-- 			<fields> -->
+<!-- 				<field name="DES" /> -->
+<!-- 				<field name="SECTIONID" alias="路段编号：" visible="true" /> -->
+<!-- 				<field name="所属道路" alias="所属道路：" visible="true" /> -->
+<!-- 			</fields> -->
+<!-- 			<showzoomtobutton>false</showzoomtobutton> -->
+<!-- 			<buttons> -->
+<!-- 	  				<button label="人工发布" action="openDevice" type="FBD_KSL" idfield="SECTIONID" /> -->
+<!-- 	  				<button label="关联事件" action="openDevice" type="RelateEvent" idfield="SECTIONID"/> -->
+<!-- 			</buttons> -->
+<!-- 		</popup> -->
+<!-- 	</ksllayer> -->
+	
+	<ksllayers>
+		<ksllayer>
+			<url>http://{serverip}/arcgis/rest/services/pudong/pd_fbd_morph/MapServer/3</url>
+			<idfield>SECTIONID</idfield>
+			<maxscale>8001</maxscale>
+			<finddevice>true</finddevice>
+		</ksllayer>
+		
+		<ksllayer>
+			<url>http://{serverip}/arcgis/rest/services/pudong/pd_fbd_morph/MapServer/4</url>
+			<idfield>SDE.主线发布段_5级.SECTIONID</idfield>
+			<minscale>8000</minscale>
+		</ksllayer>
+		
+		<ksllayer>
+			<url>http://{serverip}/arcgis/rest/services/pudong/pd_fbd_morph/MapServer/5</url>
+			<idfield>SDE.匝道发布段_5级.SECTIONID</idfield>
+			<minscale>8000</minscale>
+		</ksllayer>
+	</ksllayers>
+	
+<!-- 	<dmlayer> -->
+<!-- 		<url>http://{serverip}/arcgis/rest/services/pudong/pd_fbd_morph/MapServer/1</url> -->
+<!-- 		<idfield>SECTIONID</idfield> -->
+<!-- 		<popup> -->
+<!-- 			<title>{DES}</title> -->
+<!-- 			<fields> -->
+<!-- 				<field name="DES" /> -->
+<!-- 				<field name="SECTIONID" alias="路段编号: " visible="true" /> -->
+<!-- 				<field name="HWAYNAME" alias="所属道路: " visible="true" /> -->
+<!-- 			</fields> -->
+<!-- 			<showzoomtobutton>false</showzoomtobutton> -->
+<!-- 			<buttons> -->
+<!-- 	  				<button label="人工发布" action="openDevice" type="FBD_DM" idfield="SECTIONID" /> -->
+<!-- 	  				<button label="关联事件" action="openDevice" type="RelateEvent" idfield="SECTIONID"/> -->
+<!-- 			</buttons> -->
+<!-- 		</popup> -->
+<!-- 	</dmlayer> -->
+	
+	<dmlayers>
+		<dmlayer>
+			<url>http://{serverip}/arcgis/rest/services/pudong/pd_fbd_morph/MapServer/1</url>
+			<idfield>SECTIONID</idfield>
+			<maxscale>8001</maxscale>
+			<finddevice>true</finddevice>
+		</dmlayer>
+	</dmlayers>
+	
+</configuration>

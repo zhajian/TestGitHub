@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{CANGKUMINGCHEN}</title>
+	<fields>
+		<field name="CANGKUMINGCHEN"/>
+		<field name="DEPTNAME" alias="管理单位：" visible="true" />
+		<field name="PHONE1" alias="联系电话1：" visible="true"/>
+		<field name="PHONE2" alias="联系电话2：" visible="true"/>
+		<field name="PHONE3" alias="联系电话3：" visible="true"/>
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+<!-- 	<buttons> -->
+<!-- 		<button label="详细信息" action="openDevice" type="XHJ" idfield="devId" /> -->
+<!-- 	</buttons> -->
+</configuration>

@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<configuration>
+	<type>station-bc</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify>onStationBCOverlayRun</widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify>onStationBCOverlayClose</widgetclosenotify>
+	<popup>
+		<title>{name}</title>
+		<fields>
+			<field name="name" visible="false"/>
+			<field name="desc" alias="描述" visible="true"/>
+		</fields>
+		<buttons>
+			<button label="详情" action="openDevice" type="stationBC" />
+		</buttons>
+		<showzoomtobutton>false</showzoomtobutton>
+	</popup>
+	<simplerenderer>
+		<picturemarkersymbol url="assets/images/mapIcons/TianJin/GongJiao/GuangBo.png" yoffset="13" />
+	</simplerenderer>
+	<drawsymbol>
+		<picturemarkersymbol url="assets/images/mapIcons/TianJin/GongJiao/GuangBo.png" yoffset="13" />
+	</drawsymbol>
+</configuration>

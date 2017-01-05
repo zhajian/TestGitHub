@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<configuration label="路况图例">
+	<imageurl>assets/images/TianJin/luKuangLegend.png</imageurl>
+	<!-- 图例是否移动 -->
+	<isMove>true</isMove>
+</configuration>

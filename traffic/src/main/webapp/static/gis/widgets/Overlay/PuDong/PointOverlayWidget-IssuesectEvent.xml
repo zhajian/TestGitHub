@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<!-- 发布段关联事件 -->
+<configuration>
+	<type>IssuesectEvent</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify>onIssuesectEventRun</widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify>onIssuesectEventClose</widgetclosenotify>
+	
+	<popup>
+		<title>{name}</title>
+		<fields>
+			<field name="name"/>
+			<field name="eventId" alias="事件编号" visible="true"/>
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+		<buttons>
+			<button label="详细信息" action="openDevice" type="IssuesectEvent"/>
+		</buttons>
+	</popup>
+	
+	<simplerenderer>
+		<picturemarkersymbol url="assets/images/mapIcons/JingQing-blue.png" yoffset="13"/>
+	</simplerenderer>
+	
+	<querylayers>
+		<querylayer>
+			<url>http://{serverip}/arcgis/rest/services/pd_fbd_real/MapServer/1</url>
+			<idfield>SECTIONID</idfield>
+		</querylayer>
+		<querylayer>
+			<url>http://{serverip}/arcgis/rest/services/pd_fbd_real/MapServer/2</url>
+			<idfield>SECTIONID</idfield>
+		</querylayer>
+	</querylayers>
+	
+	
+</configuration>

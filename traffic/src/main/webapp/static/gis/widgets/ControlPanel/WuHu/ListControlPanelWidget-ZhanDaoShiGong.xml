@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<configuration>
+	<menu>
+		<itemgroup label="占道施工">
+			<item label="占道施工" initenable="true">
+				<clickfunctions>
+					<clickfunction name="ChangeOverlayVisible">
+						<params>
+							<param name="WidgetName" value="占道施工Overlay"/>
+							<param name="OverlayType" value="ZhanDaoShiGong" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item label="摄像机" initenable="true">
+				<clickfunctions>
+					<clickfunction name="ChangeOverlayVisible">
+						<params>
+							<param name="WidgetName" value="摄像机Overlay"/>
+							<param name="OverlayType" value="SheXiangJi" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item label="诱导板" initenable="true">
+				<clickfunctions>
+					<clickfunction name="ChangeOverlayVisible">
+						<params>
+							<param name="WidgetName" value="诱导板Overlay"/>
+							<param name="OverlayType" value="QingBaoBan" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</itemgroup>
+	</menu>
+	
+	
+</configuration>
+	

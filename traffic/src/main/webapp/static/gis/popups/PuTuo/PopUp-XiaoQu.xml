@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<!-- 封闭式小区 -->
+<configuration>
+	<title>{小区面.MC}</title>
+	<fields>
+		<field name="小区面.MC" />
+		<field name="小区面.BH" />
+		<field name="小区面.DZ" alias="地址" visible="true" />
+		<field name="小区面.PCS" alias="派出所" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+		<button label="显示区域" action="showRegion" type="小区" idfield="小区面.BH" />
+	</buttons>
+</configuration>

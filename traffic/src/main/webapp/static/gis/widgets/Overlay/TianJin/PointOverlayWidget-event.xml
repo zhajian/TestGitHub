@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<configuration>
+	<type>event</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify>onEventOverlayRun</widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify></widgetclosenotify>
+	
+	<needzoom>true</needzoom>
+	<zoomscale>48000</zoomscale>
+	
+	<initvisible>false</initvisible>
+	
+	
+	<popupskinclass>TianJinShiJian</popupskinclass>
+	
+	<popup>
+		<title>{shijianLeixing}【{shijianDengji}级】{shijianZhuangtai}</title>
+		<fields>
+			<field name="shijianLeixing"/>
+			<field name="shijianDengji"/>
+			<field name="shijianZhuangtai"/>
+			<field name="chuzhiGongsi"/>
+			<field name="siwangRenshu"/>
+			<field name="shoushangRenshu"/>
+			<field name="caichanSunshi"/>
+			<field name="wuziSunshi"/>
+			<field name="zuduanZhuangTai"/>
+			<field name="zuduanShijian"/>
+			<field name="fashengShijian"/>
+			<field name="shijianLaiyuan"/>
+			<field name="luxian"/>
+			<field name="luduan"/>
+			<field name="kaishiZhuanghao"/>
+			<field name="jieshuZhuanghao"/>
+			<field name="fangxiang"/>
+			<field name="shijianMiaoshu"/>
+			<field name="shijianZhaiyao"/>
+			<field name="guanxiaDanweiName"/>
+			<field name="zhibanyuan"/>
+			<field name="lianxiFangshi"/>
+			<field name="imageUrl"/>
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+<!-- 		<buttons> -->
+<!-- 			<button label="视频" action="openDevice" type="QingSaoCheVideo"/> -->
+<!-- 		</buttons> -->
+	</popup>
+	
+	<simplerenderer>
+		<picturemarkersymbol url="assets/images/mapIcons/TianJin/JiaoTongYingJiShiJian.png"/>
+	</simplerenderer>
+	
+	<clickfunction>
+		<action>showInfoWindow</action>
+	</clickfunction>
+</configuration>

@@ -1,0 +1,51 @@
+<configuration>
+	<showbuffersearch>false</showbuffersearch>
+	<showgraphicsearch>true</showgraphicsearch>
+	<showtextsearch>true</showtextsearch>
+	<sendresult>true</sendresult>
+	
+	<layerinfo>
+		<find>
+			<url>http://{serverip}/arcgis/rest/services/yixing/yixing_jingqing/MapServer</url>
+			<fields>JJYXM,SFDD,BJNR,EJJSRXM,EJJSDWMC,SJJSRXM,SJJSDWMC,POSITIONTI</fields>
+			<layerids>0</layerids>
+		</find>
+
+		<uniquevaluerenderer field="layerName">
+			<simplemarkersymbol style="circle" color="0xFF0000" size="10"/>
+			
+<!-- 			<uniquevalueinfo value="卡口"> -->
+<!-- 				<simplemarkersymbol style="circle" color="0xFF0000" size="10"/> -->
+<!-- 			</uniquevalueinfo> -->
+		</uniquevaluerenderer>
+
+		<popups>
+			<popup layername="宜兴警情">
+				<title>{接警事发地址}</title>
+				<idfieldname>接警编号</idfieldname>
+				<fields>
+					<field name="接警事发地址"/>
+					<field name="接警编号"/>
+					<field name="接警员姓名" alias="接警员姓名：" visible="true"/>
+					<field name="接警报警内容" alias="报警内容：" visible="true"/>
+					<field name="二级接警单位接收人姓名" alias="二级接警姓名：" visible="true"/>
+					<field name="二级接警单位名称" alias="二级接警单位：" visible="true"/>
+					<field name="三级接警单位接收人姓名" alias="三级接警姓名：" visible="true"/>
+					<field name="三级接警单位" alias="三级接警单位：" visible="true"/>
+					<field name="定位时间" alias="定位时间：" visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+<!-- 			<popup layername="卡口"> -->
+<!-- 				<title>{SBMC}</title> -->
+<!-- 				<idfieldname>SBBH</idfieldname> -->
+<!-- 				<fields> -->
+<!-- 					<field name="SBMC" /> -->
+<!-- 					<field name="SBBH"/> -->
+<!-- 				</fields> -->
+<!-- 				<showzoomtobutton>false</showzoomtobutton> -->
+<!-- 			</popup> -->
+		</popups>
+	</layerinfo>
+</configuration>

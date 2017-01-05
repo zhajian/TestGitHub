@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<!-- 服务区 -->
+<configuration>
+	<type>FuWuQu</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify></widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify></widgetclosenotify>
+	
+	<needzoom>false</needzoom>
+	<zoomscale>48000</zoomscale>
+	
+	<initvisible>false</initvisible>
+	
+	
+	<popupskinclass>天津设施</popupskinclass>
+	
+	<popup>
+		<showzoomtobutton>false</showzoomtobutton>
+	</popup>
+	
+	<simplerenderer>
+		<simplemarkersymbol color="0xff210f" size="10"/>
+	</simplerenderer>
+	
+	<clickfunction>
+		<action>showInfoWindow</action>
+	</clickfunction>
+</configuration>

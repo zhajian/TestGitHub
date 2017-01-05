@@ -1,0 +1,9 @@
+<!-- 水质监测点 -->
+<?xml version="1.0" ?>
+<configuration>
+	<title>{断面名称}</title>
+	<fields>
+		<field name="断面名称" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+</configuration>

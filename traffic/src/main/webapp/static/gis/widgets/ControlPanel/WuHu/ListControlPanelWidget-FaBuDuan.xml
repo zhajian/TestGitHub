@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<configuration>
+	<menu>
+		<itemgroup label="发布段">
+			<item label="发布段" initenable="true">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="发布段" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</itemgroup>
+		
+	</menu>
+</configuration>

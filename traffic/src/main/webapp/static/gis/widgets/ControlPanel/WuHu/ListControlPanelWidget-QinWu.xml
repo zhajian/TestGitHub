@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<configuration>
+	<menu>
+		<itemgroup label="勤务面板">
+			<item label="岗点" initenable="true">
+				<clickfunctions>
+					<clickfunction name="ChangeOverlayVisible">
+						<params>
+							<param name="WidgetName" value="岗点Overlay"/>
+							<param name="OverlayType" value="policeSentry" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			<item label="警车" initenable="true">
+				<clickfunctions>
+					<clickfunction name="ChangeOverlayVisible">
+						<params>
+							<param name="WidgetName" value="警车Overlay"/>
+							<param name="OverlayType" value="policeCar" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			<item label="警员" initenable="true">
+				<clickfunctions>
+					<clickfunction name="ChangeOverlayVisible">
+						<params>
+							<param name="WidgetName" value="警员Overlay"/>
+							<param name="OverlayType" value="police" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</itemgroup>
+	</menu>
+
+</configuration>

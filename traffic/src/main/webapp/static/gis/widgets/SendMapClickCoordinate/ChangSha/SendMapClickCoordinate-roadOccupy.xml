@@ -1,0 +1,10 @@
+<configuration>
+	<type>policeEvent</type>
+	<drawtype>point</drawtype>
+	<showbuffer>false</showbuffer>
+	<showconfirmwindow>true</showconfirmwindow>
+	<confirmwindow>
+		<title>添加占道施工信息</title>
+		<text>是否在此位置添加占道施工信息？</text>
+	</confirmwindow>
+</configuration>

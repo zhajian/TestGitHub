@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{NAME}</title>
+	<fields>
+		<field name="NAME"/>
+		<field name="BM_CODE" visible="true"/>
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+		<button label="人工发布" action="openDevice" type="FBD" idfield="BM_CODE" />
+	</buttons>
+</configuration>

@@ -1,0 +1,26 @@
+<configuration>
+	<layout direction="horizontal" gap="10" />
+	<groups>
+		<group>
+			<item id="sxj" name="摄像机" image="assets/images/buttons/SheXiangJi.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="摄像机" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="XHJ" name="信号机" image="assets/images/buttons/XinHaoJi.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="信号机" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</group>
+	</groups>
+</configuration>

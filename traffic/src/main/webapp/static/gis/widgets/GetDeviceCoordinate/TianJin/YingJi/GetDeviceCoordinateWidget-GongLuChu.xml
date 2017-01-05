@@ -1,0 +1,79 @@
+<?xml version="1.0" ?>
+<configuration>
+	<needzoom>true</needzoom>
+	<needzoomeffect>true</needzoomeffect>
+	<popupskinclass>MultiLayer</popupskinclass>
+	
+	<layers>
+		<layer>
+			<type>情报板</type>
+			<url>http://{serverip}/arcgis/rest/services/TianJin/tianjin_device_GongLuChu/MapServer/1</url>
+			<idfield>DEVICEID</idfield>
+			<zoomscale>96000</zoomscale>
+			<picturemarkersymbol url="assets/images/mapIcons/TianJin/QingBaoBan.png"/>
+			<popup>
+				<title>{NAME}</title>
+				<fields>
+					<field name="NAME" />
+					<field name="ROADNAME" alias="所属公路：" visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>摄像机</type>
+			<url>http://{serverip}/arcgis/rest/services/TianJin/tianjin_device_GongLuChu/MapServer/0</url>
+			<idfield>DEVICEID</idfield>
+			<zoomscale>96000</zoomscale>
+			<picturemarkersymbol url="assets/images/mapIcons/TianJin/SheXiangJi.png"/>
+			<popup>
+				<title>{NAME}</title>
+				<fields>
+					<field name="NAME" />
+					<field name="ROADNAME" alias="所属公路：" visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>仓库</type>
+			<url>http://{serverip}/arcgis/rest/services/TianJin/tianjin_device/MapServer/10</url>
+			<idfield>CANGKUID</idfield>
+			<zoomscale>96000</zoomscale>
+			<picturemarkersymbol url="assets/images/mapIcons/WuHu/YingJiSheShi-blue.png" yoffset="18"/>
+			<popup>
+				<title>{CANGKUMINGCHEN}</title>
+				<fields>
+					<field name="CANGKUID"/>
+					<field name="CANGKUMINGCHEN"/>
+					<field name="DEPTNAME" alias="管理单位：" visible="true" />
+					<field name="PHONE1" alias="联系电话1：" visible="true"/>
+					<field name="PHONE2" alias="联系电话2：" visible="true"/>
+					<field name="PHONE3" alias="联系电话3：" visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>发布段</type>
+			<url>http://{serverip}/arcgis/rest/services/TianJin/tianjin_fbd/MapServer/0</url>
+			<idfield>SDE.FaBuDuan.ISSUESECT</idfield>
+			<zoomscale>96000</zoomscale>
+			<simplelinesymbol color="0x000000" width="4"/>
+			<popup>
+				<title>{NAME}</title>
+				<fields>
+					<field name="SDE.FaBuDuan.NAME"/>
+					<field name="SDE.FaBuDuan.ISSUESECT"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+				<buttons>
+					<button label="人工发布" action="openDevice" type="FBD" idfield="SDE.FaBuDuan.ISSUESECT" />
+				</buttons>
+			</popup>
+		</layer>
+	</layers>
+</configuration>

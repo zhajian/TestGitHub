@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TGISViewer:BaseWidget xmlns:fx="http://ns.adobe.com/mxml/2009" 
+					   xmlns:s="library://ns.adobe.com/flex/spark" 
+					   xmlns:mx="library://ns.adobe.com/flex/mx" 
+					   xmlns:TGISViewer="cn.seisys.TGISViewer.*" 
+					   layout="absolute" 
+					   creationComplete="creationCompleteHandler(event)">
+	<fx:Script>
+		<![CDATA[
+			import com.esri.ags.Graphic;
+			import com.esri.ags.geometry.MapPoint;
+			import com.esri.ags.geometry.Polyline;
+			import com.esri.ags.utils.GraphicUtil;
+			
+			import mx.events.FlexEvent;
+			
+			import cn.seisys.TGISViewer.AppEvent;
+			
+			protected function creationCompleteHandler(event:FlexEvent):void
+			{
+				AppEvent.addListener( AppEvent.ADD_TRAVEL_TIME, appevent_showTravelTimeHandler );
+				AppEvent.addListener( AppEvent.DELETE_TRAVEL_TIME, appevent_HideTravelTimeHandler );
+			}
+			
+			private function appevent_showTravelTimeHandler( event:AppEvent ):void
+			{
+				clear();
+				
+				var params:String = event.data as String;
+				var paramObj:Object = JSON.parse( params );
+				var graphicArray:Array = [];
+				
+				var startPointObj:Object = paramObj.startPoint;
+				var x:Number = startPointObj.x;
+				var y:Number = startPointObj.y;
+				var name:String = startPointObj.name;
+				var startMapPoint:MapPoint = new MapPoint( x, y );
+				graphicArray.push( new Graphic( startMapPoint ) );
+				
+				//添加起点图标
+				var startPointSymbolObj:Object = 
+					{ 
+						type: "travelTimeStartPoint", 
+						points:
+						[
+							{
+								id: name, 
+								x:x, 
+								y:y
+							}
+						] 
+					};
+				var startPointSymbolJsonString:String = JSON.stringify( startPointSymbolObj );
+				AppEvent.dispatch( AppEvent.ADD_POINTS, startPointSymbolJsonString );
+				
+				//添加起点文字
+				var startPointTextObj:Object = 
+					{ 
+						type: "travelTimeStartPoint", 
+						points: 
+						[
+							{
+								text: name, 
+								id: name, 
+								position: startMapPoint.toJSON()
+							}
+						] 
+					}; 
+				var startPointTextJsonString:String = JSON.stringify( startPointTextObj );
+				AppEvent.dispatch( AppEvent.ADD_TEXTS, startPointTextJsonString );
+				
+				var endPointArray:Array = paramObj.endPoints;
+				
+				var endPointTextJsonObjArray:Array = [];
+				var endPointTextObj:Object = 
+					{ 
+						type: "travelTimeEndPoint", 
+						points: endPointTextJsonObjArray 
+					};
+				
+				var endPointSymbolJsonArray:Array = [];
+				var endPointSymbolObj:Object = 
+					{ 
+						type: "travelTimeEndPoint", 
+						points: endPointSymbolJsonArray 
+					};
+				
+				var lineJsonArray:Array = [];
+				var lineObj:Object = 
+					{ 
+						type: "travelTimeLine",
+						lines: lineJsonArray 
+					};
+				
+				var lineTextJsonArray:Array = [];
+				var lineTextObj:Object = 
+					{ 
+						type:"travelTimeLine", 
+						points: lineTextJsonArray 
+					};
+				
+				for each ( var endPointObj:Object in endPointArray )
+				{
+					x = endPointObj.x;
+					y = endPointObj.y;
+					name = endPointObj.pointName;
+					var text:String = endPointObj.lineText;
+					var endMapPoint:MapPoint = new MapPoint( x, y );
+					graphicArray.push( new Graphic( endMapPoint ) );
+					
+					//终点文字
+					endPointTextJsonObjArray.push( 
+						{ 
+							text: name, 
+							id: name, 
+							position: endMapPoint.toJSON() 
+						} 
+					);
+					//终点图标
+					endPointSymbolJsonArray.push( 
+						{
+							id:name, 
+							x:x, 
+							y:y
+						}
+					);
+					//起止点连线
+					var polyline:Polyline = new Polyline([]);
+					polyline.paths.push( [startMapPoint, endMapPoint] );
+					lineJsonArray.push( 
+						{ 
+							id: name, 
+							line:polyline.toJSON() 
+						} 
+					);
+					//连线文字
+					var lineCenterPoint:MapPoint = new MapPoint( 
+						( startMapPoint.x + endMapPoint.x ) / 2, 
+						( startMapPoint.y + endMapPoint.y ) / 2
+					);
+					lineTextJsonArray.push( 
+						{ 
+							text: text,
+							id: name,
+							position: lineCenterPoint.toJSON() 
+						} 
+					);
+				}
+				
+				//确定显示范围
+				map.extent = GraphicUtil.getGraphicsExtent( graphicArray ).expand(2);
+				
+				//添加终点图标
+				var endPointSymbolJsonString:String = JSON.stringify( endPointSymbolObj );
+				AppEvent.dispatch( AppEvent.ADD_POINTS, endPointSymbolJsonString );
+				
+				//添加终点文字
+				var endPointTextJsonString:String = JSON.stringify( endPointTextObj );
+				AppEvent.dispatch( AppEvent.ADD_TEXTS, endPointTextJsonString );
+				
+				//添加行程时间线
+				var lineJsonString:String = JSON.stringify( lineObj );
+				AppEvent.dispatch( AppEvent.ADD_LINES, lineJsonString );
+				
+				//添加行程时间文字
+				var lineTextJsonString:String = JSON.stringify( lineTextObj );
+				AppEvent.dispatch( AppEvent.ADD_TEXTS, lineTextJsonString );
+			}
+			
+			private function appevent_HideTravelTimeHandler( event:AppEvent ):void
+			{
+				clear();
+			}
+			
+			private function clear():void
+			{
+				//删除起点图标
+				AppEvent.dispatch( AppEvent.DELETE_ALL_POINTS, "travelTimeStartPoint" );
+				//删除起点文字
+				AppEvent.dispatch( AppEvent.DELETE_ALL_TEXTS, "travelTimeStartPoint" );
+				//删除终点图标
+				AppEvent.dispatch( AppEvent.DELETE_ALL_POINTS, "travelTimeEndPoint" );
+				//删除终点文字
+				AppEvent.dispatch( AppEvent.DELETE_ALL_TEXTS, "travelTimeEndPoint" );
+				//删除连线
+				AppEvent.dispatch( AppEvent.DELETE_ALL_LINES, "travelTimeLine" );
+				//删除连线文字
+				AppEvent.dispatch( AppEvent.DELETE_ALL_TEXTS, "travelTimeLine" );
+			}
+		]]>
+	</fx:Script>
+	<fx:Declarations>
+		<!-- 将非可视元素（例如服务、值对象）放在此处 -->
+	</fx:Declarations>
+</TGISViewer:BaseWidget>

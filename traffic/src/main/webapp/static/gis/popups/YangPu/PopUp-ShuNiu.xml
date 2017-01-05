@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{STATIONNAME}</title>
+	<fields>
+		<field name="STATIONNAME"/>
+		<field name="ADDRESS" alias="位置: " visible="true"/>
+		<field name="CHANGETYPE" alias="换乘车类: " visible="true"/>
+		<field name="STATIONTYPE" alias="设置形式: " visible="true"/>
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+<!-- 	<buttons> -->
+<!-- 		<button label="详细信息" action="openDevice" type="XHJ" idfield="devId" /> -->
+<!-- 	</buttons> -->
+</configuration>

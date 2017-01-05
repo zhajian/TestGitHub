@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<configuration>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify>onPointOverlayByPageRun</widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify>onPointOverlayByPageClose</widgetclosenotify>
+	
+	<type>point</type>
+		
+	<uniquevaluerenderer field="type">
+		<defaultlabel>未知</defaultlabel>
+		<simplemarkersymbol style="circle" color="0xFF0000" size="10"/>
+
+		<uniquevalueinfo value="信号机" label="信号机">
+			<picturemarkersymbol url="assets/images/mapIcons/XinHaoJi-blue.png" yoffset="13" />
+		</uniquevalueinfo>
+
+		<uniquevalueinfo value="高架车检器" label="高架车检器">
+			<picturemarkersymbol url="assets/images/mapIcons/FaBuDuan-blue.png" yoffset="13" />
+		</uniquevalueinfo>
+
+		<uniquevalueinfo value="视频监控" label="视频监控">
+			<picturemarkersymbol url="assets/images/mapIcons/SheXiangJi-blue.png" yoffset="13" />
+		</uniquevalueinfo>
+
+		<uniquevalueinfo value="情报板" label="情报板">
+			<picturemarkersymbol url="assets/images/mapIcons/QingBaoBan-blue.png" yoffset="13" />
+		</uniquevalueinfo>
+
+		<uniquevalueinfo value="信号灯" label="信号灯">
+			<picturemarkersymbol url="assets/images/mapIcons/XinHaoDeng-green.png" yoffset="13" />
+		</uniquevalueinfo>
+
+		<uniquevalueinfo value="闯红灯电子警察" label="闯红灯电子警察">
+			<picturemarkersymbol url="assets/images/mapIcons/KaKou-blue.png" yoffset="13" />
+		</uniquevalueinfo>
+
+		<uniquevalueinfo value="高架违法抓拍" label="高架违法抓拍">
+			<picturemarkersymbol url="assets/images/mapIcons/KaKou-blue.png" yoffset="13" />
+		</uniquevalueinfo>
+
+		<uniquevalueinfo value="高架线圈" label="高架线圈">
+			<picturemarkersymbol url="assets/images/mapIcons/DuanMian-blue" yoffset="13" />
+		</uniquevalueinfo>
+
+		<uniquevalueinfo value="地面道路其他违法抓拍" label="地面道路其他违法抓拍">
+			<picturemarkersymbol url="assets/images/mapIcons/KaKou-blue.png" yoffset="13" />
+		</uniquevalueinfo>
+
+		<uniquevalueinfo value="机动车轨迹抓拍前端" label="机动车轨迹抓拍前端">
+			<picturemarkersymbol url="assets/images/mapIcons/KaKou-blue.png" yoffset="13" />
+		</uniquevalueinfo>
+	</uniquevaluerenderer>
+	
+	<drawsymbol>
+		<simplemarkersymbol color="0x3E6FBC" style="circle" size="10"/>
+	</drawsymbol>
+
+	<!-- 新增点位以后查找点位周边的元素 -->
+	<buffersearchtype>RoadAndCross</buffersearchtype>
+</configuration>

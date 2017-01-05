@@ -1,0 +1,111 @@
+<?xml version="1.0" ?>
+<configuration>
+	<blockgradientcolor>0x006100,0x3c8000,0x6ba100,0xa4c400,0xdfeb00,0xffea00,0xffbb00,0xff9100,0xff6200,0xff2200</blockgradientcolor>
+	<!-- 所属行业(大类)修改-王伟 -->
+	<industries code="Z0103,Z0104,Z0105,Z0106,Z0109,Z0110,Z0111,Z0112,Z0114,Z0115,S0101,S0102,S0105,S0106,S0109,S01,N0104,N0105,N0107,N0109,N0110,N0111,N0101,N0102,N0103,B01">
+		<industry name="工业(制造业)" code="Z01">
+			<item name="炼油、炼焦、煤化气" code="Z0103"/>
+			<item name="化工" code="Z0104"/>
+			<item name="医药" code="Z0105"/>
+			<item name="化纤、橡胶、塑料制品" code="Z0106"/>
+			<item name="水泥及其他非金属矿制品" code="Z0109"/>
+			<item name="黑色金属冶炼加工" code="Z0110"/>
+			<item name="有色金属冶炼加工" code="Z0111"/>
+			<item name="机械设备、车船、电器制造" code="Z0112"/>
+			<item name="电镀及小五金加工" code="Z0114"/>
+			<item name="其他制造" code="Z0115"/>
+		</industry>
+		<industry name="市政(水电热气)" code="S01">
+			<item name="污水处理" code="S0101"/>
+			<item name="火力发电" code="S0102"/>
+			<item name="垃圾焚烧发电" code="S0105"/>
+			<item name="电力供应与传输" code="S0106"/>
+			<item name="机动车加油站" code="S0109"/>
+			<item name="其他生产和供应业" code="S0110"/>
+		</industry>
+		<industry name="农业、三产及其他" code="N01">
+			<item name="畜禽养殖" code="N0101"/>
+			<item name="农村垃圾" code="N0102"/>
+			<item name="餐饮娱乐" code="N0103"/>
+			<item name="通讯基站" code="N0104"/>
+			<item name="建筑施工" code="N0105"/>
+			<item name="废品回收与处理" code="N0107"/>
+			<item name="放射性同位素" code="N0109"/>
+			<item name="医院" code="N0110"/>
+			<item name="其他三产" code="N0111"/>
+		</industry>
+		<industry name="不涉及特定行业" code="B01"/>
+	</industries>
+	<!-- 污染类型(大类)修改-王伟 -->
+	<types code="010101,010102,010103,010201,010202,010203,010204,010205,010206,010207,010208,010211,010301,010303,010304,010401,010403,010404,010406,01040X,0105,0106,0107,0112,0201">
+		<type name="水污染" code="0101">
+			<item name="工业废水" code="010101"/>
+			<item name="生活废水" code="010102"/>
+			<item name="其他废水" code="010103"/>
+		</type>
+		<type name="大气污染" code="0102">
+			<item name="工业废气" code="010201"/>
+			<item name="锅炉烟尘" code="010202"/>
+			<item name="炉窑废气" code="010203"/>
+			<item name="车辆尾气" code="010204"/>
+			<item name="恶臭气体" code="010205"/>
+			<item name="餐饮废气" code="010206"/>
+			<item name="粉尘" code="010207"/>
+			<item name="扬尘" code="010208"/>
+			<item name="其他废气" code="010211"/>
+		</type>
+		<type name="固体废物" code="0103">
+			<item name="工业废物" code="010301"/>
+			<item name="一般固体废物" code="010302"/>
+			<item name="危险废物" code="010303"/>
+			<item name="医疗废物" code="010304"/>
+		</type>
+		<type name="噪声污染" code="0104">
+			<item name="工业噪声" code="010401"/>
+			<item name="餐饮噪声" code="010403"/>
+			<item name="社会生活噪声" code="010404"/>
+			<item name="建筑施工噪声" code="010406"/>
+			<item name="其他噪声" code="01040X"/>
+		</type>
+		<type name="危险化学品" code="0105"/>
+		<type name="放射性污染" code="0106"/>
+		<type name="电磁辐射" code="0107"/>
+		<type name="电离辐射" code="0112"/>
+		<type name="建设项目行政审批" code="0201"/>
+	</types>
+	<!-- 信访点图层相关配置 -->
+	<xfdlayer>
+		<url>http://{serverip}/arcgis/rest/services/HuanBaoJu/XinFangDian/MapServer/3</url>
+		<typefield>ISSUE_TYPE_codes_</typefield>
+		<districtnamefield>ISSUE_REGION_NAME_</districtnamefield>
+		<districtcodefield>ISSUE_REGION_CODE</districtcodefield>
+		<blocknamefield>XZQM</blocknamefield>
+		<industrycodefield>ACCUSED_INDUSTRY_CODES_</industrycodefield>
+	</xfdlayer>
+	
+	<!-- 区县图层相关配置 -->
+	<districtlayer>
+		<url>http://{serverip}/arcgis/rest/services/HuanBaoJu/XinFangDian/MapServer/0</url>
+		<districtnamefield>名称</districtnamefield>
+<!-- 		<gradient> -->
+<!-- 			<color1>0x00ff00</color1> -->
+<!-- 			<color2>0xff0000</color2> -->
+<!-- 			<count>10</count> -->
+<!-- 		</gradient> -->
+		<gradientcolor>0x006100,0x3c8000,0x6ba100,0xa4c400,0xdfeb00,0xffea00,0xffbb00,0xff9100,0xff6200,0xff2200</gradientcolor>
+	</districtlayer>
+	
+	<!-- 街道图层相关配置 -->
+	<blocklayer>
+		<url>http://{serverip}/arcgis/rest/services/HuanBaoJu/XinFangDian/MapServer/2</url>
+		<districtnamefield>QXMC</districtnamefield>
+		<blocknamefield>XZQM</blocknamefield>
+		<gradientcolor>0x006100,0x3c8000,0x6ba100,0xa4c400,0xdfeb00,0xffea00,0xffbb00,0xff9100,0xff6200,0xff2200</gradientcolor>
+	</blocklayer>
+	
+	<labellayer>
+		<url>http://{serverip}/arcgis/rest/services/HuanBaoJu/LabelLine/MapServer/0</url>
+		<labelpointnamefield>name</labelpointnamefield>
+		<labelplacementfield>labelDirec</labelplacementfield>
+	</labellayer>
+</configuration>

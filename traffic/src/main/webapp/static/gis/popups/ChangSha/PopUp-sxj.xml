@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{DESC_}</title>
+	<fields>
+		<field name="DESC_" />
+		<field name="DEVICEID" alias="编号" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+		<button label="详细信息" action="openDevice" type="SXJ" idfield="DEVICEID" />
+        <button label="故障受理" action="openDevice" type="repair_SXJ" idfield="DEVICEID"/>
+	</buttons>
+</configuration>

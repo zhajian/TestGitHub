@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<configuration>
+	<!-- 开始年份，默认为当前年份 -->
+	<defaultyear></defaultyear>
+	<!-- 开始月份，从0开始，默认为当前月份 -->
+	<defaultmonth></defaultmonth>
+	<timefieldname>PETITION_DATE_ </timefieldname>
+</configuration>

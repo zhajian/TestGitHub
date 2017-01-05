@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{企业名称}</title>
+	<fields>
+		<field name="企业名称" />
+		<field name="地址" alias="地址：" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<showrelatedrecords>false</showrelatedrecords>
+	<showattachments>false</showattachments>
+<!-- 	<buttons> -->
+<!-- 		<button label="搜索污染源" action="buffersearch" type="" idfield=""  widgetName=""  -->
+<!-- 	 			queryLayerUrl="http://192.168.130.17:6080/arcgis/rest/services/HuanBaoJu/XinFangDian/MapServer/1"   -->
+<!-- 	 			geometryServiceUrl="http://192.168.130.17:6080/arcgis/rest/services/Utilities/Geometry/GeometryServer"/>  -->
+<!-- 	</buttons> -->
+<!-- 	<buttons> -->
+<!-- 		<button label="搜索污染源" action="buffersearch" type="" idfield=""  widgetName=""  -->
+<!-- 	 			queryLayerUrl="http://10.101.59.118:8399/arcgis/rest/services/shhbgis/MapServer/12"   -->
+<!-- 	 			geometryServiceUrl="http://192.168.130.17:6080/arcgis/rest/services/Utilities/Geometry/GeometryServer"/>  -->
+<!-- 	</buttons>  -->
+</configuration>

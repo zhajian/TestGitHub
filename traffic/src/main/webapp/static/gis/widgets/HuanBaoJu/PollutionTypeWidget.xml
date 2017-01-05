@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<configuration>
+	<types>
+		<type label="大气污染" name="大气污染" selected="false"/>
+		<type label="水污染" name="水污染" selected="false"/>
+		<type label="噪声污染" name="噪声污染" selected="false"/>
+		<type label="油烟气污染" name="油烟气污染" selected="false"/>
+		<type label="固体废物污染" name="固体废物" selected="false"/>
+		<type label="电磁辐射污染" name="电磁辐射" selected="false"/>
+		<type label="危险化学品" name="危险化学品" selected="false"/>
+		<type label="新建项目" name="新建项目" selected="false"/>
+		<type label="畜牧养殖" name="畜养、农药化肥污染" selected="false"/>
+		<type label="政风行风" name="行业作风" selected="false"/>
+		<type label="其他污染" name="其他环保业务" selected="false"/>
+		<type label="非环保投诉" name="非环保投诉" selected="false"/>
+	</types>
+</configuration>

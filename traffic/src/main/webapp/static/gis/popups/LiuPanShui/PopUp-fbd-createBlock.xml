@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{SDE.fbd.FBD_NAME}</title>
+	<fields>
+		<field name="SDE.fbd.FBD_NAME" />
+		<field name="SDE.fbd.ISS_ID" alias="编号" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+		<button label="选择发布段拥堵点" action="locatePoint" type="FBD" idfield="SDE.fbd.ISS_ID" />
+	</buttons>
+</configuration>

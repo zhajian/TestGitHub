@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{zdd_2.DES}</title>
+	<fields>
+		<field name="zdd_2.ROADNAME" alias="所属高架: " visible="true"/>
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+<!-- 	<buttons> -->
+<!-- 		<button label="详细信息" action="openDevice" type="XHJ" idfield="devId" /> -->
+<!-- 	</buttons> -->
+</configuration>

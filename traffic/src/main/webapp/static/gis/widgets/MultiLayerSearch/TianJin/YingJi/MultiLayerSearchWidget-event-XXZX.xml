@@ -1,0 +1,83 @@
+<configuration>
+	<type>event</type>
+	
+	<showsearchresult>true</showsearchresult>
+	
+	<showbufferdistance>true</showbufferdistance>
+	
+	<layerinfo>
+		<find>
+			<url>http://{serverip}/arcgis/rest/services/TianJin/tianjin_device/MapServer</url>
+			<layerids>0,2,10</layerids>
+		</find>
+
+		<uniquevaluerenderer field="layerName">
+			<picturemarkersymbol url="assets/images/i_pushpin_centered.png" />
+			
+			<uniquevalueinfo value="情报板">
+				<picturemarkersymbol url="assets/images/mapIcons/TianJin/QingBaoBan.png"/>
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="摄像机">
+				<picturemarkersymbol url="assets/images/mapIcons/TianJin/SheXiangJi.png"/>
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="仓库">
+				<picturemarkersymbol url="assets/images/mapIcons/WuHu/YingJiSheShi-blue.png" yoffset="18"/>
+			</uniquevalueinfo>
+		</uniquevaluerenderer>
+
+		<popups>
+			<popup layername="default">
+				<title>{MC}</title>
+				<idfieldname>ID</idfieldname>
+				<fields>
+					<field name="MC"/>
+					<field name="ID" />
+					<field name="DZ" alias="地址" visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+
+			<popup layername="情报板">
+				<title>{NAME}</title>
+				<idfieldname>DEVICEID</idfieldname>
+				<fields>
+					<field name="NAME" />
+					<field name="ROADNAME" alias="所属公路：" visible="true"/>
+					<field name="DEVICEID"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+
+			<popup layername="摄像机">
+				<title>{NAME}</title>
+				<idfieldname>DEVICEID</idfieldname>
+				<fields>
+					<field name="NAME" />
+					<field name="ROADNAME" alias="所属公路：" visible="true"/>
+					<field name="DEVICEID"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+
+			<popup layername="仓库">
+				<title>{CangKuName}</title>
+				<idfieldname>CKID</idfieldname>
+				<fields>
+					<field name="CangKuName" />
+					<field name="RoadName" alias="所属公路：" visible="true"/>
+					<field name="PileNumber" alias="桩号：" visible="true"/>
+					<field name="GUANLIDANWEI" alias="管理单位：" visible="true"/>
+					<field name="CKID"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</popups>
+	</layerinfo>
+	
+	<overlays>
+		<overlay name="应急车辆" label="应急车辆" titlefield="chepaihao" idfield="chepaihao"/>
+		<overlay name="应急人员" label="应急人员" titlefield="name" idfield="name"/>
+	</overlays>
+</configuration>

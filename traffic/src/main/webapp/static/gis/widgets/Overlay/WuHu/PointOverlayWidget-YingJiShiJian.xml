@@ -1,0 +1,39 @@
+<!-- 应急事件 -->
+<?xml version="1.0" ?>
+<configuration>
+	<type>YingJiShiJian</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify></widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify></widgetclosenotify>
+	
+	<initvisible>false</initvisible>
+	
+	<popupskinclass>YingJiShiJian</popupskinclass>
+	<popup>
+		<title>{brief}</title>
+		<fields>
+			<field name="brief"/>
+			<field name="occurTime" alias="时间：" visible="true"/>
+			<field name="sceneDesc" alias="地点：" visible="true"/>
+			<field name="yjType" alias="类型：" visible="true"/>
+			<field name="sjLevel" alias="等级：" visible="true"/>
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+		<showdetaillink>true</showdetaillink>
+		<buttons>
+			<button label="预案" action="openDevice" type="YingJiShiJian_YuAn"/>
+			<button label="物资" action="buffersearch" type="YingJiShiJian"/>
+			<button label="处置记录" action="openDevice" type="YingJiShiJian_ChuZhiJiLu"/>
+			<button label="结束" action="openDevice" type="YingJiShiJian_Close"/>
+		</buttons>
+	</popup>
+	
+	<simplerenderer>
+		<picturemarkersymbol url="assets/images/mapIcons/WuHu/YingJiShiJian-blue.png" yoffset="18" />
+	</simplerenderer>
+	
+	<clickfunction>
+		<action>showInfoWindow</action>
+	</clickfunction>
+</configuration>

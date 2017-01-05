@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<configuration>
+	<type>issuesect</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify>onfbdOverlayRun</widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify>onfbdOverlayClose</widgetclosenotify>
+	
+	<popup>
+		<title>{desc}</title>
+		<fields>
+			<field name="desc" visible="false"/>
+			<field name="status" visible="false"/>
+			<field name="bmcode" alias="编码" visible="true"/>
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+		<buttons>
+			<button label="详情" action="openDevice" type="fbd" />
+		</buttons>
+	</popup>
+	
+	<uniquevaluerenderer field="status">
+		<simplefillsymbol style="solid" color="0xeeeeee" alpha="1">
+			<outline style="solid" color="" width=""/>
+		</simplefillsymbol>
+		
+		<uniquevalueinfo value="free" label="畅通">
+			<simplefillsymbol style="solid" color="0x00B40D" alpha="1">
+				<outline style="solid" color="0xFFFFFF" width="1"/>
+			</simplefillsymbol>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="crowd" label="拥挤">
+			<simplefillsymbol style="solid" color="0xFF8B0F" alpha="1">
+				<outline style="solid" color="0xFFFFFF" width="1"/>
+			</simplefillsymbol>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="jam" label="堵塞">
+			<simplefillsymbol style="solid" color="0xF61520" alpha="1">
+				<outline style="solid" color="0xFFFFFF" width="1"/>
+			</simplefillsymbol>
+		</uniquevalueinfo>
+	</uniquevaluerenderer>
+</configuration>

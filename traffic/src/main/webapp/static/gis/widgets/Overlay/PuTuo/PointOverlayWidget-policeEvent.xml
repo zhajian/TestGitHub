@@ -1,0 +1,80 @@
+<?xml version="1.0" ?>
+<configuration>
+	<type>policeEvent</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify>OnPoliceEventOverlayRun</widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify>OnPoliceEventOverlayClose</widgetclosenotify>
+	
+	<popup>
+		<fields>
+			<field name="eventType"/>
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+	</popup>
+	
+	<uniquevaluerenderer field="eventType">
+		<picturemarkersymbol url="assets/images/Red_glow.swf"/>
+		
+		<uniquevalueinfo value="0101">
+			<picturemarkersymbol url="assets/images/weather/HuoZai.swf"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="0102">
+			<picturemarkersymbol url="assets/images/weather/HuoZai.swf"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="0103">
+			<picturemarkersymbol url="assets/images/weather/HuoZai.swf"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="0201">
+			<picturemarkersymbol url="assets/images/weather/BaoYu.swf"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="0202">
+			<picturemarkersymbol url="assets/images/weather/BaoYu.swf"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="0203">
+			<picturemarkersymbol url="assets/images/weather/BaoYu.swf"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="0301">
+			<picturemarkersymbol url="assets/images/weather/DaFeng.swf"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="0302">
+			<picturemarkersymbol url="assets/images/weather/DaFeng.swf"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="0303">
+			<picturemarkersymbol url="assets/images/weather/DaFeng.swf"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="0401">
+			<picturemarkersymbol url="assets/images/weather/BaoXue.swf"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="0402">
+			<picturemarkersymbol url="assets/images/weather/BaoXue.swf"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="0403">
+			<picturemarkersymbol url="assets/images/weather/BaoXue.swf"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="0501">
+			<picturemarkersymbol url="assets/images/weather/BingBao.swf"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="0502">
+			<picturemarkersymbol url="assets/images/weather/BingBao.swf"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="0503">
+			<picturemarkersymbol url="assets/images/weather/BingBao.swf"/>
+		</uniquevalueinfo>
+	</uniquevaluerenderer>
+	
+</configuration>

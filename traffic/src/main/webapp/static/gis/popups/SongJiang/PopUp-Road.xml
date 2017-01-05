@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{name}</title>
+	<fields>
+		<field name="name" />
+		<field name="LD_LX" alias="类型: " visible="true"/>
+		<field name="RoadLength" alias="长度: " visible="true"/>
+		<field name="RoadWidth" alias="宽度: " visible="true"/>
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+</configuration>

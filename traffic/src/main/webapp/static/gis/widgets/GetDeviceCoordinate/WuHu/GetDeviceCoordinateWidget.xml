@@ -1,0 +1,194 @@
+<?xml version="1.0" ?>
+<configuration>
+	<needzoom>true</needzoom>
+	<layers>
+		<layer>
+			<type>LuDeng</type>
+			<url>http://{serverip}/arcgis/rest/services/wuhu/wuhu_device_new/MapServer/0</url>
+			<idfield>DEVICEID</idfield>
+			<zoomscale>12000</zoomscale>
+			<popup>
+				<title>{ROAD_NAME}</title>
+				<fields>
+					<field name="ROAD_NAME" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>JiaoTongBiaoZhi</type>
+			<url>http://{serverip}/arcgis/rest/services/wuhu/wuhu_device_new/MapServer/1</url>
+			<idfield>DEVICEID</idfield>
+			<zoomscale>1000</zoomscale>
+			<popup>
+				<title>{ROAD_NAME}</title>
+				<fields>
+					<field name="ROAD_NAME" />
+					<field name="CONTENT" alias="内容：" visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>DianZiJingCha</type>
+			<url>http://{serverip}/arcgis/rest/services/wuhu/wuhu_device_new/MapServer/2</url>
+			<idfield>DEVICEID</idfield>
+			<zoomscale>12000</zoomscale>
+			<popup>
+				<title>{ROAD_NAME}</title>
+				<fields>
+					<field name="ROAD_NAME" />
+				</fields>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>GongJiaoCheZhan</type>
+			<url>http://{serverip}/arcgis/rest/services/wuhu/wuhu_device_new/MapServer/3</url>
+			<idfield>DEVICEID</idfield>
+			<zoomscale>12000</zoomscale>
+			<popup>
+				<title>{ROAD_NAME}-{NAME}</title>
+				<fields>
+					<field name="NAME"/>
+					<field name="ROAD_NAME"/>
+					<field name="BUS_NUM" alias="公交线路：" visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>XinHaoJi</type>
+			<url>http://{serverip}/arcgis/rest/services/wuhu/wuhu_device_new/MapServer/4</url>
+			<idfield>DEVICEID</idfield>
+			<zoomscale>12000</zoomscale>
+			<popup>
+				<title>{ROAD_NAME}</title>
+				<fields>
+					<field name="ROAD_NAME" />
+					<field name="NAME" alias="类型：" visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>YouDaoBan</type>
+			<url>http://{serverip}/arcgis/rest/services/wuhu/wuhu_device_new/MapServer/5</url>
+			<idfield>DEVICEID</idfield>
+			<zoomscale>12000</zoomscale>
+			<popup>
+				<title>{ROAD_NAME}</title>
+				<fields>
+					<field name="ROAD_NAME" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>KaKouLayer</type>
+			<url>http://{serverip}/arcgis/rest/services/wuhu/wuhu_device_new/MapServer/6</url>
+			<idfield>DEVICEID</idfield>
+			<zoomscale>12000</zoomscale>
+			<popup>
+				<title>{ROAD_NAME}</title>
+				<fields>
+					<field name="ROAD_NAME" />
+					<field name="DEVICEID" alias="设备编号：" visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+				<buttons>
+					<button label="详细信息" action="openDevice" type="KaKou" idfield="DEVICEID" />
+				</buttons>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>QiXiangZhanLayer</type>
+			<url>http://{serverip}/arcgis/rest/services/wuhu/wuhu_device_new/MapServer/7</url>
+			<idfield>DEVICEID</idfield>
+			<zoomscale>12000</zoomscale>
+			<popup>
+				<title>{ROAD_NAME}</title>
+				<fields>
+					<field name="ROAD_NAME" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>LuKou</type>
+			<url>http://{serverip}/arcgis/rest/services/wuhu/wuhu_device_new/MapServer/13</url>
+			<idfield>DEVICEID</idfield>
+			<zoomscale>1000</zoomscale>
+			<popup>
+				<title>{LINK_K}</title>
+				<fields>
+					<field name="LINK_K" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+				<buttons>
+					<button label="详细信息" action="openDevice" type="LuKou" idfield="OBJECTID" />
+				</buttons>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>LongMengJia</type>
+			<url>http://{serverip}/arcgis/rest/services/wuhu/wuhu_device_new/MapServer/14</url>
+			<idfield>DEVICEID</idfield>
+			<zoomscale>1000</zoomscale>
+			<popup>
+				<title>{ROAD_NAME}</title>
+				<fields>
+					<field name="ROAD_NAME" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+<!-- 				<buttons> -->
+<!-- 					<button label="详细信息" action="openDevice" type="LuKou" idfield="OBJECTID" /> -->
+<!-- 				</buttons> -->
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>XinHaoDeng</type>
+			<url>http://{serverip}/arcgis/rest/services/wuhu/wuhu_device_new/MapServer/16</url>
+			<idfield>DEVICEID</idfield>
+			<zoomscale>1000</zoomscale>
+			<popup>
+				<title>{ROAD_NAME}</title>
+				<fields>
+					<field name="ROAD_NAME" />
+					<field name="NAME" alias="类型：" visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+<!-- 				<buttons> -->
+<!-- 					<button label="详细信息" action="openDevice" type="LuKou" idfield="OBJECTID" /> -->
+<!-- 				</buttons> -->
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>FaBuDuan</type>
+			<url>http://{serverip}/arcgis/rest/services/wuhu/wuhu_fbd/MapServer/1</url>
+			<idfield>BM_CODE</idfield>
+			<simplelinesymbol color="0x000000" width="4"/>
+			<popup>
+				<title>{NAME}</title>
+				<fields>
+					<field name="NAME"/>
+					<field name="BM_CODE"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+				<buttons>
+					<button label="人工发布" action="openDevice" type="FBD" idfield="BM_CODE" />
+				</buttons>
+			</popup>
+		</layer>
+	</layers>
+</configuration>

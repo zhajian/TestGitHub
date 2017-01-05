@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<configuration>
+	<type>gpsPoliceTrack</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify></widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify></widgetclosenotify>
+	
+	<linesymbol>
+		<style>solid</style>
+		<color>0x0055BF</color>
+		<alpha>1</alpha>
+		<width>3</width>
+	</linesymbol>
+</configuration>

@@ -1,0 +1,171 @@
+<configuration>
+	<layout direction="horizontal" gap="10" />
+	<groups>
+		<group>
+			<item id="FaBuDuanDM" name="地面发布段" initstate="enable" image="assets/images/buttons/FaBuDuan.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="地面发布段" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="FaBuDuanKSL" name="快速路发布段" initstate="enable" image="assets/images/buttons/FaBuDuan.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="快速路发布段" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="FaBuDuanKSL" name="匝道灯" initstate="enable" image="assets/images/buttons/ZaDao.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="匝道灯" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="GongJiaoZhanDian" name="公交站点" image="assets/images/buttons/TianJin/GongJiao/GongJiaoZhanDian.png">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="公交站点" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="TingCheChang" name="停车场" image="assets/images/buttons/TingCheChang.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="停车场" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="TingCheChangYouDaoBan" name="停车场诱导板" image="assets/images/buttons/QingBaoBan.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="停车场诱导板" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>			
+			
+			<item id="ChuZuChe" name="出租车扬招点" image="assets/images/buttons/ChuZuChe.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="出租车扬招点" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>			
+			
+			<item id="WeiShuNiu" name="微枢纽" image="assets/images/buttons/ShuNiu.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="微枢纽" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="GongGongZiXingChe" name="公共自行车" image="assets/images/buttons/ZiXingChe.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="公共自行车" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="zoomWuJiaoChang" name="五角场" image="assets/images/buttons/Zoom.png">
+				<clickfunctions>
+					<clickfunction name="ZoomExtent">
+						<params>
+							<param name="Extent" value="121.504 31.295 121.519 31.31" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="KuaiSuLuZhiShu" name="快速路指数" image="assets/images/buttons/YangPu/KuaiSuLuZhiShu.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="快速路指数" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="DiMianZhiShu" name="地面指数" image="assets/images/buttons/YangPu/DiMianZhiShu.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="地面指数" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="WuJiaoChangZhiShu" name="五角场指数" image="assets/images/buttons/YangPu/WuJiaoChangZhiShu.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="五角场指数" />
+						</params>
+					</clickfunction>
+					<clickfunction name="ZoomExtent">
+						<params>
+							<param name="Extent" value="121.504 31.295 121.519 31.31" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="bus" name="公交车"  image="assets/images/buttons/TianJin/GongJiao/GongJiaoChe.png">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="公交车"/>
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="Draw" name="测距" image="assets/images/buttons/CeLiang.png">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="测距"/>
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="Search" name="搜索" image="assets/images/buttons/search-blue.png">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="搜索"/>
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</group>
+	</groups>
+</configuration>

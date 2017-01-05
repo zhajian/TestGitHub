@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<configuration>
+	<issuesectlayer>http://{serverip}/arcgis/rest/services/changsha/changsha_fbd_its/MapServer/1</issuesectlayer>
+	<idfield>SDE.Issuesect.BM_CODE</idfield>
+	
+	<sound>assets/sound/Alarm1.mp3</sound>
+	
+	<uniquevaluerenderer field="alarmState">
+		<picturemarkersymbol url="assets/images/mapIcons/JingQing-red.png" yoffset="13" />
+
+		<uniquevalueinfo value="1">
+			<picturemarkersymbol url="assets/images/mapIcons/JingQing-yellow.png" yoffset="13" />
+		</uniquevalueinfo>
+	</uniquevaluerenderer>
+	
+	<popup>
+		<title>{issuesectName}</title>
+		<fields>
+			<field name="issuesectName"/>
+			<field name="issuesectId"/>
+			<field name="yujingId"/>
+			<field name="alarmTime" alias="预警时间: " visible="true"/>
+			<field name="updateTime" alias="更新时间: " visible="true"/>
+			<field name="trendType" alias="预警趋势: " visible="true"/>
+			<field name="speed" alias="行程车速: " visible="true"/>
+			<field name="volume" alias="2分钟流量: " visible="true"/>
+			<field name="standardSpeed" alias="归一化车速: " visible="true"/>
+			<field name="standardVolume" alias="归一化流量: " visible="true"/>
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+		<buttons>
+			<button label="处置" action="openDevice" type="DealAlarm" idfield="yujingId"/>
+		</buttons>
+	</popup>
+</configuration>

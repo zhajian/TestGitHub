@@ -1,0 +1,10 @@
+<configuration>
+	<type>block</type>
+	<drawtype>point</drawtype>
+	<showbuffer>false</showbuffer>
+	<showconfirmwindow>true</showconfirmwindow>
+	<confirmwindow>
+		<title>添加拥堵点</title>
+		<text>不关联发布段，是否添加拥堵点？</text>
+	</confirmwindow>
+</configuration>

@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<configuration>
+	<url>http://{serverip}/arcgis/rest/services/TianJin/tianjin_ZhuangHao/MapServer/</url>
+	<layerid>1</layerid>
+</configuration>
+

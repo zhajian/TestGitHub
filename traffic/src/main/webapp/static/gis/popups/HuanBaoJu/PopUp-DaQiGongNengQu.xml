@@ -1,0 +1,11 @@
+<!-- 大气功能区 -->
+<?xml version="1.0" ?>
+<configuration>
+	<title>{DQGNQNAME}</title>
+	<fields>
+		<field name="DQGNQNAME" />
+		<field name="DES" alias="详情：" visible="true"/>
+		<field name="DQGNQLEVEL" alias="等级：" visible="true"/>
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+</configuration>

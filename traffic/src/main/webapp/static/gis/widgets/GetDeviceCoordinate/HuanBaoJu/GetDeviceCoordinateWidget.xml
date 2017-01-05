@@ -1,0 +1,91 @@
+<?xml version="1.0" ?>
+<configuration>
+	<needzoom>false</needzoom>
+	<layers>
+		<layer>
+			<type>信访点</type>
+			<url>http://{serverip}/arcgis/rest/services/HuanBaoJu/XinFangDian/MapServer/3</url>
+			<idfield>PETITION_NO_</idfield>
+			<picturemarkersymbol url="assets/images/Red_glow.swf" xoffset="-15" yoffset="15"/>
+			<zoomscale>12000</zoomscale>
+			<popup>
+				<title>要素: {ISSUE_TYPE_nameS_} 来源: {DATASOURCE}</title>
+				<fields>
+					<field name="ISSUE_TYPE_nameS_" />
+					<field name="ACCUSED_NAME_" alias="投诉对象：" visible="true" />
+					<field name="PETITION_DATE_" alias="投诉时间: " visible="true"/>
+					<field name="ACCUSER_NAME_" alias="投诉人：" visible="true" />
+					<field name="person_num_" alias="人数：" visible="true" />
+					<field name="PETITION_TYPE_NAME_" alias="信访方式：" visible="true" />
+					<field name="ISSUE_UNIT_ADDRESS_" alias="投诉地址：" visible="true" />
+					<field name="ACCUSED_INDUSTRY_NAMES_" alias="所属行业：" visible="true" />
+					<field name="ISSUE_CONTENT_BLOB_" alias="投诉内容：" visible="true" />
+					<field name="RETURN_CONTENT_" alias="回复内容：" visible="true"/>
+					<field name="DATASOURCE" alias="数据来源：" visible="false"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>重复件</type>
+			<url>http://{serverip}/arcgis/rest/services/HuanBaoJu/XinFangDian/MapServer/3</url>
+			<idfield>PETITION_NO_</idfield>
+			<picturemarkersymbol url="assets/images/Red_glow.swf" xoffset="-15" yoffset="15"/>
+			<zoomscale>12000</zoomscale>
+			<popup>
+				<title>{ISSUE_TYPE_nameS_}</title>
+				<fields>
+					<field name="ISSUE_TYPE_nameS_" />
+					<field name="ACCUSED_NAME_" alias="投诉对象：" visible="true" />
+					<field name="PETITION_DATE_" alias="投诉时间: " visible="true"/>
+					<field name="ACCUSER_NAME_" alias="投诉人：" visible="true" />
+					<field name="person_num_" alias="人数：" visible="true" />
+					<field name="PETITION_TYPE_NAME_" alias="信访方式：" visible="true" />
+					<field name="ISSUE_UNIT_ADDRESS_" alias="投诉地址：" visible="true" />
+					<field name="ACCUSED_INDUSTRY_NAMES_" alias="所属行业：" visible="true" />
+					<field name="ISSUE_CONTENT_BLOB_" alias="投诉内容：" visible="true" />
+					<field name="RETURN_CONTENT_" alias="回复内容：" visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>黑名单</type>
+			<url>http://{serverip}/arcgis/rest/services/HuanBaoJu/HMD/MapServer/0</url>
+			<idfield>ST_LA_NO</idfield>
+			<picturemarkersymbol url="assets/images/Red_glow.swf" xoffset="-15" yoffset="15"/>
+			<zoomscale>12000</zoomscale>
+			<popup>
+				<title>{ST_DSR_COM}</title>
+				<fields>
+					<field name="ST_LA_NO" alias="立案编号：" visible="true" />
+					<field name="ST_YEAR" alias="时间：" visible="true" />
+					<field name="ST_ADDRESS" alias="地址：" visible="true" />
+					<field name="ST_ILLEGAL" alias="处罚事项：" visible="true" />
+					<field name="ST_ORDER" alias="处罚：" visible="true" />
+					<field name="ST_JAQK" alias="结案情况：" visible="true" />
+					<field name="ST_ZGQK" alias="结果：" visible="true" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>环境信用评价</type>
+			<url>http://{serverip}/arcgis/rest/services/HuanBaoJu/QXZX/MapServer/0</url>
+			<idfield>OID</idfield>
+			<picturemarkersymbol url="assets/images/Red_glow.swf" xoffset="-15" yoffset="15"/>
+			<zoomscale>12000</zoomscale>
+			<popup>
+				<title>{企业名称}</title>
+				<fields>
+					<field name="企业名称" />
+					<field name="地址" alias="地址：" visible="true" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+	</layers>
+</configuration>

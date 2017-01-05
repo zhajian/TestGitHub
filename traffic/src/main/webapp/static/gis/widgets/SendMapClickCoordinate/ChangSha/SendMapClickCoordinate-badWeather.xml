@@ -1,0 +1,11 @@
+<configuration>
+	<type>badweather</type>
+	<drawtype>point</drawtype>
+	<showbuffer>false</showbuffer>
+	
+	<showconfirmwindow>true</showconfirmwindow>
+	<confirmwindow>
+		<title>添加灾害天气</title>
+		<text>是否在此位置添加灾害天气？</text>
+	</confirmwindow>
+</configuration>

@@ -1,0 +1,33 @@
+<configuration>
+	<type>policeEvent</type>
+	
+	<showbuffersearch>false</showbuffersearch>
+	<showgraphicsearch>true</showgraphicsearch>
+	<showsendresult>false</showsendresult>
+	<showsavearea>true</showsavearea>
+	<showstatistic>true</showstatistic>
+	
+	<layerinfo>
+		<uniquevaluerenderer field="layerName">
+			<simplemarkersymbol style="circle" color="0xFF0000" size="10"/>
+		</uniquevaluerenderer>
+	
+		<popups>
+			<popup layername="policeEventOverlay">
+				<title>{fdtTime}</title>
+				<fields>
+					<field name="fdtTime" alias="报警时间" visible="false" />
+					<field name="caseLocation" alias="案发地址" visible="true" />
+					<field name="caseContent" alias="主要情节" visible="true" />
+					<field name="caseLevel" alias="警情等级" visible="false" />
+					<field name="caseType" alias="警情类型" visible="false" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</popups>
+	</layerinfo>
+	
+	<overlays>
+		<overlay name="policeEventOverlay" label="警情" titlefield="fdtTime" defaultselected="true"/>
+	</overlays>
+</configuration>

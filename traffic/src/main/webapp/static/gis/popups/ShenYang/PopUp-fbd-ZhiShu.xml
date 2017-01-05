@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{FBD_Within2Ring.MC}</title>
+	<fields>
+		<field name="FBD_Within2Ring.MC" />
+		<field name="FBD_Within2Ring.QDZ" alias="起点: " visible="true" />
+		<field name="FBD_Within2Ring.ZDZ" alias="终点: " visible="true" />
+		<field name="FSTRSPEED" alias="车速: " visible="true"/>
+		<field name="FSTRINDEXRAW" alias="指数: " visible="true"/>
+		<field name="FSTRSTATEDESC" alias="状态: " visible="true"/>
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+</configuration>

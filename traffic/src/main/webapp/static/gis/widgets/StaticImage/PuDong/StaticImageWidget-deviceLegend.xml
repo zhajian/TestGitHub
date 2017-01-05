@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<configuration label="设备图例">
+	<imageurl>assets/images/PuDong/DeviceLegend.png</imageurl>
+</configuration>
+
+<!-- See Static Image widget tag reference at http://links.esri.com/staticimagewidget -->

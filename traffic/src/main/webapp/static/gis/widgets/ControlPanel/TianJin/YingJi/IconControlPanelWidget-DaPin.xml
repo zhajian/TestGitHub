@@ -1,0 +1,109 @@
+<configuration>
+	<layout direction="horizontal" gap="10" />
+	<groups>
+		<group>
+			<item id="home" name="首页" image="assets/images/TianJin/ButtonIcon.png" initstate="enable">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="发布段" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="LuKuang" name="路况" image="assets/images/TianJin/ButtonIcon.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="车检器" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="CheLiang" name="车辆" image="assets/images/TianJin/ButtonIcon.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="情报板" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			<item id="JianKong" name="路网监控" image="assets/images/TianJin/ButtonIcon.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="摄像机" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			<item id="XingZhengShengPi" name="行政审批" image="assets/images/TianJin/ButtonIcon.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="卡口" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			<item id="XingZhengShengPi" name="行政审批" image="assets/images/TianJin/ButtonIcon.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="卡口" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			<item id="QingBaoBan" name="情报板" image="assets/images/TianJin/ButtonIcon.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="卡口" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			<item id="JiaoDiao" name="交通调查" image="assets/images/TianJin/ButtonIcon.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="卡口" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			<item id="ZhiChaoGuanLi" name="治超管理" image="assets/images/TianJin/ButtonIcon.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="卡口" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			<item id="YingJiWuZi" name="应急物资" image="assets/images/TianJin/ButtonIcon.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="卡口" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="ShiGongZuDuan" name="施工阻断" image="assets/images/TianJin/ButtonIcon.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="卡口" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</group>
+	</groups>
+</configuration>

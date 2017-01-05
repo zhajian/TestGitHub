@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<configuration>
+	<monthcounts>
+		<monthcount name="宝山区" count="13,10,17,23,22,15,9,21,28,29,23,32"/>
+		<monthcount name="虹口区" count="92,51,135,76,114,102,96,105,110,82,138,124"/>
+	</monthcounts>
+
+</configuration>

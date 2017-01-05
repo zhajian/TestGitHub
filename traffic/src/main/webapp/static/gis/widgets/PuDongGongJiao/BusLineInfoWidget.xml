@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<configuration>
+	<webmercator>true</webmercator>
+	
+	<popup>
+		<title>{BL_NAME}</title>
+		<fields>
+			<field name="totalFlow" alias="总流量: " visible="true"/>
+			<field name="onFlow" alias="上行流量: " visible="true"/>
+			<field name="offFlow" alias="下行流量: " visible="true"/>
+		</fields>
+		<initvisible>true</initvisible>
+		<showzoomtobutton>false</showzoomtobutton>
+<!-- 		<medias> -->
+<!--     		<media type="piechart"  -->
+<!--            		title="Population by race"  -->
+<!--            		chartfields="onFlow,offFlow"/> -->
+<!-- 		</medias> -->
+	</popup>
+</configuration>

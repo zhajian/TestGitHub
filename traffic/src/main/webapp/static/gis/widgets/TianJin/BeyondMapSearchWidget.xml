@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<configuration>
+	<textsearchurl>http://{beyondserverip}/gisapi/rest/searchservice/fullsearch?token=BF833A1145CB44669FB387DEA62AC464&needGeometry=true&key={key}</textsearchurl>
+<!-- 	<graphicsearchurl>http://{beyondserverip}/gisapi/rest/searchservice/fullsearch?token=BF833A1145CB44669FB387DEA62AC464&needGeometry=true&rings={rings}</graphicsearchurl> -->
+	<graphicsearchurl>http://{beyondserverip}/gisapi/rest/searchservice/simplespatialquery?token=BF833A1145CB44669FB387DEA62AC464&needGeometry=true&key=&bbox={xmin},{ymin} {xmax},{ymax}</graphicsearchurl>
+	
+	<searchlayers>
+		<searchlayer name="SP_QBB" alias="情报板"/>
+		<searchlayer name="SP_SXJ" alias="摄像机"/>
+	</searchlayers>
+	
+	<popups>
+		<popup layer="情报板">
+			<showzoomtobutton>false</showzoomtobutton>
+			<popupskinclass>查询结果</popupskinclass>
+		</popup>
+		<popup layer="摄像机">
+			<showzoomtobutton>false</showzoomtobutton>
+			<popupskinclass>查询结果</popupskinclass>
+		</popup>
+	</popups>
+	
+	<uniquevaluerenderer field="layerName">
+		<simplemarkersymbol color="0xff210f" size="10"/>
+		
+		<uniquevalueinfo value="情报板">
+			<picturemarkersymbol url="assets/images/mapIcons/QingBaoBan-blue.png" yoffset="13"/>
+		</uniquevalueinfo>
+	
+		<uniquevalueinfo value="摄像机">
+			<picturemarkersymbol url="assets/images/mapIcons/SheXiangJi-blue.png" yoffset="13"/>
+		</uniquevalueinfo>
+	</uniquevaluerenderer>
+</configuration>

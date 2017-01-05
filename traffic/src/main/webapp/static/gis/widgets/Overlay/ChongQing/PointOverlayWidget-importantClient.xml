@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<!-- 重要用户 -->
+<configuration>
+	<type>importantClient</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify></widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify></widgetclosenotify>
+	<popup>
+		<title>{name}</title>
+		<fields>
+			<field name="name" alias="户名" visible="false"/>
+			<field name="profession" alias="行业" visible="true"/>
+			<field name="unitType" alias="供电单位性质" visible="true"/>
+			<field name="area" alias="所属区域" visible="true"/>
+			<field name="accessPoint" alias="接入点" visible="true"/>
+			
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+	</popup>
+	<simplerenderer>
+		<picturemarkersymbol url="assets/images/users.png"/>
+	</simplerenderer>
+</configuration>

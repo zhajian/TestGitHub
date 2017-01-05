@@ -1,0 +1,19 @@
+<!--摄像机 -->
+<configuration>
+	<layer>http://{serverip}/arcgis/rest/services/pudong/pd_device/MapServer/1</layer>
+	
+	<refreshrate>0</refreshrate>
+	<refreshneedquery>false</refreshneedquery>
+	
+	<widgetvisible>false</widgetvisible>
+	
+	<clickfunction>
+		<action>openDevice</action>
+		<type>SXJ</type>
+		<idfield>DEVICEID</idfield>
+	</clickfunction>
+	
+	<simplerenderer>
+		<picturemarkersymbol url="assets/images/mapIcons/SheXiangJi-blue.png" yoffset="13" />
+	</simplerenderer>
+</configuration>

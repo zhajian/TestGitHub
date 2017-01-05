@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<configuration>
+	<type>bus</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify></widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify></widgetclosenotify>
+	
+	<initvisible>true</initvisible>
+	
+	<popup>
+		<title>{lineid}路</title>
+		<fields>
+			<field name="lineid"/>
+			<field name="busid" alias="车牌号: " visible="true" />
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+	</popup>
+	
+	<simplerenderer>
+		<picturemarkersymbol url="assets/images/mapIcons/TianJin/GongJiao/GongJiaoChe.png" yoffset="13"/>
+	</simplerenderer>
+	
+    
+    <clickfunction>
+		<action>showInfoWindow</action>
+	</clickfunction>
+</configuration>

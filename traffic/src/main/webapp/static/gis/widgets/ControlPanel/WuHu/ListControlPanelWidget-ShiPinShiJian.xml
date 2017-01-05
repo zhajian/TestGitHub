@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<configuration>
+	<menu>
+		<itemgroup label="视频事件">
+			<item label="抓拍事件" initenable="true">
+				<clickfunctions>
+					<clickfunction name="ChangeOverlayVisible">
+						<params>
+							<param name="WidgetName" value="抓拍事件Overlay"/>
+							<param name="OverlayType" value="ZPSJ" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item label="事件检测" initenable="true">
+				<clickfunctions>
+					<clickfunction name="ChangeOverlayVisible">
+						<params>
+							<param name="WidgetName" value="事件检测Overlay"/>
+							<param name="OverlayType" value="SJJC" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item label="摄像机" initenable="true">
+				<clickfunctions>
+					<clickfunction name="ChangeOverlayVisible">
+						<params>
+							<param name="WidgetName" value="摄像机Overlay"/>
+							<param name="OverlayType" value="SheXiangJi" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item label="诱导板" initenable="true">
+				<clickfunctions>
+					<clickfunction name="ChangeOverlayVisible">
+						<params>
+							<param name="WidgetName" value="诱导板Overlay"/>
+							<param name="OverlayType" value="QingBaoBan" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</itemgroup>
+	</menu>
+</configuration>
+	

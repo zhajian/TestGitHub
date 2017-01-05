@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{DES}</title>
+	<fields>
+		<field name="DES" />
+		<field name="SDEVICEID" alias="编号" visible="true" />
+		<field name="HWAYNAME" alias="所属高架" visible="true"/>
+		<field name="DIRECTION" alias="方向" visible="true"/>
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+		<button label="详细信息" action="openDevice" type="SXJ_REMOTE" idfield="SDEVICEID" />
+	</buttons>
+</configuration>

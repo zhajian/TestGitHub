@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!-- 匝道文字板 -->
+<configuration>
+	<title>{SDE.ZAQBB.sbbh}</title>
+	<fields>
+		<field name="SDE.ZAQBB.sbbh" />
+		<field name="SDE.ZAQBB.sbms" alias="详细描述：" visible="true" />
+		<field name="SDE.ZAQBB.azsj" alias="安装时间：" visible="true" />
+		<field name="SDE.ZAQBB.azdw" alias="安装单位：" visible="true" />
+		<field name="SDE.ZAQBB.whdw" alias="维护单位：" visible="true" />
+		<field name="SDE.ZAQBB.fzr" alias="负责人：" visible="true" />
+		<field name="SDE.ZAQBB.tel" alias="联系方式：" visible="true" />
+		<field name="SDE.ZAQBB.pp" alias="品牌：" visible="true" />
+		<field name="SDE.ZAQBB.xh" alias="型号：" visible="true" />
+		<field name="SDE.ZAQBB.jg" alias="价格：" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+		<button label="详细信息" action="openDevice" type="ZAQBB" idfield="SDE.ZAQBB.sbbh" />
+	</buttons>
+</configuration>

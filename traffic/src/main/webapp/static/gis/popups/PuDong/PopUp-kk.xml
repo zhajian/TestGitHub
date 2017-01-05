@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{sb_cpsbsb.FSTR_DESC}</title>
+	<fields>
+		<field name="sb_cpsbsb.FSTR_DESC" />
+		<field name="sb_cpsbsb.DEVICEID" alias="编号" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+	   <button label="详细信息" action="openDevice" type="KK" idfield="sb_cpsbsb.DEVICEID" />
+	</buttons>
+</configuration>

@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!-- 新增警情热点 -->
+<configuration>
+	<type>createEventHotSpot</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify></widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify></widgetclosenotify>
+	
+	<popup>
+		<fields>
+        	<field name="keyValue" alias="关键词" visible="true"/>
+	    </fields>
+		<showzoomtobutton>false</showzoomtobutton>
+	</popup>
+	
+    <simplerenderer>
+		<simplemarkersymbol style="circle" color="0x0055BF" size="10"/>
+	</simplerenderer>
+	
+	
+</configuration>

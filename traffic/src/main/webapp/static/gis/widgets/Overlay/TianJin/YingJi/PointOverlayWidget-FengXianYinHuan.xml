@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<!-- 风险隐患 -->
+<configuration>
+	<type>FengXianYinHuan</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify></widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify></widgetclosenotify>
+	
+	<needzoom>true</needzoom>
+	<zoomscale>48000</zoomscale>
+	
+	<initvisible>false</initvisible>
+	
+	
+	<popupskinclass>天津风险隐患</popupskinclass>
+	
+	<popup>
+		<showzoomtobutton>false</showzoomtobutton>
+	</popup>
+	
+	<uniquevaluerenderer field="fengxianZhuangTai">
+		<picturemarkersymbol url="assets/images/mapIcons/FaultDevice-blue.png"/>
+		
+		<uniquevalueinfo value="识别风险">
+			<picturemarkersymbol url="assets/images/mapIcons/FaultDevice-yellow.png"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="预警风险">
+			<picturemarkersymbol url="assets/images/mapIcons/FaultDevice-red.png"/>
+		</uniquevalueinfo>
+	</uniquevaluerenderer>
+	
+	<clickfunction>
+		<action>showInfoWindow</action>
+	</clickfunction>
+</configuration>

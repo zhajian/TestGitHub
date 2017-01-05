@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{地面主干道路发布段_二级显示.路名}({地面主干道路发布段_二级显示.起点交叉路}-{地面主干道路发布段_二级显示.终点交叉路})</title>
+	<fields>
+		<field name="地面主干道路发布段_二级显示.路名" />
+		<field name="地面主干道路发布段_二级显示.起点交叉路" />
+		<field name="地面主干道路发布段_二级显示.终点交叉路" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+<!-- 	<buttons> -->
+<!-- 		<button label="详细信息" action="openDevice" type="XHJ" idfield="devId" /> -->
+<!-- 	</buttons> -->
+</configuration>

@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<configuration>
+	<xhdlayer>
+		<url>http://{serverip}/arcgis/rest/services/yiwu/YiWu-GreenWaveBand/MapServer/0</url>
+		<idfield>devid</idfield>
+		<namefield>devdesc</namefield>
+		
+		<uniquevaluerenderer field="nearest">
+			<picturemarkersymbol url="assets/images/mapIcons/XinHaoJi-blue.png" yoffset="13"/>
+			
+			<uniquevalueinfo value="true">
+				<picturemarkersymbol url="assets/images/mapIcons/XinHaoJi-yellow.png" yoffset="13"/>
+			</uniquevalueinfo>
+		</uniquevaluerenderer>
+	</xhdlayer>
+</configuration>

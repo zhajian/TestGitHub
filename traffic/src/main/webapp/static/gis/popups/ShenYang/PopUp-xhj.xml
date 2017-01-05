@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{DESCRIBE}</title>
+	<fields>
+		<field name="DESCRIBE" />
+		<field name="TCS" alias="编号" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+</configuration>

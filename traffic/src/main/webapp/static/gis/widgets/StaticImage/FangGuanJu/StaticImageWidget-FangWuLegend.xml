@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<configuration label="房屋类型图例">
+	<imageurl>assets/images/FangGuanJu/FangWuLegend.png</imageurl>
+</configuration>
+
+<!-- See Static Image widget tag reference at http://links.esri.com/staticimagewidget -->

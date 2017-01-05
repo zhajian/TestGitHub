@@ -1,0 +1,166 @@
+<configuration>
+	<layout direction="horizontal" gap="10" />
+	<groups>
+		<group>
+			<item id="fbd" name="发布段" image="assets/images/buttons/FaBuDuan.png" initstate="enable">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="发布段" />
+						</params>
+					</clickfunction>
+<!-- 					<clickfunction name="ChangeLayer"> -->
+<!-- 						<params> -->
+<!-- 							<param name="ServiceName" value="地面发布段" /> -->
+<!-- 						</params> -->
+<!-- 					</clickfunction> -->
+<!-- 					<clickfunction name="ChangeLayer"> -->
+<!-- 						<params> -->
+<!-- 							<param name="ServiceName" value="浦东发布段" /> -->
+<!-- 						</params> -->
+<!-- 					</clickfunction> -->
+<!-- 					<clickfunction name="ChangeLayer"> -->
+<!-- 						<params> -->
+<!-- 							<param name="ServiceName" value="浦东发布浦西发布段" /> -->
+<!-- 						</params> -->
+<!-- 					</clickfunction> -->
+				</clickfunctions>
+			</item>
+
+			<item id="qbbc" name="全彩板" image="assets/images/buttons/QingBaoBanC.png" initstate="enable">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="全彩板" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="qbba" name="A板" image="assets/images/buttons/QingBaoBanA.png" initstate="enable">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="A板" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="qbbl" name="L板" image="assets/images/buttons/QingBaoBanL.png" initstate="enable">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="L板" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="qbbm" name="M板" image="assets/images/buttons/QingBaoBanM.png" initstate="enable">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="M板" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="qbbs" name="S板" image="assets/images/buttons/QingBaoBanS.png" initstate="enable">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="S板" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="sxj" name="摄像机" image="assets/images/buttons/SheXiangJi.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="摄像机" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="zdd" name="匝道灯" image="assets/images/buttons/ZaDao.png" initstate="enable">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="浦东匝道灯" />
+						</params>
+					</clickfunction>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="浦西匝道灯" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="cljc" name="车辆检测器" image="assets/images/buttons/FaBuDuan.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="车辆检测器" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="cpsb" name="车牌识别" image="assets/images/buttons/KaKou.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="车牌识别" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+<!-- 			<item id="XHJ" name="信号机" image="assets/images/buttons/XinHaoJi.png"> -->
+<!-- 				<clickfunctions> -->
+<!-- 					<clickfunction name="ChangeLayer"> -->
+<!-- 						<params> -->
+<!-- 							<param name="ServiceName" value="信号机" /> -->
+<!-- 						</params> -->
+<!-- 					</clickfunction> -->
+<!-- 				</clickfunctions> -->
+<!-- 			</item> -->
+			
+			<item id="cdkz" name="车道控制" image="assets/images/buttons/DuanMian.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="车道控制" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="IssuesectEvent" name="发布段事件" image="assets/images/buttons/JingQing.png">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="发布段事件" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="legend" name="图例" image="assets/images/i_info.png">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="设备图例" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</group>
+	</groups>
+</configuration>

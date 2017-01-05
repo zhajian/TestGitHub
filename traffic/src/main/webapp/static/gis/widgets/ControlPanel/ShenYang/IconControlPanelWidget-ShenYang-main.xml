@@ -1,0 +1,72 @@
+<configuration>
+	<layout direction="horizontal" gap="10" />
+	<groups>
+		<group title="group1">
+			<item id="GongZuFang" name="公租房" image="assets/images/buttons/GangDian.png"
+				initstate="enable">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="servicename" value="公租房" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="DongQianFang" name="动迁房" image="assets/images/buttons/GangDian.png"
+				initstate="enable">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="servicename" value="动迁房" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="DongQianFang" name="动迁房" image="assets/images/buttons/GangDian.png"
+				initstate="enable">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="servicename" value="动迁房" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="JiuFang" name="旧房改造" image="assets/images/buttons/GangDian.png"
+				initstate="enable">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="servicename" value="旧房改造" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="LianZuFang" name="廉租房" image="assets/images/buttons/GangDian.png"
+				initstate="enable">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="servicename" value="廉租房" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="JingShi" name="经适房" image="assets/images/buttons/GangDian.png"
+				initstate="enable">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="servicename" value="经适房" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</group>
+	</groups>
+</configuration>

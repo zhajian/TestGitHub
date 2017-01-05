@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<configuration>
+	<layers>
+		<layer>
+			<type>固定摄像机</type>
+			<url>http://{serverip}/arcgis/rest/services/ChangZhou/ChangZhou_device/MapServer/0</url>
+			<idfield>SDEVICEID</idfield>
+		</layer>
+		<layer>
+			<type>检测器</type>
+			<url>http://{serverip}/arcgis/rest/services/ChangZhou/ChangZhou_device/MapServer/1</url>
+			<idfield>JCQ_ChangZhou.SDEVICEID</idfield>
+		</layer>
+		<layer>
+			<type>情报板</type>
+			<url>http://{serverip}/arcgis/rest/services/ChangZhou/ChangZhou_device/MapServer/2</url>
+			<idfield>QBB_ChangZhou.SDEVICEID</idfield>
+		</layer>
+		<layer>
+			<type>遥控摄像机</type>
+			<url>http://{serverip}/arcgis/rest/services/ChangZhou/ChangZhou_device/MapServer/3</url>
+			<idfield>SDEVICEID</idfield>
+		</layer>
+		<layer>
+			<type>匝道控制器</type>
+			<url>http://{serverip}/arcgis/rest/services/ChangZhou/ChangZhou_device/MapServer/4</url>
+			<idfield>ZDD_ChangZhou.SDEVICEID</idfield>
+		</layer>
+	</layers>
+</configuration>

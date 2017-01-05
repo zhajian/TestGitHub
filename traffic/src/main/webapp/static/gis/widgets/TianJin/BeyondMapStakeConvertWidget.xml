@@ -1,0 +1,4 @@
+<?xml version="1.0" ?>
+<configuration>
+	<roadserviceurl>http://{beyondserverip}/gisapi/rest/roadservice/zhlnglat?token=BF833A1145CB44669FB387DEA62AC464&roadCode={roadCode}&startStake={startStake}&endStake={endStake}</roadserviceurl>
+</configuration>

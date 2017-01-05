@@ -1,0 +1,65 @@
+<?xml version="1.0" ?>
+<configuration>
+	<zoomscale />
+	<shareresults>true</shareresults>
+	<layers>
+		<layer>
+			<name>摄像机</name>
+			<url>http://128.64.151.12:8399/arcgis/rest/services/changsha/changsha_search_device/FeatureServer/0</url>
+			<expression>DESC_ like '%[value]%'</expression>
+			<titlefield>DESC_</titlefield>
+			<fields>
+				<field name="DESC_" alias="名称" />
+				<field name="DEVICEID" alias="编号" />
+			</fields>
+			<orderbyfields>DESC_ ASC</orderbyfields>
+		</layer>
+		<layer>
+			<name>电子警察</name>
+			<url>http://128.64.151.12:8399/arcgis/rest/services/changsha/changsha_search_device/FeatureServer/1</url>
+			<expression>DESC_ like '%[value]%'</expression>
+			<titlefield>DESC_</titlefield>
+			<fields>
+				<field name="DESC_" alias="desc_" />
+				<field name="TYPE" alias="type" />
+			</fields>
+			<orderbyfields>DESC_ ASC</orderbyfields>
+		</layer>
+		<layer>
+			<name>诱导板</name>
+			<url>http://128.64.151.12:8399/arcgis/rest/services/changsha/changsha_search_device/FeatureServer/2</url>
+			<expression>DESC_ like '%[value]%'</expression>
+			<textsearchlabel>Select by attribute</textsearchlabel>
+			<titlefield>DESC_</titlefield>
+			<fields>
+				<field name="DESC_" alias="desc_" />
+				<field name="DEVICEID" alias="deviceid" />
+			</fields>
+			<orderbyfields>DEVICEID ASC</orderbyfields>
+		</layer>
+		<layer>
+			<name>车检器</name>
+			<url>http://128.64.151.12:8399/arcgis/rest/services/changsha/changsha_search_device/FeatureServer/3</url>
+			<expression>DESC_ like '%[value]%'</expression>
+			<textsearchlabel>Select by attribute</textsearchlabel>
+			<titlefield>DESC_</titlefield>
+			<fields>
+				<field name="DESC_" alias="desc_" />
+				<field name="ROAD" alias="road" />
+			</fields>
+			<orderbyfields>DESC_ ASC</orderbyfields>
+		</layer>
+		<layer>
+			<name>SCATS</name>
+			<url>http://128.64.151.12:8399/arcgis/rest/services/changsha/changsha_search_device/FeatureServer/4</url>
+			<expression>DESC_ like '%[value]%'</expression>
+			<textsearchlabel>Select by attribute</textsearchlabel>
+			<titlefield>DESC_</titlefield>
+			<fields>
+				<field name="DESC_" alias="desc_" />
+				<field name="POS_" alias="pos_" />
+			</fields>
+			<orderbyfields>DESC_ ASC</orderbyfields>
+		</layer>
+	</layers>
+</configuration>

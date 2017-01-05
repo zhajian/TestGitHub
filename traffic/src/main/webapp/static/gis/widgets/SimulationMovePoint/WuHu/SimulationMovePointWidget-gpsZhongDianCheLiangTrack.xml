@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<!-- 重点车辆gps轨迹 -->
+<configuration>
+	<type>gpsZhongDianCheLiangTrack</type>
+	<linetype>gpsZhongDianCheLiangTrack</linetype>
+	<pointsymbol>
+		<picturemarkersymbol url="assets/images/mapIcons/WuHu/JingChe-red.png" yoffset="18"/>
+	</pointsymbol>
+</configuration>

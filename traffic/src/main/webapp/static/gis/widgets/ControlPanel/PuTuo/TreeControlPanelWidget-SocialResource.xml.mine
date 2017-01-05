@@ -1,0 +1,260 @@
+<!-- 社会资源 -->
+<configuration>
+	<groups>
+		<group name="政府机关">
+			
+		</group>
+		
+		<group name="基层组织">
+			<item id="JuWeiHui" name="居委会">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="14" />
+						</params>
+					</clickfunction>
+					<clickfunction name="RecordCount">
+						<params>
+							<param name="ServiceUrl" value="http://{serverip}/arcgis/rest/services/putuo/pt_live/MapServer/14" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			<item id="JingWuShi" name="警务室(235个)">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="23" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			<item id="FengBiShiXiaoQu" name="封闭式小区(568个)">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="28" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</group>
+		
+		<group name="公共设施">
+			<item id="ATM" name="ATM机(211个)">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="7" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			<item id="GongGongDianHua" name="公共电话(871个)">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="8" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			<item id="XiaoFangShuan" name="消防栓(1881个)">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="9" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</group>
+		
+		<group name="医疗单位">
+			<item id="YiYuan" name="医院(10个)">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="12" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</group>
+		
+		<group name="学校">
+			<item id="XueXiao" name="学校(212个)">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="19" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</group>
+		
+		<group name="金融单位">
+			<item id="YinHang" name="银行(274个)">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="20" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			<item id="ZhengQuan" name="证券(31个)">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="25" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			<item id="DianDangHang" name="典当行(18个)">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="21" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			<item id="YouZheng" name="邮政(22个)">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="24" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			<item id="BaoXian" name="保险(7个)">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="26" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</group>
+		
+		<group name="商业单位">
+			<item id="DaXingShangChang" name="大型商场(23个)">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="13" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			<item id="24hBianLiDian" name="24小时便利店(226个)">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="18" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			<item id="JiaYouQiZhan" name="加油气站(20个)">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="11" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			<item id="JinYinShiPinDian" name="金银饰品店(50个)">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="16" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</group>
+		
+		<group name="企业单位">
+			
+		</group>
+		
+		<group name="事业单位">
+			
+		</group>
+		
+		<group name="文娱场所">
+			
+		</group>
+		
+		<group name="集贸市场">
+			<item id="ShiChang" name="市场(53个)">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="6" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</group>
+		
+		<group name="停车场">
+			
+		</group>
+		
+		<group name="视频资源">
+			<item id="SheHuiShiPin" name="社会视频(3191个)">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="2" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			<item id="GongAnShiPin" name="公安视频(1837个)">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="公安视频" />
+						</params>
+					</clickfunction>
+<!-- 					<clickfunction name="ChangeLayer"> -->
+<!-- 						<params> -->
+<!-- 							<param name="ServiceName" value="3" /> -->
+<!-- 						</params> -->
+<!-- 					</clickfunction> -->
+				</clickfunctions>
+			</item>
+			<item id="GaoQingKaKou" name="高清卡口(44个)">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="4" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</group>
+		
+		<group name="楼宇大厦">
+			<item id="DaSha" name="大厦(74幢)">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="32" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</group>
+	</groups>
+	
+</configuration>

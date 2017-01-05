@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+<configuration>
+	<showresult>true</showresult>
+	<layers>
+		<layer>
+			<type>电子警察</type>
+			<url>http://{serverip}/arcgis/rest/services/yiwu/yiwu_device/MapServer/3</url>
+			<idfield>devid</idfield>
+		</layer>
+		
+		<layer>
+			<type>发布段</type>
+			<url>http://{serverip}/arcgis/rest/services/yw/YiWu-Issuesect/MapServer/0</url>
+			<idfield>FaBuDuan.ISSUESECT</idfield>
+			<zoomscale>24000</zoomscale>
+			<simplelinesymbol color="0x3E6FBC" width="4"/>
+			<popup>
+				<title>{FaBuDuan.PATHNAME}</title>
+				<fields>
+					<field name="FaBuDuan.PATHNAME" />
+					<field name="FaBuDuan.ISSUESECT" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+				<buttons>
+					<button label="详细信息" action="openDevice" type="FBD" idfield="FaBuDuan.ISSUESECT" />
+				</buttons>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>行政区</type>
+			<url>http://{serverip}/arcgis/rest/services/yw/YiWu-IndexRegion-XZQ/MapServer/0</url>
+			<idfield>IndexRegion_XZQ.RegionID</idfield>
+			<popup>
+				<title>{IndexRegion_XZQ.RegionName}</title>
+				<fields>
+					<field name="IndexRegion_XZQ.RegionName"/>
+					<field name="FSTRINDEXRAW" alias="指数: " visible="true"/>
+					<field name="FSTRSPEED" alias="车速: " visible="true"/>
+					<field name="FSTRSTATEDESC" alias="状态: " visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		
+		<layer>
+			<type>热点区</type>
+			<url>http://{serverip}/arcgis/rest/services/yw/YiWu-IndexRegion-RD/MapServer/0</url>
+			<idfield>IndexRegion_RD.RegionID</idfield>
+			<popup>
+				<title>{IndexRegion_RD.RegionName}</title>
+				<fields>
+					<field name="IndexRegion_RD.RegionName"/>
+					<field name="FSTRINDEXRAW" alias="指数: " visible="true"/>
+					<field name="FSTRSPEED" alias="车速: " visible="true"/>
+					<field name="FSTRSTATEDESC" alias="状态: " visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+	</layers>
+</configuration>

@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{ST_DSR_COM}</title>
+	<fields>
+		<field name="ST_LA_NO" alias="立案编号：" visible="true" />
+		<field name="ST_YEAR" alias="时间：" visible="true" />
+		<field name="ST_ADDRESS" alias="地址：" visible="true" />
+		<field name="ST_ILLEGAL" alias="处罚事项：" visible="true" />
+		<field name="ST_ORDER" alias="处罚：" visible="true" />
+		<field name="ST_JAQK" alias="结案情况：" visible="true" />
+		<field name="ST_ZGQK" alias="结果：" visible="true" />
+	</fields>
+	
+	<showzoomtobutton>false</showzoomtobutton>
+	
+	<showrelatedrecords>false</showrelatedrecords>
+	<showattachments>false</showattachments>
+<!-- 	<buttons> -->
+<!-- 		<button label="搜索污染源" action="buffersearch" type="" idfield=""  widgetName=""  -->
+<!-- 	 			queryLayerUrl="http://192.168.130.17:6080/arcgis/rest/services/HuanBaoJu/XinFangDian/MapServer/1"   -->
+<!-- 	 			geometryServiceUrl="http://192.168.130.17:6080/arcgis/rest/services/Utilities/Geometry/GeometryServer"/>  -->
+<!-- 	</buttons> -->
+<!-- 	<buttons> -->
+<!-- 		<button label="搜索污染源" action="buffersearch" type="" idfield=""  widgetName=""  -->
+<!-- 	 			queryLayerUrl="http://10.101.59.118:8399/arcgis/rest/services/shhbgis/MapServer/12"   -->
+<!-- 	 			geometryServiceUrl="http://192.168.130.17:6080/arcgis/rest/services/Utilities/Geometry/GeometryServer"/>  -->
+<!-- 	</buttons>  -->
+</configuration>

@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{FSTR_DESC}</title>
+	<fields>
+		<field name="FSTR_DESC" />
+		<field name="PORT" alias="设备编号：" visible="true" />
+		<field name="DEVICEID" />
+		<field name="ROADNAME" alias="道路名称：" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+	   <button label="详细信息" action="openDevice" type="SXJ" idfield="DEVICEID" />
+	</buttons>
+</configuration>

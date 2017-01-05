@@ -1,0 +1,31 @@
+<!-- 视频检测器 -->
+<?xml version="1.0" ?>
+<configuration>
+	<type>ShiPinJianCeQi</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify></widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify></widgetclosenotify>
+	
+	<initvisible>false</initvisible>
+	
+	<popup>
+		<title>{name}</title>
+		<fields>
+			<field name="name"/>
+			<field name="fintVisibility" alias="能见度：" visible="true"/>
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+		<buttons>
+			<button label="详细信息" action="openDevice" type="ShiPinJianCeQi"/>
+		</buttons>
+	</popup>
+	
+	<simplerenderer>
+		<picturemarkersymbol url="assets/images/mapIcons/WuHu/QiXiangZhan-blue.png" yoffset="18"/>
+	</simplerenderer>
+	
+	<clickfunction>
+		<action>showInfoWindow</action>
+	</clickfunction>
+</configuration>

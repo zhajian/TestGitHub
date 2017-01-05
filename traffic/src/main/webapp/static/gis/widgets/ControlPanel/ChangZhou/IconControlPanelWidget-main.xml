@@ -1,0 +1,71 @@
+<configuration>
+	<layout direction="horizontal" gap="10" />
+	<groups>
+		<group>
+			<item id="fbd" name="发布段" image="assets/images/buttons/FaBuDuan.png" initstate="enable">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="发布段" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="sxj_fixed" name="固定摄像机" image="assets/images/buttons/SheXiangJi.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="设备" />
+							<param name="LayerId" value="0" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="sxj_remote" name="遥控摄像机" image="assets/images/buttons/KaKou.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="设备" />
+							<param name="LayerId" value="3" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="cjq" name="检测器" image="assets/images/buttons/DuanMian.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="设备" />
+							<param name="LayerId" value="1" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="qbb" name="情报板" image="assets/images/buttons/QingBaoBan.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="设备" />
+							<param name="LayerId" value="2" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="zdd" name="匝道控制器" image="assets/images/buttons/ZaDao.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="设备" />
+							<param name="LayerId" value="4" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</group>
+	</groups>
+</configuration>

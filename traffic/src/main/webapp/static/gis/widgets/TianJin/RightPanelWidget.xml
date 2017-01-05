@@ -1,0 +1,242 @@
+<?xml version="1.0" ?>
+<configuration>
+	<remoteobject>
+<!-- 		<endpoint>http://192.168.0.115:8080/tjdp/spring/messagebroker/amf</endpoint> -->
+		<endpoint>http://172.16.4.222:18080/tjdp/spring/messagebroker/amf</endpoint>
+	</remoteobject>
+	
+	<deptlist>
+		<dept name="全部"
+			  id=""
+			  color="0x767ecf" 
+			  skinclass="purple"
+			  selected="true"/>
+		<dept name="东丽公路局" 
+			  id="4"
+			  color="0x79c950"
+			  skinclass="green"/>
+		<dept name="津南公路局" 
+			  id="5"
+			  color="0xfeb73b"
+			  skinclass="yellow"/>
+		<dept name="西青公路局"
+			  id="6" 
+			  color="0xff7153"
+			  skinclass="red"/>
+		<dept name="北辰公路局"
+			  id="7" 
+			  color="0x767ecf"
+			  skinclass="purple"/>
+		<dept name="滨海一处" 
+			  id="9"
+			  color="0x4ac7f7"
+			  skinclass="blue"/>
+		<dept name="滨海二处" 
+			  id="8"
+			  color="0x79c950"
+			  skinclass="green"/>
+		<dept name="滨海三处" 
+			  id="10"
+			  color="0xfeb73b"
+			  skinclass="yellow"/>
+		<dept name="蓟县交通局"
+			  id="11" 
+			  color="0xff7153"
+			  skinclass="red"/>
+		<dept name="宝坻交通局"
+			  id="12" 
+			  color="0x767ecf"
+			  skinclass="purple"/>
+		<dept name="武清交通局" 
+			  id="13"
+			  color="0x4ac7f7"
+			  skinclass="blue"/>
+		<dept name="宁河交通局" 
+			  id="14"
+			  color="0x79c950"
+			  skinclass="green"/>
+		<dept name="静海交通局" 
+			  id="15"
+			  color="0xfeb73b"
+			  skinclass="yellow"/>
+		<dept name="公路直属处"
+			  id="3"
+			  color="0xff7153"
+			  skinclass="red"/>
+		<dept name="天津大道" 
+			  id="41"
+			  color="0x767ecf"
+			  skinclass="purple"/>
+	</deptlist>
+	
+	<districtlist>
+		<district name="全部"
+			  color="0x767ecf" 
+			  skinclass="purple"
+			  selected="true"/>
+		<district name="东丽区"
+			  color="0x4ac7f7"
+			  skinclass="blue"/>
+		<district name="西青区" 
+			  color="0x79c950"
+			  skinclass="green"/>
+		<district name="北辰区" 
+			  color="0xfeb73b"
+			  skinclass="yellow"/>
+		<district name="津南区"
+			  color="0xff7153"
+			  skinclass="red"/>
+		<district name="滨海新区"
+			  color="0x767ecf"
+			  skinclass="purple"/>
+		<district name="武清区" 
+			  color="0x4ac7f7"
+			  skinclass="blue"/>
+		<district name="宝坻区" 
+			  color="0x79c950"
+			  skinclass="green"/>
+		<district name="宁河县" 
+			  color="0xfeb73b"
+			  skinclass="yellow"/>
+		<district name="静海县"
+			  color="0xff7153"
+			  skinclass="red"/>
+		<district name="蓟县"
+			  color="0x767ecf"
+			  skinclass="purple"/>
+	</districtlist>
+	
+	<!-- 路况专题所需配置 -->
+	<lukuang>
+		<typelist>
+			<type label="全部        01"
+				  name="全部" 
+				  id=""
+				  color="0x4ac7f7"
+				  position="left"
+				  skinclass="question01"
+				  selected="true"/>
+			<type label="公路设施因人为损坏        02"
+				  name="公路设施因人为造成损坏" 
+				  id="2"
+				  color="0x79c850"
+				  position="left"
+				  skinclass="question02"/>
+			<type label="公路交通阻塞事件        03"
+				  name="公路交通阻塞事件" 
+				  id="3"
+				  color="0xfeb73b"
+				  position="left"
+				  skinclass="question03"/>
+			<type label="公路路面塌陷管线爆裂        04"
+				  name="公路路面塌陷、管线爆裂" 
+				  id="4"
+				  color="0xff7053"
+				  position="left"
+				  skinclass="question04"/>
+			<type label="公路路面雨后积水        05"
+				  name="公路路面雨后积水" 
+				  id="7"
+				  color="0x8b99fe"
+				  position="left"
+				  skinclass="question05"/>
+			<type label="公路路面撒落污染(100平米以上)        06"
+				  name="公路路面撒落污染（100M2以上）" 
+				  id="5"
+				  color="0xfeb73b"
+				  position="left"
+				  skinclass="question06"/>
+			<type label="12        公路设施因事故损坏" 
+				  name="公路设施因事故造成损坏" 
+				  id="1"
+				  color="0x8b99fe"
+				  position="right"
+				  skinclass="question12"/>
+			<type label="11        路政清理"
+				  name="路政清理" 
+				  id="19"
+				  color="0x4ac7f7"
+				  position="right"
+				  skinclass="question11"/>
+			<type label="10        公路填垫边沟违章建筑"
+				  name="公路填垫边沟、违章建筑" 
+				  id="6"
+				  color="0x79c850"
+				  position="right"
+				  skinclass="question10"/>
+			<type label="09        公路范围内设置非公路标志"
+				  name="公路范围内设置非公路标志" 
+				  id="9"
+				  color="0xfeb73b"
+				  position="right"
+				  skinclass="question09"/>
+			<type label="08        公路范围内非公路设施损坏"
+				  name="公路范围内非公路设施损坏" 
+				  id="10"
+				  color="0xff7053"
+				  position="right"
+				  skinclass="question08"/>
+			<type label="07        公路因工涉路施工"
+				  name="公路涉路施工（因工掘路）" 
+				  id="8"
+				  color="0x79c850"
+				  position="right"
+				  skinclass="question07"/>
+		</typelist>
+	</lukuang>
+	
+	<!-- 行政审批 -->
+	<xingzhengshenpi>
+		<typelist>
+			<type label="全部        01"
+				  name="全部" 
+				  id=""
+				  color="0x4ac7f7"
+				  position="left"
+				  skinclass="question01"
+				  selected="true"/>
+			<type label="公路区内管线设施        02"
+				  name="公路区内管线设施" 
+				  id="1"
+				  color="0x79c850"
+				  position="left"
+				  skinclass="question02"/>
+			<type label="平交道口桥涵        03"
+				  name="平交道口桥涵" 
+				  id="2"
+				  color="0xfeb73b"
+				  position="left"
+				  skinclass="question03"/>
+			<type label="用地内非公路设施        04"
+				  name="用地内非公路设施" 
+				  id="3"
+				  color="0xff7053"
+				  position="left"
+				  skinclass="question04"/>
+			<type label="08        临时占用挖掘" 
+				  name="临时占用挖掘" 
+				  id="11"
+				  color="0x8b99fe"
+				  position="right"
+				  skinclass="question12"/>
+			<type label="07        履带车等机具行驶"
+				  name="履带车等机具行驶" 
+				  id="6"
+				  color="0x4ac7f7"
+				  position="right"
+				  skinclass="question11"/>
+			<type label="06        临时占用挖掘"
+				  name="临时占用挖掘" 
+				  id="5"
+				  color="0x79c850"
+				  position="right"
+				  skinclass="question10"/>
+			<type label="05        跨空及用地内管线设施"
+				  name="跨空及用地内管线设施" 
+				  id="4"
+				  color="0xfeb73b"
+				  position="right"
+				  skinclass="question09"/>
+		</typelist>
+	</xingzhengshenpi>
+</configuration>

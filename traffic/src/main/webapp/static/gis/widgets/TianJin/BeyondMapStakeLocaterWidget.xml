@@ -1,0 +1,557 @@
+<?xml version="1.0" ?>
+<configuration>
+	<roadserviceurl>http://{beyondserverip}/gisapi/rest/roadservice/zhlnglat?token=BF833A1145CB44669FB387DEA62AC464&roadCode={roadCode}&startStake={startStake}&endStake={endStake}</roadserviceurl>
+	<bufferserviceurl>http://{beyondserverip}/gisapi/rest/geometryservice/buffer?point={x},{y}&distance={distance}</bufferserviceurl>
+	<roads>
+		<road>
+			<cell fieldname="LX_ID">G1</cell>
+			<cell fieldname="LX_MC">京哈高速</cell>
+			<cell fieldname="LX_LX">国道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">G2</cell>
+			<cell fieldname="LX_MC">京沪高速</cell>
+			<cell fieldname="LX_LX">国道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">G3</cell>
+			<cell fieldname="LX_MC">京台高速</cell>
+			<cell fieldname="LX_LX">国道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">G18</cell>
+			<cell fieldname="LX_MC">荣乌高速</cell>
+			<cell fieldname="LX_LX">国道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">G25</cell>
+			<cell fieldname="LX_MC">长深高速</cell>
+			<cell fieldname="LX_LX">国道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">G2501</cell>
+			<cell fieldname="LX_MC">滨保高速</cell>
+			<cell fieldname="LX_LX">国道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S1</cell>
+			<cell fieldname="LX_MC">津蓟高速</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S2</cell>
+			<cell fieldname="LX_MC">津宁高速</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S3</cell>
+			<cell fieldname="LX_MC">津滨高速</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S4</cell>
+			<cell fieldname="LX_MC">津港高速</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S5</cell>
+			<cell fieldname="LX_MC">荣乌联络线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S6</cell>
+			<cell fieldname="LX_MC">津沧高速</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S7</cell>
+			<cell fieldname="LX_MC">津保高速</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S11</cell>
+			<cell fieldname="LX_MC">海滨高速</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S21</cell>
+			<cell fieldname="LX_MC">塘承高速</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S30</cell>
+			<cell fieldname="LX_MC">京津高速</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S3011</cell>
+			<cell fieldname="LX_MC">京沪联络线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S3012</cell>
+			<cell fieldname="LX_MC">京津联络线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S3015</cell>
+			<cell fieldname="LX_MC">津汉联络线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S40</cell>
+			<cell fieldname="LX_MC">京津塘高速</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S50</cell>
+			<cell fieldname="LX_MC">津晋高速</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S60</cell>
+			<cell fieldname="LX_MC">滨石高速</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">G102</cell>
+			<cell fieldname="LX_MC">北京-哈尔滨</cell>
+			<cell fieldname="LX_LX">国道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">G103</cell>
+			<cell fieldname="LX_MC">北京-塘沽</cell>
+			<cell fieldname="LX_LX">国道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">G104</cell>
+			<cell fieldname="LX_MC">北京-福州</cell>
+			<cell fieldname="LX_LX">国道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">G112</cell>
+			<cell fieldname="LX_MC">北京环线</cell>
+			<cell fieldname="LX_LX">国道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">G205</cell>
+			<cell fieldname="LX_MC">山深线</cell>
+			<cell fieldname="LX_LX">国道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S101</cell>
+			<cell fieldname="LX_MC">津围线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S102</cell>
+			<cell fieldname="LX_MC">津芦线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S103</cell>
+			<cell fieldname="LX_MC">津汉线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S104</cell>
+			<cell fieldname="LX_MC">津北线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S105</cell>
+			<cell fieldname="LX_MC">津沽线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S106</cell>
+			<cell fieldname="LX_MC">津歧线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S107</cell>
+			<cell fieldname="LX_MC">津港线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S109</cell>
+			<cell fieldname="LX_MC">津涞线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S110</cell>
+			<cell fieldname="LX_MC">津静线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S111</cell>
+			<cell fieldname="LX_MC">津霸线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S112</cell>
+			<cell fieldname="LX_MC">津永线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S113</cell>
+			<cell fieldname="LX_MC">外环线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S115</cell>
+			<cell fieldname="LX_MC">津淄线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S116</cell>
+			<cell fieldname="LX_MC">津文公路</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S119</cell>
+			<cell fieldname="LX_MC">新津杨线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S120</cell>
+			<cell fieldname="LX_MC">新津涞线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S121</cell>
+			<cell fieldname="LX_MC">津榆复线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S123</cell>
+			<cell fieldname="LX_MC">滨玉线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S124</cell>
+			<cell fieldname="LX_MC">滨唐线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S125</cell>
+			<cell fieldname="LX_MC">天津大道</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S126</cell>
+			<cell fieldname="LX_MC">港城大道</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S127</cell>
+			<cell fieldname="LX_MC">津武线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S128</cell>
+			<cell fieldname="LX_MC">机场路二线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S129</cell>
+			<cell fieldname="LX_MC">滨水西道延长线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S203</cell>
+			<cell fieldname="LX_MC">遵玉线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S204</cell>
+			<cell fieldname="LX_MC">塘汉线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S205</cell>
+			<cell fieldname="LX_MC">宝芦线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S206</cell>
+			<cell fieldname="LX_MC">塘港线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S207</cell>
+			<cell fieldname="LX_MC">葛万线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S208</cell>
+			<cell fieldname="LX_MC">汉港路</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S209</cell>
+			<cell fieldname="LX_MC">飞新线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S210</cell>
+			<cell fieldname="LX_MC">平宝线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S211</cell>
+			<cell fieldname="LX_MC">崔杨线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S212</cell>
+			<cell fieldname="LX_MC">南东线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S213</cell>
+			<cell fieldname="LX_MC">团王线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S219</cell>
+			<cell fieldname="LX_MC">九园线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S220</cell>
+			<cell fieldname="LX_MC">宝白公路</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S223</cell>
+			<cell fieldname="LX_MC">津静复线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S225</cell>
+			<cell fieldname="LX_MC">团唐线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S227</cell>
+			<cell fieldname="LX_MC">杨崔支线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S228</cell>
+			<cell fieldname="LX_MC">京福支线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S229</cell>
+			<cell fieldname="LX_MC">武香线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S230</cell>
+			<cell fieldname="LX_MC">营建线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S231</cell>
+			<cell fieldname="LX_MC">高王线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S233</cell>
+			<cell fieldname="LX_MC">钱顺路</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S234</cell>
+			<cell fieldname="LX_MC">汉蔡线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S237</cell>
+			<cell fieldname="LX_MC">东海路</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S239</cell>
+			<cell fieldname="LX_MC">机场大道</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S241</cell>
+			<cell fieldname="LX_MC">东沽路</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S243</cell>
+			<cell fieldname="LX_MC">宝武路</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S245</cell>
+			<cell fieldname="LX_MC">武静线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S246</cell>
+			<cell fieldname="LX_MC">静青路</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S301</cell>
+			<cell fieldname="LX_MC">马平线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S302</cell>
+			<cell fieldname="LX_MC">喜邦线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S303</cell>
+			<cell fieldname="LX_MC">玉杨线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S304</cell>
+			<cell fieldname="LX_MC">唐通线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S305</cell>
+			<cell fieldname="LX_MC">潘青线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S306</cell>
+			<cell fieldname="LX_MC">崔廊线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S307</cell>
+			<cell fieldname="LX_MC">梅丰线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S308</cell>
+			<cell fieldname="LX_MC">北杨线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S309</cell>
+			<cell fieldname="LX_MC">机场线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S310</cell>
+			<cell fieldname="LX_MC">静霸线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S311</cell>
+			<cell fieldname="LX_MC">港静线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S312</cell>
+			<cell fieldname="LX_MC">制万线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S313</cell>
+			<cell fieldname="LX_MC">团大线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S314</cell>
+			<cell fieldname="LX_MC">汉南线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S315</cell>
+			<cell fieldname="LX_MC">港中线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S316</cell>
+			<cell fieldname="LX_MC">大丰线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S317</cell>
+			<cell fieldname="LX_MC">二八线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S318</cell>
+			<cell fieldname="LX_MC">津塘二线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S320</cell>
+			<cell fieldname="LX_MC">汉沽环线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S321</cell>
+			<cell fieldname="LX_MC">潮阳大道</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S322</cell>
+			<cell fieldname="LX_MC">唐廊线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S323</cell>
+			<cell fieldname="LX_MC">大东线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S324</cell>
+			<cell fieldname="LX_MC">武宁公路</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S326</cell>
+			<cell fieldname="LX_MC">林大路</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S329</cell>
+			<cell fieldname="LX_MC">金钟路</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S331</cell>
+			<cell fieldname="LX_MC">赛达大道</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S350</cell>
+			<cell fieldname="LX_MC">津南环线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S360</cell>
+			<cell fieldname="LX_MC">武清环线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S370</cell>
+			<cell fieldname="LX_MC">宝坻环线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S380</cell>
+			<cell fieldname="LX_MC">静海环线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+		<road>
+			<cell fieldname="LX_ID">S390</cell>
+			<cell fieldname="LX_MC">蓟县环线</cell>
+			<cell fieldname="LX_LX">省道</cell>
+		</road>
+	</roads>
+</configuration>

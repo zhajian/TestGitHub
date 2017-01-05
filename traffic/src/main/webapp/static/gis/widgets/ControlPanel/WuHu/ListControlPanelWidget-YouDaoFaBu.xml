@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<configuration>
+	<menu>
+		<itemgroup label="设施设备">
+			<item label="诱导板" initenable="true">
+				<clickfunctions>
+					<clickfunction name="ChangeOverlayVisible">
+						<params>
+							<param name="WidgetName" value="诱导板Overlay"/>
+							<param name="OverlayType" value="QingBaoBan" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</itemgroup>
+		
+	</menu>
+</configuration>

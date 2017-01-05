@@ -1,0 +1,9 @@
+<!-- 在线监测 -->
+<?xml version="1.0" ?>
+<configuration>
+	<title>{Name}</title>
+	<fields>
+		<field name="Name" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+</configuration>

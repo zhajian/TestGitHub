@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<configuration>
+	<type>kkAlert</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify></widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify></widgetclosenotify>
+	<simplerenderer>
+		<picturemarkersymbol url="assets/images/Red_glow.swf" xoffset="-15" yoffset="15"/>
+	</simplerenderer>
+</configuration>

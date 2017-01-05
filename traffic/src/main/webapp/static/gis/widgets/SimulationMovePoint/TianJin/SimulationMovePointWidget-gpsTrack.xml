@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<configuration>
+	<type>gpsTrack</type>
+	<linetype>gpsTrack</linetype>
+	<pointsymbol>
+		<picturemarkersymbol url="assets/images/car.png"/>
+	</pointsymbol>
+</configuration>

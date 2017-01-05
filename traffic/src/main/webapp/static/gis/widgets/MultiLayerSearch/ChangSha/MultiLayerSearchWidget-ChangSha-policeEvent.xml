@@ -1,0 +1,174 @@
+<configuration>
+	<layerinfo>
+		<find>
+			<url>http://{serverip}/arcgis/rest/services/changsha/changsha_search_device/MapServer</url>
+			<fields>DESC,NAME</fields>
+		</find>
+
+		<uniquevaluerenderer field="layerName">
+			<picturemarkersymbol url="assets/images/i_pushpin_centered.png" />
+
+			<uniquevalueinfo value="SCATS">
+				<picturemarkersymbol url="assets/images/mapIcons/XinHaoJi-blue.png"
+									 height="26" width="22" yoffset="13" />
+			</uniquevalueinfo>
+
+			<uniquevalueinfo value="车检器">
+				<picturemarkersymbol url="assets/images/mapIcons/DuanMian-blue.png"
+									 height="26" width="22" yoffset="13" />
+			</uniquevalueinfo>
+
+			<uniquevalueinfo value="电子警察">
+				<picturemarkersymbol url="assets/images/mapIcons/DianZiJingCha-blue.png"
+									 height="26" width="22" yoffset="13" />
+			</uniquevalueinfo>
+
+			<uniquevalueinfo value="摄像机">
+				<picturemarkersymbol url="assets/images/mapIcons/SheXiangJi-blue.png"
+								  	 height="26" width="22" yoffset="13" />
+			</uniquevalueinfo>
+
+			<uniquevalueinfo value="诱导板">
+				<picturemarkersymbol url="assets/images/mapIcons/QingBaoBan-blue.png"
+									 height="26" width="22" yoffset="13" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="发布段">
+				<simplelinesymbol color="0x3E6FBC" width="2" />
+			</uniquevalueinfo>
+
+			<uniquevalueinfo value="PoliceOverlay">
+				<picturemarkersymbol url="assets/images/mapIcons/JingCha-blue.png" 
+									 height="26" width="22" yoffset="13" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="PoliceCarOverlay">
+				<picturemarkersymbol url="assets/images/mapIcons/JingChe-blue.png" 
+									 height="26" width="22" yoffset="13" />
+			</uniquevalueinfo>
+		</uniquevaluerenderer>
+
+		<popups>
+			<popup layername="default">
+				<title>{DESC}</title>
+				<idfieldname>DEVICEID</idfieldname>
+				<fields>
+					<field name="DESC" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+
+			<popup layername="车检器">
+				<title>{DESC}</title>
+				<idfieldname>ID</idfieldname>
+				<fields>
+					<field name="DESC_" />
+					<field name="ID" alias="编号" visible="true" />
+					<field name="road" alias="所属道路" visible="true" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+				<buttons>
+					<button label="详细信息" action="openDevice" type="CJQ" idfield="ID" />
+				</buttons>
+			</popup>
+
+			<popup layername="电子警察">
+				<title>{DESC}</title>
+				<idfieldname>DEVICEID</idfieldname>
+				<fields>
+					<field name="DESC_" />
+					<field name="DEVICEID" alias="编号" visible="true" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+				<buttons>
+					<button label="详细信息" action="openDevice" type="DZJC" idfield="DEVICEID" />
+				</buttons>
+			</popup>
+
+			<popup layername="诱导板">
+				<title>{DESC_}</title>
+				<idfieldname>DEVICEID</idfieldname>
+				<fields>
+					<field name="DESC_" />
+					<field name="DEVICEID" alias="编号" visible="true" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+				<buttons>
+					<button label="详细信息" action="openDevice" type="QBB" idfield="DEVICEID" />
+				</buttons>
+			</popup>
+	
+			<popup layername="摄像机">
+				<title>{DESC_}</title>
+				<idfieldname>DEVICEID</idfieldname>
+				<fields>
+					<field name="DESC_" />
+					<field name="DEVICEID" alias="编号" visible="true" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+				<buttons>
+					<button label="详细信息" action="openDevice" type="SXJ" idfield="DEVICEID" />
+				</buttons>
+			</popup>
+	
+			<popup layername="SCATS">
+				<title>{DESC}</title>
+				<idfieldname>ID</idfieldname>
+				<fields>
+					<field name="DESC_" />
+					<field name="ID" alias="编号" visible="true" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+				<buttons>
+					<button label="详细信息" action="openDevice" type="XHJ" idfield="ID" />
+				</buttons>
+			</popup>
+			
+			<popup layername="发布段">
+				<title>{NAME}</title>
+				<idfieldname>ISSUEID</idfieldname>
+				<fields>
+					<field name="NAME" />
+					<field name="ISSUEID" alias="编号" visible="true" />
+					<field name="车道数" visible="true" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+			<popup layername="PoliceOverlay">
+				<title>{policeName}</title>
+				<idfieldname>policeSn</idfieldname>
+				<fields>
+					<field name="policeSn" alias="警员编号" visible="true" />
+					<field name="policeName"/>
+					<field name="departmentName" alias="所属部门" visible="true" />
+					<field name="dutyName" alias="职务" visible="true" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+				<buttons>
+					<button label="发送短信" action="openDevice" type="textPolice"
+							idfield="policeId" />
+					<button label="呼叫警员" action="openDevice" type="phonePolice"
+							idfield="policeId" />
+				</buttons>
+			</popup>
+			
+			<popup layername="PoliceCarOverlay">
+				<title>{plateNo}</title>
+				<idfieldname>plateNo</idfieldname>
+				<fields>
+					<field name="plateNo" alias="车牌号"/>
+					<field name="departmentName" alias="所属部门" visible="true" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</popups>
+	</layerinfo>
+	
+	
+	<!-- 要搜索的动态数据 -->
+	<overlays>
+		<overlay name="PoliceOverlay" label="警员" titlefield="policeName" idfield="policeSn" defaultselected="true"/>
+		<overlay name="PoliceCarOverlay" label="警车" titlefield="plateNo" idfield="policeCarId" defaultselected="true"/>
+	</overlays>
+</configuration>

@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<configuration>
+	<style>
+		<!--textColor,backgroundColor,rolloverColor,selectionColor,titleColor -->
+		<colors>0x000000,0xFFFFFF,0xDDDDDD,0x3E6FBC,0x3E6FBC</colors>
+		<navigationcolors>0xFFFFFF,0x3E6FBC,0xDDDDDD,0x3E6FBC,0xFFFFFF</navigationcolors>
+		<alpha>0.8</alpha>
+		<font name="微软雅黑" size="14" />
+	</style>
+
+	<arcgisserverip>localhost:6080</arcgisserverip>
+<!-- 	<arcgisserverip>116.228.238.34:32125</arcgisserverip> -->
+
+	<geometryservice url="http://sampleserver6.arcgisonline.com/arcgis/rest/services/Utilities/Geometry/GeometryServer"/>
+<!-- 	<geometryservice url="http://192.168.130.17:6080/arcgis/rest/services/Utilities/Geometry/GeometryServer"/> -->
+	
+	<!-- UI elements -->
+	<widget left="20" top="10" 
+			config="widgets/Navigation/NavigationWidget.xml"
+		    url="widgets/Navigation/NavigationWidget.swf" />
+		    
+	<widget left="3" bottom="3" visible="true"
+			config="widgets/Coordinate/CoordinateWidget.xml" 
+			url="widgets/Coordinate/CoordinateWidget.swf" />
+
+	<!-- 天地图配置 -->
+	<map top="0" initialextent="121.4385 31.1755 121.5622 31.2697 102100"
+		 scalebarvisible="false" esrilogovisible="false">
+		<basemaps>
+<!-- 			<layer label="综合图" type="tiled" visible="true" icon="assets/images/basemap_topographic.jpg" -->
+<!-- 				   url="http://map4.shanghai-map.net/RemoteRest/services/SHMAP_D/MapServer" /> -->
+<!-- 		    <layer label="影像图" type="tiled" visible="false" icon="assets/images/basemap_imagery.jpg" -->
+<!-- 				   url="http://map4.shanghai-map.net/RemoteRest/services/SHMAP_image/MapServer" /> -->
+<!-- 			<layer label="地形图" type="tianditu" visible="true" imageformat="tiles"  -->
+<!-- 				   style="default" servicemode="KVP" layerid="vec" tilematrixsetid="c" -->
+<!-- 				   url="http://t0.tianditu.com/vec_c/wmts" /> -->
+<!--            <layer label="天地图注记" type="tianditu" visible="true" imageformat="tiles" -->
+<!-- 				   style="default" servicemode="KVP" layerid="cva" tilematrixsetid="c" -->
+<!-- 				   url="http://t0.tianditu.com/cva_c/wmts" /> -->
+           <layer label="ArcGISMap" type="tiled" visible="true"
+           		url="http://cache1.arcgisonline.cn/ArcGIS/rest/services/ChinaOnlineStreetCold/MapServer"/>
+		</basemaps>
+		<operationallayers>
+<!-- 			<layer label="陆家嘴" type="dynamic" visible="true" -->
+<!-- 				url="http://{serverip}/arcgis/rest/services/PuDongGongJiao/PuDongGongJiao_LuJiaZui/MapServer"/> -->
+		</operationallayers>
+	</map>
+	
+	<!-- widgets organized into widget containers that manage close/open etc -->
+	<!-- supported layout property options: horizontal(default)|float|vertical|fix -->
+	<widgetcontainer>
+		<widget label="陆家嘴高亮" preload="open" 
+			config="widgets/PuDongGongJiao/LuJiaZhuiHighLightWidget.xml"
+			url="widgets/PuDongGongJiao/LuJiaZhuiHighLightWidget.swf"/>
+	</widgetcontainer>
+	
+	
+</configuration>

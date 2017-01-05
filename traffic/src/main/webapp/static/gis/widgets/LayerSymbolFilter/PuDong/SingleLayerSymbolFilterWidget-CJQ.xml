@@ -1,0 +1,32 @@
+<!--车检器 -->
+<configuration>
+	<layer>http://{serverip}/arcgis/rest/services/pudong/pd_device/MapServer/3</layer>
+	
+	<refreshrate>0</refreshrate>
+	<refreshneedquery>false</refreshneedquery>
+	
+	<widgetvisible>false</widgetvisible>
+	
+	<clickfunction>
+		<action>openDevice</action>
+		<type>CLJC</type>
+		<idfield>SDE.sb_cljcq.DEVICEID</idfield>
+	</clickfunction>
+	
+	<uniquevaluerenderer field="PD_PJ.RT_DEVCOMMSTATE_V.FSTR_STATE">
+		<defaultlabel>未知</defaultlabel>
+		<picturemarkersymbol url="assets/images/mapIcons/FaBuDuan-grey.png" yoffset="13" />
+
+		<uniquevalueinfo value="connect" label="连接">
+			<picturemarkersymbol url="assets/images/mapIcons/FaBuDuan-blue.png" yoffset="13" />
+		</uniquevalueinfo>
+
+		<uniquevalueinfo value="malfunction" label="异常">
+			<picturemarkersymbol url="assets/images/mapIcons/FaBuDuan-yellow.png" yoffset="13" />
+		</uniquevalueinfo>
+
+		<uniquevalueinfo value="disconnect" label="中断">
+			<picturemarkersymbol url="assets/images/mapIcons/FaBuDuan-red.png" yoffset="13" />
+		</uniquevalueinfo>
+	</uniquevaluerenderer>
+</configuration>

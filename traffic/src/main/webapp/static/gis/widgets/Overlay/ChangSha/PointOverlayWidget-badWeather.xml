@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<configuration>
+	<type>badweather</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify>onBadweatherOverlayRun</widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify>onBadweatherOverlayClose</widgetclosenotify>
+	<popup>
+		<title>{type}</title>
+		<fields>
+			<field name="type" alias="灾害类型" visible="false"/>
+			<field name="locationDescription" alias="位置" visible="true"/>
+			<field name="area" alias="所在辖区" visible="true"/>
+			<field name="affectDescription" alias="影响道路" visible="true"/>
+			<field name="remark" alias="备注" visible="true"/>
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+	</popup>
+	<simplerenderer>
+		<picturemarkersymbol url="assets/images/mapIcons/BadWeather-red.png"/>
+	</simplerenderer>
+    
+    <clickfunction>
+		<action>showInfoWindow</action>
+	</clickfunction>
+</configuration>

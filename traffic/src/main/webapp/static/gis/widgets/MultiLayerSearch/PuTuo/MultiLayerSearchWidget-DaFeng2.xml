@@ -1,0 +1,135 @@
+<configuration>
+	<type>DaFeng2</type>
+	
+	<layerinfo>
+		<find>
+			<url>http://{serverip}/arcgis/rest/services/pt_search_event/MapServer</url>
+			<fields>MC,COMPANY,SXJMC</fields>
+			<layerids>0,1,2,3,4,5,6,7,8,9,11,13,14,15,16,17,18,19,20</layerids>
+		</find>
+
+		<uniquevaluerenderer field="layerName">
+			<picturemarkersymbol url="assets/images/i_pushpin_centered.png" />
+		</uniquevaluerenderer>
+
+		<popups>
+			<popup layername="default">
+				<title>{MC}</title>
+				<idfieldname>ID</idfieldname>
+				<fields>
+					<field name="MC"/>
+					<field name="ID" />
+					<field name="DZ" alias="地址" visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+
+			<popup layername="社会视频">
+				<title>{大厦名称}</title>
+				<idfieldname>CA_ID</idfieldname>
+				<fields>
+					<field name="大厦名称" />
+					<field name="CA_ID"/>
+					<field name="地址" visible="true" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+
+			<popup layername="公安视频">
+				<title>{名称}</title>
+				<idfieldname>LG_ID</idfieldname>
+				<fields>
+					<field name="名称" />
+					<field name="LG_ID"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+
+			<popup layername="高清卡口">
+				<title>{名称}</title>
+				<idfieldname>DWH</idfieldname>
+				<fields>
+					<field name="名称" />
+					<field name="DWH"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+	
+			<popup layername="市场">
+				<title>{名称}</title>
+				<idfieldname>MARKET_ID</idfieldname>
+				<fields>
+					<field name="名称" />
+					<field name="MARKET_ID"/>
+					<field name="地址" visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+	
+			<popup layername="ATM">
+				<title>{名称}</title>
+				<idfieldname>ID</idfieldname>
+				<fields>
+					<field name="名称" />
+					<field name="ID"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+			<popup layername="消防栓">
+				<title>{地址}</title>
+				<idfieldname>编号</idfieldname>
+				<fields>
+					<field name="地址"/>
+					<field name="编号"/>
+					<field name="车道数" visible="true" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+			<popup layername="加油汽站">
+				<title>{名称}</title>
+				<idfieldname>ID</idfieldname>
+				<fields>
+					<field name="名称" />
+					<field name="ID"/>
+					<field name="地址" visible="true" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+			<popup layername="金银饰品店">
+				<title>{单位名称}</title>
+				<idfieldname>ID</idfieldname>
+				<fields>
+					<field name="单位名称" />
+					<field name="ID"/>
+					<field name="单位地址" visible="true" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+			<popup layername="24小时便利店">
+				<title>{单位名称}</title>
+				<idfieldname>ID</idfieldname>
+				<fields>
+					<field name="单位名称" />
+					<field name="ID"/>
+					<field name="单位地址" visible="true" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+			<popup layername="警务室">
+				<title>{MC}</title>
+				<idfieldname>ID</idfieldname>
+				<fields>
+					<field name="MC" />
+					<field name="ID"/>
+					<field name="DZXZ" alias="地址" visible="true" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</popups>
+	</layerinfo>
+</configuration>

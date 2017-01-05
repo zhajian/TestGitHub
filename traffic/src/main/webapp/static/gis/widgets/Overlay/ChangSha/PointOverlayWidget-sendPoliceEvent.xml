@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<!-- 派警时显示的警情 -->
+<configuration>
+	<type>policeEvent</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify>onPoliceEventOverlayRun</widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify>onPoliceEventOverlayClose</widgetclosenotify>
+	<popup>
+		<title>{caseId}</title>
+		<fields>
+			<field name="caseId" alias="警情编号" visible="true" />
+			<field name="callPoliceTime" alias="报警时间" visible="true" />
+			<field name="occurPlace" alias="案发地址" visible="true" />
+			<field name="content" alias="主要情节" visible="true" />
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+	</popup>
+	<simplerenderer>
+		<picturemarkersymbol url="assets/images/mapIcons/JingQing-blue.png" yoffset="13"/>
+	</simplerenderer>
+	
+    
+    <clickfunction>
+		<action>showInfoWindow</action>
+	</clickfunction>
+</configuration>

@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<configuration>
+	<url>http://sampleserver6.arcgisonline.com/arcgis/rest/services/NetworkAnalysis/SanDiego/NAServer/Route</url>
+</configuration>
+
+<!-- See Directions widget tag reference at http://links.esri.com/directionswidget -->

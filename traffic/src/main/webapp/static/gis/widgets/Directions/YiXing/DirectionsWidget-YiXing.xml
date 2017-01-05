@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<configuration>
+<!-- 	<url>http://192.0.5.52:8399/arcgis/rest/services/yixing/yx_route/NAServer/route</url> -->
+	<url>http://128.64.151.12:8399/arcgis/rest/services/yixing/yx_route/NAServer/route</url>
+	<routeoptions>
+		<directionslanguage>zh_CN</directionslanguage>
+	</routeoptions>
+</configuration>
+
+<!-- See Directions widget tag reference at http://links.esri.com/directionswidget -->

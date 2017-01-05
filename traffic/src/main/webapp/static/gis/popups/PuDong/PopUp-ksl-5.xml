@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{DES}</title>
+	<fields>
+		<field name="DES" />
+		<field name="SECTIONID" alias="编号" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+	   <button label="人工发布" action="openDevice" type="FBD_KSL" idfield="SECTIONID" />
+	   <button label="关联事件" action="openDevice" type="RelateEvent" idfield="SECTIONID"/>
+	</buttons>
+</configuration>

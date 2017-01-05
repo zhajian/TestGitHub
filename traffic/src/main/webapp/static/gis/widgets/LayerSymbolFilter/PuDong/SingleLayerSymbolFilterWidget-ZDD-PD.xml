@@ -1,0 +1,53 @@
+<!--浦东匝道灯 -->
+<configuration>
+	<layer>http://{serverip}/arcgis/rest/services/pudong/pd_device/MapServer/2</layer>
+	<query>PD_PJ.RT_RCLAMP_VW.FSTR_SYSID IS NULL</query>
+
+	<refreshrate>0</refreshrate>
+	<refreshneedquery>false</refreshneedquery>
+
+	<widgetvisible>false</widgetvisible>
+
+	<clickfunction>
+		<action>openDevice</action>
+		<type>ZDD</type>
+		<idfield>SDE.sb_zdd.DEVICEID</idfield>
+	</clickfunction>
+
+	<uniquevaluerenderer field="PD_PJ.RT_RCLAMP_VW.DEVSTATE" field2="PD_PJ.RT_RCLAMP_VW.FSTR_STATE">
+		<defaultlabel>默认</defaultlabel>
+		<picturemarkersymbol url="assets/images/mapIcons/ZaDaoDeng-grey.png" yoffset="13" />
+
+		<uniquevalueinfo value="connect,closed" label="关闭">
+			<picturemarkersymbol url="assets/images/mapIcons/ZaDaoDeng-close.png" yoffset="13" />
+		</uniquevalueinfo>
+
+		<uniquevalueinfo value="connect,opened" label="打开">
+			<picturemarkersymbol url="assets/images/mapIcons/ZaDaoDeng-open.png" yoffset="13" />
+		</uniquevalueinfo>
+
+		<uniquevalueinfo value="connect,black" label="黑屏">
+			<picturemarkersymbol url="assets/images/mapIcons/ZaDaoDeng-black.png" yoffset="13" />
+		</uniquevalueinfo>
+
+		<uniquevalueinfo value="connet,unknown" label="未知">
+			<picturemarkersymbol url="assets/images/mapIcons/ZaDaoDeng-grey.png" yoffset="13" />
+		</uniquevalueinfo>
+
+		<uniquevalueinfo value="disconnect,closed" label="关闭">
+			<picturemarkersymbol url="assets/images/mapIcons/ZaDaoDeng-red.png" yoffset="13" />
+		</uniquevalueinfo>
+
+		<uniquevalueinfo value="disconnect,opened" label="打开">
+			<picturemarkersymbol url="assets/images/mapIcons/ZaDaoDeng-red.png" yoffset="13" />
+		</uniquevalueinfo>
+
+		<uniquevalueinfo value="disconnect,black" label="黑屏">
+			<picturemarkersymbol url="assets/images/mapIcons/ZaDaoDeng-red.png" yoffset="13" />
+		</uniquevalueinfo>
+
+		<uniquevalueinfo value="disconnet,unknown" label="未知">
+			<picturemarkersymbol url="assets/images/mapIcons/ZaDaoDeng-red.png" yoffset="13" />
+		</uniquevalueinfo>
+	</uniquevaluerenderer>
+</configuration>

@@ -1,0 +1,290 @@
+<configuration>
+	<type>RoadAndPOI</type>
+	
+	<showbuffersearch>false</showbuffersearch>
+	<showgraphicsearch>true</showgraphicsearch>
+	<showtextsearch>true</showtextsearch>
+	<showsendresult>false</showsendresult>
+	
+	<defaultbufferdistance>500</defaultbufferdistance>
+	
+	<layerinfo>
+		<find>
+			<url>http://{serverip}/arcgis/rest/services/wuhu/wuhu_search/MapServer</url>
+			<fields>DEVICEID,NAME,ROAD_NAME</fields>
+		</find>
+
+		<uniquevaluerenderer field="layerName">
+			<simplemarkersymbol style="circle" color="0xFF0000" size="10"/>
+			
+			<uniquevalueinfo value="道路">
+				<simplelinesymbol color="0x3E6FBC" width="2" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="摄像机Overlay">
+				<picturemarkersymbol url="assets/images/mapIcons/WuHu/SheXiangJi-blue.png" yoffset="18" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="诱导板Overlay">
+				<picturemarkersymbol url="assets/images/mapIcons/WuHu/QingBaoBan-blue.png" yoffset="18" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="能见度仪Overlay">
+				<picturemarkersymbol url="assets/images/mapIcons/WuHu/NengJianDuYi-blue.png" yoffset="18" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="气象站Overlay">
+				<picturemarkersymbol url="assets/images/mapIcons/WuHu/QiXiangZhan-blue.png" yoffset="18" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="事件检测Overlay">
+				<picturemarkersymbol url="assets/images/mapIcons/WuHu/GangDian-blue.png" yoffset="18" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="卡口">
+				<picturemarkersymbol url="assets/images/mapIcons/KaKou-blue.png" yoffset="13" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="电子警察">
+				<picturemarkersymbol url="assets/images/mapIcons/WuHu/DianZiJingCha-blue.png" yoffset="18" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="车检器Overlay">
+				<picturemarkersymbol url="assets/images/mapIcons/FaBuDuan-blue.png" yoffset="13" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="警员Overlay">
+				<picturemarkersymbol url="assets/images/mapIcons/WuHu/JingCha-blue.png" yoffset="18" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="警车Overlay">
+				<picturemarkersymbol url="assets/images/mapIcons/WuHu/JingChe-blue.png" yoffset="18" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="警情Overlay">
+				<picturemarkersymbol url="assets/images/mapIcons/JingQing-blue.png" yoffset="13" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="岗点Overlay">
+				<picturemarkersymbol url="assets/images/mapIcons/WuHu/GangDian-blue.png" yoffset="18" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="占道施工Overlay">
+				<picturemarkersymbol url="assets/images/mapIcons/ShiGong-blue.png" yoffset="13" />
+			</uniquevalueinfo>
+		</uniquevaluerenderer>
+
+		<popups>
+			<popup layername="default">
+				<title>{ROAD_NAME}</title>
+				<fields>
+					<field name="ROAD_NAME" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+			<popup layername="道路">
+				<title>{NAME}</title>
+				<fields>
+					<field name="NAME" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+			<popup layername="商贸场所">
+				<title>{MC}</title>
+				<fields>
+					<field name="MC" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+			<popup layername="娱乐场所">
+				<title>{MC}</title>
+				<fields>
+					<field name="MC" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+			<popup layername="摄像机Overlay">
+				<title>{cameraDesc}</title>
+				<fields>
+					<field name="cameraDesc"/>
+					<field name="cameraIp" alias="IP：" visible="true"/>
+					<field name="cameraState" alias="状态：" visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+				<buttons>
+					<button label="播放" action="openDevice" type="SXJ"/>
+					<button label="预置位管理" action="openDevice" type="SXJ_Preset"/>
+				</buttons>
+			</popup>
+			
+			<popup layername="诱导板Overlay">
+				<title>{qbbDesc}</title>
+				<fields>
+					<field name="qbbDesc"/>
+					<field name="qbbState"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+				<buttons>
+					<button label="详细信息" action="openDevice" type="QingBaoBan"/>
+				</buttons>
+			</popup>
+			
+			<popup layername="能见度仪Overlay">
+				<title>能见度仪</title>
+				<fields>
+					<field name="name" alias="编号：" visible="true"/>
+					<field name="fintVisibility" alias="能见度：" visible="true"/>
+					<field name="fstrState" alias="状态：" visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+				<buttons>
+					<button label="详细信息" action="openDevice" type="NengJianDuYi"/>
+				</buttons>
+			</popup>
+			
+			<popup layername="气象站Overlay">
+				<title>气象站</title>
+				<fields>
+					<field name="name" alias="编号：" visible="true"/>
+					<field name="temperature" alias="温度：" visible="true"/>
+					<field name="windSpeed" alias="风速：" visible="true"/>
+					<field name="fintRainintensity" alias="雨水强度：" visible="true"/>
+					<field name="fintRelativehumidity" alias="湿度：" visible="true"/>
+					<field name="fintVisibility" alias="能见度：" visible="true"/>
+					<field name="fstrState"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+				<buttons>
+					<button label="详细信息" action="openDevice" type="QiXiangZhan"/>
+				</buttons>
+			</popup>
+			
+			<popup layername="事件检测Overlay">
+				<title>{detectorName}</title>
+				<fields>
+					<field name="detectorName"/>
+					<field name="detectorId" alias="设备ID：" visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+				<buttons>
+					<button label="实时视频" action="openDevice" type="SJJC_ShiShiShiPin"/>
+				</buttons>
+			</popup>
+			
+			<popup layername="车检器Overlay">
+				<title>{devDesc}</title>
+				<fields>
+					<field name="devDesc"/>
+					<field name="typedesc" alias="设备类型：" visible="true"/>
+					<field name="status" alias="通信状态：" visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+				<buttons>
+					<button label="流量统计" action="openDevice" type="CheJianQiLiuLiangTongJi"/>
+				</buttons>
+			</popup>
+			
+			<popup layername="警员Overlay">
+				<title>{policeName}({policeSn})</title>
+				<fields>
+					<field name="policeName" />
+					<field name="dutyName" alias="职务：" visible="true"/>
+					<field name="departmentName" alias="所属单位：" visible="true"/>
+					<field name="gpsState" alias="GPS状态：" visible="true"/>
+					<field name="acquisitionTime" alias="同步时间：" visible="true"/>
+					<field name="m350Sn" alias="350M编号：" visible="true"/>
+					<field name="policeSn" alias="警号：" visible="false"/>
+					<field name="policeId" alias="警员id：" visible="false"/>
+					<field name="interphoneCode" alias="手持终端编号：" visible="false"/>
+					<field name="pdaCode" alias="PDA编号：" visible="false"/>
+					<field name="phoneNum" alias="电话：" visible="false"/>
+					<field name="distance" alias="距离：" visible="false"/>
+					<field name="stateColor"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+				<buttons>
+					<button label="呼叫" action="openDevice" type="callPDA"/>
+					<button label="短信" action="openDevice" type="sendMessage"/>
+					<button label="查看轨迹" action="openDevice" type="gpsPoliceTrack"/>
+				</buttons>
+			</popup>
+			
+			<popup layername="警车Overlay">
+				<title>{policeCarSn}</title>
+				<fields>
+					<field name="policeCarSn" />
+					<field name="deptName" alias="所属单位：" visible="true"/>
+					<field name="gpsState" alias="GPS状态：" visible="true"/>
+					<field name="acquisitionTime" alias="同步时间：" visible="true"/>
+					<field name="policeCarId" alias="警车ID："/>
+					<field name="stateColor"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+				<buttons>
+					<button label="呼叫" action="openDevice" type="callPoliceCarPDA"/>
+					<button label="短信" action="openDevice" type="sendPoliceCarMessage"/>
+					<button label="查看轨迹" action="openDevice" type="gpsPoliceCarTrack"/>
+				</buttons>
+			</popup>
+			
+			<popup layername="警情Overlay">
+				<title>{callPoliceTime}</title>
+				<fields>
+					<field name="taskSourceId" alias="任务源Id：" visible="true"/>
+					<field name="callPoliceTime"/>
+					<field name="callPolicePhone" alias="报警电话：" visible="true"/>
+					<field name="callPolicePerson" alias="报警人：" visible="true"/>
+					<field name="occurPlace" alias="案发地址：" visible="true"/>
+					<field name="content" alias="案情：" visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+			<popup layername="岗点Overlay">
+				<title>{spotName}({spotStatus})</title>
+				<fields>
+					<field name="spotName" />
+					<field name="deptName" alias="所属单位：" visible="true" />
+					<field name="spotType" alias="岗点类型：" visible="true"/>
+					<field name="taskPeriod" alias="当前班次：" visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+			<popup layername="占道施工Overlay">
+				<title>{projectName}</title>
+				<fields>
+					<field name="taskSourceId" alias="任务源Id：" visible="false" />
+					<field name="constructionStartTime" alias="开始时间" visible="true" />
+					<field name="constructionEndTime" alias="结束时间" visible="true" />			
+					<field name="constructionUnit" alias="施工单位" visible="true"/>			
+					<field name="contactPerson" alias="联系人" visible="true"/>			
+					<field name="contactPhone" alias="联系电话" visible="true"/>
+					<field name="constructionPlace" alias="施工地点" visible="true"/>
+					<field name="constructionReason" alias="施工原因" visible="true"/>
+					<field name="stateId" alias="状态Id" visible="false"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</popups>
+	</layerinfo>
+	
+	<!-- 要搜索的动态数据 -->
+	<overlays>
+		<overlay name="摄像机Overlay" label="摄像机" titlefield="cameraDesc" defaultselected="true"/>
+		<overlay name="诱导板Overlay" label="诱导板" titlefield="qbbDesc" defaultselected="true"/>
+		<overlay name="能见度仪Overlay" label="能见度仪" titlefield="name" defaultselected="true"/>
+		<overlay name="气象站Overlay" label="气象站" titlefield="name" defaultselected="true"/>
+		<overlay name="事件检测Overlay" label="事件检测" titlefield="detectorName" defaultselected="true"/>
+		<overlay name="车检器Overlay" label="车检器" titlefield="devDesc" defaultselected="true"/>
+		<overlay name="警员Overlay" label="警员" titlefield="policeName" idfield="policeId" defaultselected="true"/>
+		<overlay name="警车Overlay" label="警车" titlefield="policeCarSn" idfield="policeCarId" defaultselected="true"/>
+		<overlay name="警情Overlay" label="警情" titlefield="callPoliceTime" defaultselected="true"/>
+		<overlay name="岗点Overlay" label="岗点" titlefield="spotName" idfield="spotId" defaultselected="true"/>
+		<overlay name="占道施工Overlay" label="占道施工" titlefield="projectName" idfield="taskSourceId" defaultselected="true"/>
+	</overlays>
+</configuration>

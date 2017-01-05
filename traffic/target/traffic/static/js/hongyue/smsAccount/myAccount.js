@@ -1,0 +1,1 @@
+jQuery(function(a){Hg.post("/smsAccount/getMyAccountNum",{},function(b){a("#myNum").html(b.myNum)});a("#renewBtn").on("click",function(){alert("续费")})});

@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<!-- 警情 -->
+<configuration>
+	<type>policeEvent</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify>onPoliceEventRun</widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify></widgetclosenotify>
+	
+	<clickfunction>
+	    <action>getPoliceEventData</action>
+	    <type>   </type>
+	    <idField> </idField>
+	</clickfunction>
+    <simplerenderer>
+		<picturemarkersymbol url="assets/images/mapIcons/JingQing-blue.png" yoffset="13"/>
+	</simplerenderer>
+	
+	
+	<layerinfo>
+		<find>
+			<url>http://{serverip}/arcgis/rest/services/changsha/WuHu_search_device/MapServer</url>
+			<fields>DESC,NAME</fields>
+		</find>
+
+		<uniquevaluerenderer field="layerName">
+			<picturemarkersymbol url="assets/images/i_pushpin_centered.png" />
+
+			<uniquevalueinfo value="SCATS">
+				<picturemarkersymbol url="assets/images/mapIcons/XinHaoJi-blue.png"
+									 height="26" width="22" yoffset="13" />
+			</uniquevalueinfo>
+
+			<uniquevalueinfo value="车检器">
+				<picturemarkersymbol url="assets/images/mapIcons/DuanMian-blue.png"
+									 height="26" width="22" yoffset="13" />
+			</uniquevalueinfo>
+
+			<uniquevalueinfo value="电子警察">
+				<picturemarkersymbol url="assets/images/mapIcons/DianZiJingCha-blue.png"
+									 height="26" width="22" yoffset="13" />
+			</uniquevalueinfo>
+
+			<uniquevalueinfo value="摄像机">
+				<picturemarkersymbol url="assets/images/mapIcons/SheXiangJi-blue.png"
+								  	 height="26" width="22" yoffset="13" />
+			</uniquevalueinfo>
+
+			<uniquevalueinfo value="诱导板">
+				<picturemarkersymbol url="assets/images/mapIcons/QingBaoBan-blue.png"
+									 height="26" width="22" yoffset="13" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="发布段">
+				<simplelinesymbol color="0x3E6FBC" width="2" />
+			</uniquevalueinfo>
+
+			<uniquevalueinfo value="PoliceOverlay">
+				<picturemarkersymbol url="assets/images/mapIcons/JingCha-blue.png" 
+									 height="26" width="22" yoffset="13" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="PoliceCarOverlay">
+				<picturemarkersymbol url="assets/images/mapIcons/JingChe-blue.png" 
+									 height="26" width="22" yoffset="13" />
+			</uniquevalueinfo>
+		</uniquevaluerenderer>
+
+	</layerinfo>
+
+	<!-- 要搜索的动态数据 -->
+	<overlays>
+		<overlay name="PoliceOverlay" label="警员" titlefield="policeName" idfield="policeSn" defaultselected="true"/>
+		<overlay name="PoliceCarOverlay" label="警车" titlefield="plateNo" idfield="policeCarId" defaultselected="true"/>
+	</overlays>
+</configuration>

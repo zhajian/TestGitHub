@@ -1,0 +1,36 @@
+<configuration>
+	<layout direction="horizontal" gap="10" />
+	<groups>
+		<group>
+			<item id="sxj" name="功能区" image="assets/images/buttons/GangDian.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="功能区" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="fbd" name="环境设施" image="assets/images/buttons/JingCha.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="环境设施"/>
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="ShiJian" name="信访点" image="assets/images/buttons/DianZiJingCha.png" initstate="enable">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="信访点" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</group>
+	</groups>
+</configuration>

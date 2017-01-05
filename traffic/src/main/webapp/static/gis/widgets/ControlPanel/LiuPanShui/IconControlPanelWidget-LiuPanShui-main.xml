@@ -1,0 +1,203 @@
+<configuration>
+	<layout direction="horizontal" gap="10" />
+	<groups>
+		<group>
+			<item id="fbd" name="发布段" image="assets/images/buttons/FaBuDuan.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="发布段" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="dc" name="地磁" image="assets/images/buttons/DuanMian.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="地磁" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="qbb" name="诱导板" image="assets/images/buttons/QingBaoBan.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="诱导板" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="sxj" name="天网" image="assets/images/buttons/SheXiangJi.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="天网" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="sxj-kekong" name="可控摄像机" image="assets/images/buttons/SheXiangJi-KeKong.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="可控摄像机" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="kk" name="卡口" image="assets/images/buttons/KaKou.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="卡口" />
+						</params>
+					</clickfunction>
+					<clickfunction name="InformStateChanged">
+						<params>
+							<param name="type" value="dzjc" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="dzjc" name="电子警察" image="assets/images/buttons/DianZiJingCha.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="电子警察" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="XHJ" name="信号机" image="assets/images/buttons/XinHaoJi.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="信号机" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+		</group>
+
+		<group>
+			<item id="police" name="警员" image="assets/images/buttons/JingCha.png"
+				initstate="enable">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="PoliceOverlay" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="policeCar" name="警车" image="assets/images/buttons/JingChe.png"
+				initstate="enable">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="PoliceCarOverlay" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="policeEvent" name="警情" image="assets/images/buttons/JingQing.png"
+				initstate="enable">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="PoliceEventOverlay" />
+						</params>
+					</clickfunction>
+					
+					<clickfunction name="OpenWidget">
+						<params>
+							<param name="WidgetName" value="周边搜索" />
+							<param name="WidgetState" value="minimized"/>
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+<!-- 			<item id="emergencyPoliceEvent" name="应急警情" image="assets/images/buttons/JingQing-YinJi.png" -->
+<!-- 				initstate="enable"> -->
+<!-- 				<clickfunctions> -->
+<!-- 					<clickfunction name="ChangeWidget"> -->
+<!-- 						<params> -->
+<!-- 							<param name="WidgetName" value="EmergencyPoliceEventOverlay" /> -->
+<!-- 						</params> -->
+<!-- 					</clickfunction> -->
+					
+<!-- 					<clickfunction name="OpenWidget"> -->
+<!-- 						<params> -->
+<!-- 							<param name="WidgetName" value="周边搜索" /> -->
+<!-- 							<param name="WidgetState" value="minimized"/> -->
+<!-- 						</params> -->
+<!-- 					</clickfunction> -->
+<!-- 				</clickfunctions> -->
+<!-- 			</item> -->
+
+			<item id="block" name="拥堵点" image="assets/images/buttons/YongDu.png"
+				initstate="enable">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="BlockOverlay" />
+						</params>
+					</clickfunction>
+					
+					<clickfunction name="OpenWidget">
+						<params>
+							<param name="WidgetName" value="周边搜索"/>
+							<param name="WidgetState" value="minimized"/>
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+<!-- 			<item id="roadOccupy" name="占道施工" image="assets/images/buttons/ShiGong.png" -->
+<!-- 				initstate="enable"> -->
+<!-- 				<clickfunctions> -->
+<!-- 					<clickfunction name="ChangeWidget"> -->
+<!-- 						<params> -->
+<!-- 							<param name="WidgetName" value="RoadOccupyOverlay" /> -->
+<!-- 						</params> -->
+<!-- 					</clickfunction> -->
+<!-- 				</clickfunctions> -->
+<!-- 			</item> -->
+			
+			<item id="policeSentry" name="岗点" image="assets/images/buttons/GangDian.png"
+				initstate="enable">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="PoliceSentryOverlay" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+<!-- 			<item id="badWeather" name="灾害天气" image="assets/images/buttons/BadWeather.png" -->
+<!-- 				initstate="enable"> -->
+<!-- 				<clickfunctions> -->
+<!-- 					<clickfunction name="ChangeWidget"> -->
+<!-- 						<params> -->
+<!-- 							<param name="WidgetName" value="BadWeatherOverlay" /> -->
+<!-- 						</params> -->
+<!-- 					</clickfunction> -->
+<!-- 				</clickfunctions> -->
+<!-- 			</item> -->
+		</group>
+	</groups>
+</configuration>

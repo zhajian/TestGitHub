@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<configuration>
+	<showresult>true</showresult>
+	<layers>
+		<layer>
+			<type>SXJ</type>
+			<url>http://{serverip}/arcgis/rest/services/XinJiang/XinJiang_device/MapServer/0</url>
+			<idfield>DEVICEID</idfield>
+			<picturemarkersymbol url="assets/images/mapIcons/SheXiangJi-blue.png"  yoffset="18" />
+			<zoomscale>12000</zoomscale>
+			<popup>
+				<title>{FSTR_DESC}</title>
+				<fields>
+					<field name="FSTR_DESC" alias="设备描述：" visible="true"/>
+	            	<field name="DEVICEID" alias="设备编号：" visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+				<buttons>
+					<button label="详细信息" action="openDevice" type="SXJ" idfield="DEVICEID" />
+				</buttons>
+			</popup>
+		 </layer>
+	</layers>
+</configuration>

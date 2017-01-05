@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<configuration>
+	<type>QingSaoChe</type>
+	<popup>
+		<title>{车牌号}</title>
+		<fields>
+			<field name="车牌号"/>
+			<field name="time" alias="经过时间: " visible="true" />
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+	</popup>
+</configuration>

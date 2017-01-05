@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<configuration>
+	<layertype>point</layertype>
+	<layerurl>http://{beyondserverip}/gisapi/rest/featureservice/SL_HL/simplequery?token=BF833A1145CB44669FB387DEA62AC464&needGeometry=true</layerurl>
+	<idfield>SSID</idfield>
+	<featuretype>护栏</featuretype>
+	
+	<popup>
+		<showzoomtobutton>false</showzoomtobutton>
+	</popup>
+	
+	<popupskinclass>天津设施</popupskinclass>
+	
+	<simplerenderer>
+		<simplemarkersymbol color="0xff0000" size="10"/>
+	</simplerenderer>
+	
+	<clickfunction>
+		<action>showInfoWindow</action>
+	</clickfunction>
+</configuration>

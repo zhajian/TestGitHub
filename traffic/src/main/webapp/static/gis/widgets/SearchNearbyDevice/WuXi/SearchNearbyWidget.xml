@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<!-- 无锡，搜索设备周边的路口、路段 -->
+<configuration>
+	<type>searchNearbyDevice</type>
+	<bufferdistance>500</bufferdistance>
+	<identifyparam>
+		<url>http://{serverip}/arcgis/rest/services/wuxi/wx_search/MapServer</url>
+		<layerids>1,2</layerids>
+	</identifyparam>
+</configuration>

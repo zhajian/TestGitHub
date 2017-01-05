@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{SDE.Issuesect.NAME}</title>
+	<fields>
+		<field name="SDE.Issuesect.NAME" />
+		<field name="SDE.Issuesect.BM_CODE" alias="编号: " visible="true" />
+		<field name="CHANGSHA2.ALARM_RT_ISSUESECT_VW.FDT_UPDATE_TIME" alias="预警时间: " visible="true"/>
+		<field name="CHANGSHA2.ALARM_RT_ISSUESECT_VW.FINT_TREND_TYPE" alias="预警趋势: " visible="true"/>
+		<field name="CHANGSHA2.ALARM_RT_ISSUESECT_VW.FFLT_SPEED" alias="行程车速: " visible="true"/>
+		<field name="CHANGSHA2.ALARM_RT_ISSUESECT_VW.FINT_VOLUME" alias="2分钟流量: " visible="true"/>
+		<field name="CHANGSHA2.ALARM_RT_ISSUESECT_VW.FFLT_STANDARD_SPEED" alias="车速因子: " visible="true"/>
+		<field name="CHANGSHA2.ALARM_RT_ISSUESECT_VW.FFLT_STANDARD_VOLUME" alias="流量因子: " visible="true"/>
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+	</buttons>
+</configuration>

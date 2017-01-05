@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{ROAD_NAME}</title>
+	<fields>
+		<field name="ROAD_NAME" />
+		<field name="DEVICEID" alias="设备编号：" visible="true"/>
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+		<button label="详细信息" action="openDevice" type="KaKou" idfield="DEVICEID" />
+	</buttons>
+</configuration>

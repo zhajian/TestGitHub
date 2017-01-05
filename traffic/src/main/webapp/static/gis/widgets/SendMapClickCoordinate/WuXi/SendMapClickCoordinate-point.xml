@@ -1,0 +1,12 @@
+<configuration>
+	<type>point</type>
+	<drawtype>point</drawtype>
+	<showbuffer>false</showbuffer>
+	
+	<showconfirmwindow>true</showconfirmwindow>
+	<confirmwindow>
+		<title>添加实体</title>
+		<text>是否在此位置添加实体？</text>
+	</confirmwindow>
+	<showbuffer>false</showbuffer>
+</configuration>

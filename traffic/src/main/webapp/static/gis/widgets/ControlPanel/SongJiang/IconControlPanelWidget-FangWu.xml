@@ -1,0 +1,89 @@
+<configuration>
+	<layout direction="horizontal" gap="10" />
+	<groups>
+		<group title="group1">
+			<item id="fbdWithinWorkScrope" name="项目内发布段" image="assets/device/fbd40.png"
+				initstate="enable">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="servicename" value="项目内发布段" />
+						</params>
+					</clickfunction>
+					<clickfunction name="ChangeItemInverse">
+						<params>
+							<param name="itemtext" value="二环内发布段" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="fbdWith2Ring" name="二环内发布段" image="assets/device/fbd40.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="servicename" value="二环内发布段" />
+						</params>
+					</clickfunction>
+					<clickfunction name="ChangeItemInverse">
+						<params>
+							<param name="itemtext" value="项目内发布段" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="wbcjq" name="微波车检器" image="assets/device/dm40.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="servicename" value="微波车检器" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="qbb" name="诱导屏" image="assets/device/qbb40.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="servicename" value="诱导屏" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</group>
+
+		<group title="group2">
+			<item id="scats" name="SCATS" image="assets/device/xhj40.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="servicename" value="SCATS" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="cdkz" name="车道控制" image="assets/device/dm40.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="servicename" value="车道控制" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="zdkz" name="匝道控制" image="assets/device/zdd40.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="servicename" value="匝道控制" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</group>
+	</groups>
+</configuration>

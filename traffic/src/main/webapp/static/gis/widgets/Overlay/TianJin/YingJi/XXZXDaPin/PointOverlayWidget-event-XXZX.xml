@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<configuration>
+	<type>event</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify>onEventOverlayRun</widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify></widgetclosenotify>
+	
+	<needzoom>true</needzoom>
+	<zoomscale>192000</zoomscale>
+	
+	<initvisible>true</initvisible>
+	
+	
+	<popupskinclass>天津信息中心大屏事件</popupskinclass>
+	
+	<popup>
+
+		<showzoomtobutton>false</showzoomtobutton>
+	</popup>
+	
+	<uniquevaluerenderer field="shijianDengji">
+		<picturemarkersymbol url="assets/images/mapIcons/WuHu/YingJiShiJian-big-blue.png" yoffset="28"/>
+		
+		<uniquevalueinfo value="1">
+			<picturemarkersymbol url="assets/images/mapIcons/WuHu/YingJiShiJian-big-red.png" yoffset="28"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="2">
+			<picturemarkersymbol url="assets/images/mapIcons/WuHu/YingJiShiJian-big-red.png" yoffset="28"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="3">
+			<picturemarkersymbol url="assets/images/mapIcons/WuHu/YingJiShiJian-big-red.png" yoffset="28"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="4">
+			<picturemarkersymbol url="assets/images/mapIcons/WuHu/YingJiShiJian-big-yellow.png" yoffset="28"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="5">
+			<picturemarkersymbol url="assets/images/mapIcons/WuHu/YingJiShiJian-big-blue.png" yoffset="28"/>
+		</uniquevalueinfo>
+	</uniquevaluerenderer>
+<!-- 	<simplerenderer> -->
+<!-- 		<picturemarkersymbol url="assets/images/mapIcons/TianJin/JiaoTongYingJiShiJian.png"/> -->
+<!-- 	</simplerenderer> -->
+	
+	<clickfunction>
+		<action>showInfoWindow</action>
+	</clickfunction>
+</configuration>

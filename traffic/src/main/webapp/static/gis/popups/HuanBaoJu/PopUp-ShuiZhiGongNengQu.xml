@@ -1,0 +1,10 @@
+<!-- 水质功能区 -->
+<?xml version="1.0" ?>
+<configuration>
+	<title>{名称}</title>
+	<fields>
+		<field name="名称" />
+		<field name="功能区类别" alias="类别：" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+</configuration>

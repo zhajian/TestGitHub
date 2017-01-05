@@ -1,0 +1,60 @@
+<!-- 岗点上勤警员 -->
+<?xml version="1.0" ?>
+<configuration>
+	<type>dutyPolice</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify></widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify></widgetclosenotify>
+	
+	<popup>
+		<title>{policeName}({policeSn},{m350})</title>
+		<fields>
+			<field name="policeName" />
+			<field name="policeSn"/>
+			<field name="dutyName" alias="职务：" visible="true"/>
+			<field name="departmentName" alias="所属单位：" visible="true"/>
+			<field name="gpsState" alias="GPS状态：" visible="true"/>
+			<field name="acquisitionTime" alias="同步时间：" visible="true"/>
+			<field name="policeJingQing" alias="当前警情：" visible="false"/>
+			<field name="policeDutyType"/>
+			<field name="policeState"/>
+			<field name="m350"/>
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+		<showdetaillink>true</showdetaillink>
+<!-- 		<buttons> -->
+<!-- 			<button label="呼叫" action="openDevice" type="callPDA"/> -->
+<!-- 			<button label="短信" action="openDevice" type="sendMessage"/> -->
+<!-- 			<button label="查看轨迹" action="openDevice" type="gpsPoliceTrack"/> -->
+<!-- 		</buttons> -->
+	</popup>
+	
+	<uniquevaluerenderer field="policeDutyType" field2="policeState" fielddelimiter=",">
+		<picturemarkersymbol url="assets/images/mapIcons/JingCha-grey.png" yoffset="13"/>
+		
+		<!-- 固定岗正常 -->
+		<uniquevalueinfo value="1,1">
+			<picturemarkersymbol url="assets/images/mapIcons/GuDingGang_ZhengChang.png"/>
+		</uniquevalueinfo>
+		
+		<!-- 固定岗其他 -->
+		<uniquevalueinfo value="1,2">
+			<picturemarkersymbol url="assets/images/mapIcons/GuDingGang_QiTa.png"/>
+		</uniquevalueinfo>
+		
+		<!-- 巡逻岗正常 -->
+		<uniquevalueinfo value="2,1">
+			<picturemarkersymbol url="assets/images/mapIcons/XunLuoGang_ZhengChang.png"/>
+		</uniquevalueinfo>
+		
+		<!-- 巡逻岗其他 -->
+		<uniquevalueinfo value="2,2">
+			<picturemarkersymbol url="assets/images/mapIcons/XunLuoGang_QiTa.png"/>
+		</uniquevalueinfo>
+	</uniquevaluerenderer>	
+	
+	<clickfunction>
+		<action>showInfoWindow</action>
+	</clickfunction>
+</configuration>

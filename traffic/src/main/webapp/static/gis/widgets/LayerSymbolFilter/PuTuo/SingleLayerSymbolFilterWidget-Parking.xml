@@ -1,0 +1,19 @@
+<!--停车场 -->
+<configuration>
+	<layer>http://116.228.238.34:32125/gis12/rest/services/putuo/PuTuo_Parking/MapServer/0</layer>
+	
+	<refreshrate>0</refreshrate>
+	<refreshneedquery>false</refreshneedquery>
+	
+	<widgetvisible>false</widgetvisible>
+	
+	<clickfunction>
+		<action>openDevice</action>
+		<type>Parking</type>
+		<idfield>Parking.ParkingID</idfield>
+	</clickfunction>
+	
+	<simplerenderer>
+		<picturemarkersymbol url="assets/images/mapIcons/TingCheChang-blue.png" yoffset="13"/>
+	</simplerenderer>
+</configuration>

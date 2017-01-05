@@ -1,0 +1,115 @@
+<configuration>
+	<showbuffersearch>false</showbuffersearch>
+	<showgraphicsearch>false</showgraphicsearch>
+	<sendresult>false</sendresult>
+	
+	<layerinfo>
+		<find>
+			<url>http://{serverip}/arcgis/rest/services/wuxi/wx_device_new/MapServer</url>
+			<fields>DES,JNAME,BYNAMEC,FSTR_DESC</fields>
+		</find>
+
+		<uniquevaluerenderer field="layerName">
+			<simplemarkersymbol style="circle" color="0xFF0000" size="10"/>
+			
+			<uniquevalueinfo value="主要道路">
+				<simplelinesymbol color="0x3E6FBC" width="2" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="高速公路">
+				<simplelinesymbol color="0x3E6FBC" width="2" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="快速路">
+				<simplefillsymbol style="solid" color="0x3E6FBC" alpha="0.5">
+					<outline style="solid" color="0x3E6FBC" width="1"/>
+				</simplefillsymbol>
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="电子警察">
+				<picturemarkersymbol url="assets/images/mapIcons/DianZiJingCha-blue.png" yoffset="13" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="监控">
+				<picturemarkersymbol url="assets/images/mapIcons/SheXiangJi-blue.png" yoffset="13" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="卡口">
+				<picturemarkersymbol url="assets/images/mapIcons/KaKou-blue.png" yoffset="13" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="信号灯">
+				<picturemarkersymbol url="assets/images/mapIcons/XinHaoDeng-green.png"/>
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="信号机">
+				<picturemarkersymbol url="assets/images/mapIcons/XinHaoJi-blue.png" yoffset="13" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="流量检测器">
+				<picturemarkersymbol url="assets/images/mapIcons/DuanMian-blue.png" yoffset="13" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="情报板">
+				<picturemarkersymbol url="assets/images/mapIcons/QingBaoBan-blue.png" yoffset="13" />
+			</uniquevalueinfo>
+		</uniquevaluerenderer>
+
+		<popups>
+			<popup layername="default">
+				<title>{DES}</title>
+				<fields>
+					<field name="DES" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+			<popup layername="路口">
+				<title>{JNAME}</title>
+				<fields>
+					<field name="JNAME" />
+					<field name="JID" />
+				</fields>
+				<buttons>
+					<button label="关联" action="addDeviceToJob" type="路口" idfield="JID"/>
+				</buttons>
+			</popup>
+			
+			<popup layername="主要道路">
+				<title>{BYNAMEC}</title>
+				<idfieldname>EDGEID</idfieldname>
+				<fields>
+					<field name="BYNAMEC" />
+					<field name="EDGEID"/>
+				</fields>
+				<buttons>
+					<button label="关联" action="addDeviceToJob" type="主要道路" idfield="EDGEID"/>
+				</buttons>
+			</popup>
+			
+			<popup layername="高速公路">
+				<title>{BYNAMEC}</title>
+				<idfieldname>EDGEID</idfieldname>
+				<fields>
+					<field name="BYNAMEC" />
+					<field name="EDGEID"/>
+				</fields>
+				<buttons>
+					<button label="关联" action="addDeviceToJob" type="高速公路" idfield="EDGEID"/>
+				</buttons>
+			</popup>
+			
+			<popup layername="快速路">
+				<title>{FSTR_DESC}</title>
+				<idfieldname>FSTR_ISSUE</idfieldname>
+				<fields>
+					<field name="FSTR_DESC" />
+					<field name="FSTR_ISSUE"/>
+				</fields>
+				<buttons>
+					<button label="关联" action="addDeviceToJob" type="快速路" idfield="FSTR_ISSUE"/>
+				</buttons>
+			</popup>
+		</popups>
+	</layerinfo>
+</configuration>

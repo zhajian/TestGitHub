@@ -1,0 +1,191 @@
+<configuration>
+	<showbuffersearch>false</showbuffersearch>
+	<showgraphicsearch>true</showgraphicsearch>
+	<showtextsearch>true</showtextsearch>
+	<showsendresult>false</showsendresult>
+	
+	<layerinfo>
+		<find>
+			<url>http://128.64.151.12:8399/arcgis/rest/services/shanghai/sh_points/MapServer</url>
+			<fields>路名,NAME,名称,DES,FSTR_DESC,DEVDESC,SECTIONID,DEVICEID</fields>
+		</find>
+
+		<uniquevaluerenderer field="layerName">
+			<simplemarkersymbol style="circle" color="0xFF0000" size="10"/>
+			
+			<uniquevalueinfo value="快速路发布段">
+				<simplefillsymbol style="solid" color="0x3E6FBC" alpha="0.6">
+					<outline style="solid" color="0x3E6FBC" width="1" alpha="1"/>
+				</simplefillsymbol>
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="地面主干道路发布段">
+				<simplefillsymbol style="solid" color="0x3E6FBC" alpha="0.6">
+					<outline style="solid" color="0x3E6FBC" width="1" alpha="1"/>
+				</simplefillsymbol>
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="地面次干道路发布段">
+				<simplefillsymbol style="solid" color="0x3E6FBC" alpha="0.6">
+					<outline style="solid" color="0x3E6FBC" width="1" alpha="1"/>
+				</simplefillsymbol>
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="地面一般道路发布段">
+				<simplefillsymbol style="solid" color="0x3E6FBC" alpha="0.6">
+					<outline style="solid" color="0x3E6FBC" width="1" alpha="1"/>
+				</simplefillsymbol>
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="高速公路发布段">
+				<simplefillsymbol style="solid" color="0x3E6FBC" alpha="0.6">
+					<outline style="solid" color="0x3E6FBC" width="1" alpha="1"/>
+				</simplefillsymbol>
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="情报板">
+				<picturemarkersymbol url="assets/images/mapIcons/QingBaoBan-blue.png" yoffset="13" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="摄像机">
+				<picturemarkersymbol url="assets/images/mapIcons/SheXiangJi-blue.png" yoffset="13" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="匝道灯">
+				<picturemarkersymbol url="assets/images/mapIcons/ZaDaoDeng-black.png" yoffset="13" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="车牌识别">
+				<picturemarkersymbol url="assets/images/mapIcons/KaKou-blue.png" yoffset="13" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="信号机">
+				<picturemarkersymbol url="assets/images/mapIcons/XinHaoJi-blue.png" yoffset="13" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="车道控制">
+				<picturemarkersymbol url="assets/images/mapIcons/DuanMian-blue.png" yoffset="13" />
+			</uniquevalueinfo>
+		</uniquevaluerenderer>
+
+		<popups>
+			<popup layername="default">
+				<title>{NAME}</title>
+				<fields>
+					<field name="NAME" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+			<popup layername="快速路发布段">
+				<title>{DES}</title>
+				<idfieldname>BM_CODE</idfieldname>
+				<fields>
+					<field name="DES" />
+					<field name="BM_CODE"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+			<popup layername="地面主干道路发布段">
+				<title>{路名}</title>
+				<idfieldname>BM_CODE</idfieldname>
+				<fields>
+					<field name="路名" />
+					<field name="BM_CODE"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+			<popup layername="地面次干道路发布段">
+				<title>{NAME}</title>
+				<idfieldname>BM_CODE</idfieldname>
+				<fields>
+					<field name="NAME" />
+					<field name="BM_CODE"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+			<popup layername="地面一般道路发布段">
+				<title>{路名}</title>
+				<idfieldname>BM_CODE</idfieldname>
+				<fields>
+					<field name="路名" />
+					<field name="BM_CODE"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+			<popup layername="高速公路发布段">
+				<title>{名称}</title>
+				<idfieldname>BM_CODE</idfieldname>
+				<fields>
+					<field name="路名" />
+					<field name="BM_CODE"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+			<popup layername="情报板">
+				<title>{FSTR_DESC}</title>
+				<idfieldname>DEVICEID</idfieldname>
+				<fields>
+					<field name="FSTR_DESC" />
+					<field name="DEVICEID"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+			<popup layername="摄像机">
+				<title>{FSTR_DESC}</title>
+				<idfieldname>DEVICEID</idfieldname>
+				<fields>
+					<field name="FSTR_DESC" />
+					<field name="DEVICEID"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+			<popup layername="匝道灯">
+				<title>{DEVDESC}</title>
+				<idfieldname>DEVICEID</idfieldname>
+				<fields>
+					<field name="DEVDESC" />
+					<field name="DEVICEID"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+			<popup layername="车牌识别">
+				<title>{FSTR_DESC}</title>
+				<idfieldname>DEVICEID</idfieldname>
+				<fields>
+					<field name="FSTR_DESC" />
+					<field name="DEVICEID"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+			<popup layername="信号机">
+				<title>{FSTR_DESC}</title>
+				<idfieldname>DEVICEID</idfieldname>
+				<fields>
+					<field name="FSTR_DESC" />
+					<field name="DEVICEID"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+			<popup layername="车道控制">
+				<title>{FSTR_DESC}</title>
+				<idfieldname>DEVICEID</idfieldname>
+				<fields>
+					<field name="FSTR_DESC" />
+					<field name="DEVICEID"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</popups>
+	</layerinfo>
+</configuration>

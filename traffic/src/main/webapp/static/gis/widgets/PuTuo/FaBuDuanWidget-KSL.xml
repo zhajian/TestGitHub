@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<configuration>
+	<layers>
+		<layer>
+			<url>http://{serverip}/arcgis/rest/services/PuTuo/PuTuo_Road/MapServer/1</url>
+			<uniquevaluerenderer field="线圈状态">
+				<simplefillsymbol color="0xb2b2b2" alpha="1">
+					<outline color="0xffffff"/>
+				</simplefillsymbol>
+				
+				<uniquevalueinfo value="21">
+					<simplefillsymbol color="0x17bf00" alpha="1">
+						<outline color="0xffffff"/>
+					</simplefillsymbol>
+				</uniquevalueinfo>
+				
+				<uniquevalueinfo value="22">
+					<simplefillsymbol color="0xff9f19" alpha="1">
+						<outline color="0xffffff"/>
+					</simplefillsymbol>
+				</uniquevalueinfo>
+				
+				<uniquevalueinfo value="23">
+					<simplefillsymbol color="0xf23030" alpha="1">
+						<outline color="0xffffff"/>
+					</simplefillsymbol>
+				</uniquevalueinfo>
+			</uniquevaluerenderer>
+		</layer>
+	</layers>
+</configuration>

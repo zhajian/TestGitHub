@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<configuration>
+	<menu>
+		<itemgroup label="信号控制">
+			<item label="路口" initenable="true">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="路口" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</itemgroup>
+	</menu>
+</configuration>
+	

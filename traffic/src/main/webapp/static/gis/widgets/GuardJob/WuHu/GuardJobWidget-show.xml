@@ -1,0 +1,142 @@
+<?xml version="1.0" ?>
+<configuration>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify>onGuardJobWidgetRun</widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify>onGuardJobWidgetClose</widgetclosenotify>
+	
+	<!-- 是否显示面板，只显示任务的话不用显示面板 -->
+	<showpanel>false</showpanel>
+	
+	<identifyparams>
+		<url>http://{serverip}/arcgis/rest/services/wuhu/wuhu_device_new/MapServer/</url>
+		
+		<param>
+			<type>信号机</type>
+			<layerids>4</layerids>
+			<idfield>DEVICEID</idfield>
+			<descfield>NAME</descfield>
+		</param>
+		
+		<param>
+			<type>摄像机</type>
+			<layerids>12</layerids>
+			<idfield>DEVICEID</idfield>
+			<descfield>NAME</descfield>
+		</param>
+	</identifyparams>
+	
+	<uniquevaluerenderer field="layerName">
+		<uniquevalueinfo value="信号机">
+			<picturemarkersymbol url="assets/images/mapIcons/XinHaoJi-blue.png" yoffset="13" />
+		</uniquevalueinfo>
+			
+		<uniquevalueinfo value="摄像机">
+			<picturemarkersymbol url="assets/images/mapIcons/SheXiangJi-blue.png" yoffset="13" />
+		</uniquevalueinfo>
+			
+		<uniquevalueinfo value="policeSentry">
+			<picturemarkersymbol url="assets/images/mapIcons/GangDian-blue.png" yoffset="13" />
+		</uniquevalueinfo>
+	</uniquevaluerenderer>
+	
+	<!-- 新增路线是搜索出的设备popup配置 -->	
+	<searchresultpopups>
+		<popup layername="default">
+			<title>{DESC}</title>
+			<idfieldname>DEVICEID</idfieldname>
+			<fields>
+				<field name="DESC" />
+			</fields>
+			<showzoomtobutton>false</showzoomtobutton>
+		</popup>
+
+		<popup layername="摄像机">
+			<title>{NAME}</title>
+			<idfieldname>DEVICEID</idfieldname>
+			<fields>
+				<field name="NAME" />
+				<field name="DEVICEID" alias="编号" visible="true" />
+			</fields>
+			<showzoomtobutton>false</showzoomtobutton>
+			<buttons>
+				<button label="添加" action="addDeviceToJob" type="摄像机" idfield="DEVICEID" />
+				<button label="删除" action="deleteDeviceFromJob" type="摄像机" idfield="DEVICEID" />
+				<button label="详细信息" action="openDevice" type="SXJ" idfield="DEVICEID" />
+			</buttons>
+		</popup>
+		
+		<popup layername="信号机">
+			<title>{NAME}</title>
+			<idfieldname>DEVICEID</idfieldname>
+			<fields>
+				<field name="NAME" />
+				<field name="DEVICEID" alias="编号" visible="true" />
+			</fields>
+			<showzoomtobutton>false</showzoomtobutton>
+			<buttons>
+				<button label="添加" action="addDeviceToJob" type="信号机" idfield="DEVICEID" />
+				<button label="删除" action="deleteDeviceFromJob" type="信号机" idfield="DEVICEID" />
+				<button label="详细信息" action="openDevice" type="XHJ" idfield="DEVICEID" />
+			</buttons>
+		</popup>
+	</searchresultpopups>
+	
+	<!-- 页面回传任务关联设备时的popup配置 -->
+	<showdevicepopups>
+		<popup layername="default">
+			<title>{DESC}</title>
+			<idfieldname>DEVICEID</idfieldname>
+			<fields>
+				<field name="DESC" />
+			</fields>
+			<showzoomtobutton>false</showzoomtobutton>
+		</popup>
+		
+		<popup layername="信号机">
+			<title>{desc}</title>
+			<idfieldname>id</idfieldname>
+			<fields>
+				<field name="desc" />
+				<field name="id" alias="编号" visible="true" />
+			</fields>
+			<showzoomtobutton>false</showzoomtobutton>
+			<buttons>
+				<button label="详细信息" action="openDevice" type="XHJ" idfield="id" />
+			</buttons>
+		</popup>
+		
+		<popup layername="摄像机">
+			<title>{desc}</title>
+			<idfieldname>id</idfieldname>
+			<fields>
+				<field name="desc" />
+				<field name="id" alias="编号" visible="true" />
+			</fields>
+			<showzoomtobutton>false</showzoomtobutton>
+			<buttons>
+				<button label="详细信息" action="openDevice" type="SXJ" idfield="id" />
+			</buttons>
+		</popup>
+		
+		<popup layername="policeSentry">
+			<title>{desc}</title>
+			<idfieldname>id</idfieldname>
+			<fields>
+				<field name="desc" />
+				<field name="id" alias="编号" visible="true" />
+			</fields>
+			<showzoomtobutton>false</showzoomtobutton>
+		</popup>
+		
+		<popup layername="警车">
+			<title>{plateNo}</title>
+			<idfieldname>carphoneCode</idfieldname>
+			<fields>
+				<field name="plateNo" alias="车牌号" visible="false"/>
+				<field name="carphoneCode" alias="车台编号" visible="false"/>
+			</fields>
+			<showzoomtobutton>false</showzoomtobutton>
+		</popup>
+	</showdevicepopups>
+</configuration>

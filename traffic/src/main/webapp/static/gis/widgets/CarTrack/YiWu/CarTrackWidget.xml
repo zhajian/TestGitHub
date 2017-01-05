@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<configuration>
+	<simmovepointtype>carTrack</simmovepointtype>
+	<speed>200</speed>
+	<devicelayer>
+		<url>http://{serverip}/arcgis/rest/services/yw/yiwu_device/MapServer/5</url>
+		<idfield>KKDM</idfield>
+	</devicelayer>
+</configuration>

@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<configuration>
+	<type>SheXiangJi</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify></widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify></widgetclosenotify>
+	
+	<popupskinclass>普陀摄像机</popupskinclass>
+	
+	<needzoom>true</needzoom>
+	
+	<initvisible>true</initvisible>
+	
+	<popup>
+		
+		<showzoomtobutton>false</showzoomtobutton>
+	</popup>
+	
+	<uniquevaluerenderer field="CONTROLTYP">
+		<picturemarkersymbol url="assets/images/mapIcons/SheXiangJi-blue.png" yoffset="13" />
+		<uniquevalueinfo value="可控">
+			<picturemarkersymbol url="assets/images/mapIcons/SheXiangJi-KeKong-blue.png" yoffset="13" />
+		</uniquevalueinfo>
+	</uniquevaluerenderer>
+	
+	<clickfunction>
+		<action>showInfoWindow</action>
+	</clickfunction>
+</configuration>

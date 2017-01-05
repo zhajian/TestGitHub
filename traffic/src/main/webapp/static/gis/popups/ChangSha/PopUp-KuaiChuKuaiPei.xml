@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<!-- 快处快赔 -->
+<configuration>
+	<title>{NAME}</title>
+	<fields>
+		<field name="NAME" />
+		<field name="ADDRESS" alias="地址" visible="true" />
+		<field name="PHONE" alias="电话" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+	</buttons>
+</configuration>

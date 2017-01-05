@@ -1,0 +1,30 @@
+<!--仓库 -->
+<configuration>
+	<layer>http://{serverip}/arcgis/rest/services/TianJin/tianjin_device/MapServer/10</layer>
+	<layername>仓库</layername>
+	
+	<refreshrate>0</refreshrate>
+	<refreshneedquery>false</refreshneedquery>
+	
+	<widgetvisible>false</widgetvisible>
+	
+	<clickfunction>
+		<action>OpenDevice</action>
+		<type>CangKu</type>
+		<idfield>CANGKUID</idfield>
+	</clickfunction>
+	
+	<popup>
+		<title>{CANGKUID}</title>
+		<fields>
+			<field name="CANGKUID" />
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+	</popup>
+	
+	<popupskinclass></popupskinclass>
+	
+	<simplerenderer>
+		<picturemarkersymbol url="assets/images/mapIcons/WuHu/YingJiSheShi-blue.png" yoffset="18"/>
+	</simplerenderer>
+</configuration>

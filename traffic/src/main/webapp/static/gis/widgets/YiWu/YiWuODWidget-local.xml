@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<configuration>
+	<kklayer>
+		<url>http://{serverip}/arcgis/rest/services/yiwu/yiwu_device/MapServer/5</url>
+		<idfield>DMDM</idfield>
+	</kklayer>
+	
+	<simplerenderer>
+		<picturemarkersymbol url="assets/images/mapIcons/KaKou-blue.png" yoffset="13" />
+	</simplerenderer>
+</configuration>

@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<configuration>
+	<httpserviceip>219.233.250.175:83</httpserviceip>
+	
+	<layerinfo>
+		<districtlayer>
+			<url>http://{serverip}/arcgis/rest/services/HuanBaoJu/XinFangDian/MapServer/0</url>
+		</districtlayer>
+		
+		<blocklayer>
+			<url>http://{serverip}/arcgis/rest/services/HuanBaoJu/XinFangDian/MapServer/2</url>
+		</blocklayer>
+		
+		<labellayer>
+			<url>http://{serverip}/arcgis/rest/services/HuanBaoJu/LabelLine/MapServer/0</url>
+		</labellayer>
+		
+		<xfdlayer>
+			<url>http://{serverip}/arcgis/rest/services/HuanBaoJu/XinFangDian/MapServer/3</url>
+		</xfdlayer>
+		
+		<hmdlayer>
+			<url>http://{serverip}/arcgis/rest/services/HuanBaoJu/HMD/MapServer/0</url>
+		</hmdlayer>
+		
+		<hjxypjlayer>
+			<url>http://{serverip}/arcgis/rest/services/HuanBaoJu/QXZX/MapServer/0</url>
+		</hjxypjlayer>
+	</layerinfo>
+</configuration>

@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<!-- 银行 -->
+<configuration>
+	<title>{MC}</title>
+	<fields>
+		<field name="MC" />
+		<field name="DZ" alias="地址" visible="true" />
+		<field name="ADD_JDMC" alias="街道" visible="true" />
+		<field name="ADD_PCSMC" alias="派出所" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+</configuration>

@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!-- 情报板 -->
+<configuration>
+	<title>{SDE.SQBB.sbbh}</title>
+	<fields>
+		<field name="SDE.SQBB.sbbh" />
+		<field name="SDE.SQBB.sbms" alias="详细描述：" visible="true" />
+		<field name="SDE.SQBB.azsj" alias="安装时间：" visible="true" />
+		<field name="SDE.SQBB.azdw" alias="安装单位：" visible="true" />
+		<field name="SDE.SQBB.whdw" alias="维护单位：" visible="true" />
+		<field name="SDE.SQBB.fzr" alias="负责人：" visible="true" />
+		<field name="SDE.SQBB.tel" alias="联系方式：" visible="true" />
+		<field name="SDE.SQBB.pp" alias="品牌：" visible="true" />
+		<field name="SDE.SQBB.xh" alias="型号：" visible="true" />
+		<field name="SDE.SQBB.jg" alias="价格：" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+		<button label="详细信息" action="openDevice" type="SQBB" idfield="SDE.SQBB.sbbh" />
+	</buttons>
+</configuration>

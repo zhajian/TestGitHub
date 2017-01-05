@@ -1,0 +1,42 @@
+<!-- 警情 -->
+<?xml version="1.0" ?>
+<configuration>
+	<type>JingQing</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify></widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify></widgetclosenotify>
+	
+	<initvisible>false</initvisible>
+	
+	<popupskinclass>JingQing</popupskinclass>
+	<popup>
+		<title>{callPoliceTime}</title>
+		<fields>
+			<field name="taskSourceId" alias="任务源Id：" visible="true"/>
+			<field name="callPoliceTime"/>
+			<field name="callPolicePhone" alias="报警电话：" visible="true"/>
+			<field name="callPolicePerson" alias="报警人：" visible="true"/>
+			<field name="occurPlace" alias="案发地址：" visible="true"/>
+			<field name="content" alias="案情：" visible="true"/>
+			<field name="canView"/>
+			<field name="canEdit"/>
+			<field name="canDelete"/>
+			<field name="canLocate"/>
+			<field name="canDispatch"/>
+			<field name="canDispatchPolice"/>
+			<field name="canArrive"/>
+			<field name="canQuick"/>
+			<field name="canOver"/>
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+	</popup>
+	
+	<simplerenderer>
+		<picturemarkersymbol url="assets/images/mapIcons/JingQing-blue.png" yoffset="13"/>
+	</simplerenderer>
+	
+	<clickfunction>
+		<action>showInfoWindow</action>
+	</clickfunction>
+</configuration>

@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{高架发布段_一级显示.DES}</title>
+	<fields>
+		<field name="高架发布段_二级显示.DES" />
+		<field name="高架发布段_一级显示.所属道路" alias="所属道路:" visible="true"/>
+		<field name="高架发布段_二级显示.BM_CODE"/>
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+		<button label="详细信息" action="openDevice" type="FBD" idfield="高架发布段_二级显示.BM_CODE" />
+	</buttons>
+</configuration>

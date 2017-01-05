@@ -1,0 +1,61 @@
+<configuration>
+	<layout direction="horizontal" gap="10" />
+	<groups>
+		<group>
+			<item id="kk-all" name="所有卡口" initstate="enable" 
+				  image="assets/images/buttons/PuDong/KaKou.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="所有卡口" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="kk-KaoHe" name="考核卡口" 
+				  image="assets/images/buttons/PuDong/KaKou-KaoHe.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="考核卡口"/>
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="kk-JiaoJing" name="交警卡口" 
+				  image="assets/images/buttons/PuDong/KaKou-JiaoJing.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="交警卡口" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="kk-ShiGong" name="施工卡口" 
+				  image="assets/images/buttons/PuDong/KaKou-ShiGong.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="施工卡口" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="kk-other" name="其他卡口" 
+				  image="assets/images/buttons/PuDong/KaKou-Other.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="其他卡口" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</group>
+	</groups>
+</configuration>

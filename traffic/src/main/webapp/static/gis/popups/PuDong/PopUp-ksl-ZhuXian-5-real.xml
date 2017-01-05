@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{SDE.主线发布段_5级.DES}</title>
+	<fields>
+		<field name="SDE.主线发布段_5级.DES" />
+		<field name="SDE.主线发布段_5级.SECTIONID" alias="路段编号：" visible="true" />
+		<field name="SDE.主线发布段_5级.所属道路" alias="所属道路：" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	
+</configuration>

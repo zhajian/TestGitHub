@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{sb_卡口.SBMC}</title>
+	<fields>
+		<field name="sb_卡口.SBMC" />
+		<field name="sb_卡口.SBBH" alias="编号" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+		<button label="详细信息" action="openDevice" type="KaKou" idfield="sb_卡口.SBBH" />
+	</buttons>
+</configuration>

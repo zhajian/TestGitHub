@@ -1,0 +1,30 @@
+<!--情报板 -->
+<configuration>
+	<layer>http://{serverip}/arcgis/rest/services/TianJin/tianjin_device/MapServer/0</layer>
+	<layername>情报板</layername>
+	
+	<refreshrate>0</refreshrate>
+	<refreshneedquery>false</refreshneedquery>
+	
+	<widgetvisible>false</widgetvisible>
+	
+	<clickfunction>
+		<action>OpenDevice</action>
+		<type>QingBaoBan</type>
+		<idfield>DEVICEID</idfield>
+	</clickfunction>
+	
+	<popup>
+		<title>{DEVICEID}</title>
+		<fields>
+			<field name="DEVICEID" />
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+	</popup>
+	
+	<popupskinclass></popupskinclass>
+	
+	<simplerenderer>
+		<picturemarkersymbol url="assets/images/mapIcons/TianJin/QingBaoBan.png"/>
+	</simplerenderer>
+</configuration>

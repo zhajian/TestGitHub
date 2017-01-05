@@ -1,0 +1,58 @@
+<configuration>
+	<layout direction="horizontal" gap="10" />
+	<groups>
+		<group>
+			<item id="fbd-ksl" name="快速路发布段" image="assets/images/buttons/FaBuDuan.png" initstate="enable">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="发布段" />
+							<param name="LayerId" value="0" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="fbd-dm" name="地面发布段" image="assets/images/buttons/FaBuDuan.png" initstate="enable">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="发布段" />
+							<param name="LayerId" value="1" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="cjq" name="车检器" image="assets/images/buttons/DuanMian.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="车辆检测器" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="xhd" name="信号灯" image="assets/images/buttons/XinHaoJi.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="信号灯" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="kk" name="卡口" image="assets/images/buttons/KaKou.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="卡口" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</group>
+	</groups>
+</configuration>

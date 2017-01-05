@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{Road_Name}</title>
+	<fields>
+		<field name="Road_Name" />
+		<field name="DEVICEID"/>
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+		<button label="详细信息" action="openDevice" type="SXJ" idfield="DEVICEID" />
+	</buttons>
+</configuration>

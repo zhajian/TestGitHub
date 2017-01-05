@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{devDesc}</title>
+	<fields>
+		<field name="devDesc" />
+		<field name="maintain" alias="维护班组" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+</configuration>

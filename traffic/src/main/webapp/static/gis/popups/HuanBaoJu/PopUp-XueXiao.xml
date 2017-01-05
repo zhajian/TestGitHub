@@ -1,0 +1,9 @@
+<!-- 学校 -->
+<?xml version="1.0" ?>
+<configuration>
+	<title>{XXMC}</title>
+	<fields>
+		<field name="XXMC" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+</configuration>

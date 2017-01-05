@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<!-- 警车gps轨迹 -->
+<configuration>
+	<type>gpsCarTrack</type>
+	<linetype>gpsCarTrack</linetype>
+	<pointsymbol>
+		<picturemarkersymbol url="assets/images/mapIcons/WuHu/JingChe-blue.png" yoffset="18"/>
+	</pointsymbol>
+</configuration>

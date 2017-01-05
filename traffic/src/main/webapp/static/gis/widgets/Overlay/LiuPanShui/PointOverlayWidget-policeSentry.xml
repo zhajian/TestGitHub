@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<configuration>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify>onPoliceSentryOverlayRun</widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify>onPoliceSentryOverlayClose</widgetclosenotify>
+	
+	<type>policeSentry</type>
+	
+	<simplerenderer>
+		<picturemarkersymbol url="assets/images/mapIcons/GangDian-blue.png" yoffset="13" />
+	</simplerenderer>
+	
+	<drawsymbol>
+		<picturemarkersymbol url="assets/images/mapIcons/GangDian-blue.png" yoffset="13" />
+	</drawsymbol>
+</configuration>

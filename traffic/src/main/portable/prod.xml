@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<portable-config>
+	<config-file path="WEB-INF/classes/db.properties">
+		<replace key="jdbc.username">prod</replace>
+		<replace key="jdbc.password">prod_pwd</replace>
+	</config-file>
+</portable-config>

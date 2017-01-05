@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<configuration>
+	<showresult>false</showresult>
+	<needzoom>true</needzoom>
+	<layers>
+		<layer>
+			<type>小区</type>
+			<url>http://{serverip}/arcgis/rest/services/songjiang/SongJiang_FangWu/MapServer/0</url>
+			<idfield>CommunityId</idfield>
+			<simplefillsymbol color="0x3E6FBC" alpha="0" style="solid">
+				<outline color="0x3E6FBC" width="3" style="solid" alpha="0"/>
+			</simplefillsymbol>
+		</layer>
+		<layer>
+			<type>地块</type>
+			<url>http://{serverip}/arcgis/rest/services/songjiang/SongJiang_FangWu/MapServer/1</url>
+			<idfield>LandId</idfield>
+			<simplefillsymbol color="0x3E6FBC" alpha="0" style="solid">
+				<outline color="0x3E6FBC" width="3" style="solid" alpha="0"/>
+			</simplefillsymbol>
+		</layer>
+		<layer>
+			<type>项目</type>
+			<url>http://{serverip}/arcgis/rest/services/songjiang/SongJiang_FangWu/MapServer/2</url>
+			<idfield>ProjectApplyId</idfield>
+			<simplefillsymbol color="0x3E6FBC" alpha="0" style="solid">
+				<outline color="0x3E6FBC" width="3" style="solid" alpha="0"/>
+			</simplefillsymbol>
+		</layer>
+	</layers>
+</configuration>

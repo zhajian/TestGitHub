@@ -1,0 +1,124 @@
+<configuration>
+	<layout direction="horizontal" gap="10" />
+	<groups>
+		<group>
+			<item id="sxj" name="摄像机" image="assets/images/buttons/TianJin/SheBei/SheXiangJi.png">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="SheXiangJiOverlay" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="fbd" name="发布段" image="assets/images/buttons/TianJin/SheBei/FaBuDuan.png">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="FaBuDuanOverlay"/>
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="ShiJian" name="事件" image="assets/images/buttons/TianJin/ShiJian.png">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="ShiJianOverlay" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="LiuLiang" name="流量" image="assets/images/buttons/TianJin/LuKou.png">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="LiuLiangOverlay" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</group>
+		
+		<group>
+			<item id="GongJiaoZhanDian" name="公交站点" 
+				image="assets/images/buttons/TianJin/GongJiao/GongJiaoZhanDian.png"  initstate="enable">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="GongJiaoZhanDianOverlay" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="GongJiaoZhanDian" name="公交站点(视频)" 
+				image="assets/images/buttons/TianJin/GongJiao/GongJiaoZhanDian_ShiPin.png" >
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="GongJiaoZhanDianShiPinOverlay" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="GongJiaoZhanDian" name="公交站点(电子站牌)" 
+				image="assets/images/buttons/TianJin/GongJiao/GongJiaoZhanDian_ZhanPai.png" >
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="GongJiaoZhanDianZhanPaiOverlay" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</group>
+		
+		<group>
+			<item id="GongJiaoXianLu" name="公交线路" 
+				image="assets/images/buttons/TianJin/GongJiao/GongJiaoXianLu.png"  initstate="enable">
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="GongJiaoXianLuOverlay" />
+						</params>
+					</clickfunction>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="GongJiaoZhanDianQiDianOverlay" />
+						</params>
+					</clickfunction>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="GongJiaoZhanDianZhongDianOverlay" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="GuangBo" name="广播" image="assets/images/buttons/TianJin/GongJiao/GuangBo.png" >
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="GuangBoOverlay" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="TingCheChang" name="停车场" image="assets/images/buttons/TianJin/SheBei/TingCheChang.png" >
+				<clickfunctions>
+					<clickfunction name="ChangeWidget">
+						<params>
+							<param name="WidgetName" value="TingCheChangOverlay" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</group>
+	</groups>
+</configuration>

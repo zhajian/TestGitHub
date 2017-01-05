@@ -1,0 +1,84 @@
+<?xml version="1.0" ?>
+<configuration>
+	<type>block</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify>onBlockOverlayRun</widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify>onBlockOverlayClose</widgetclosenotify>
+	<popup>
+		<title>{issueSect}({statusDesc})</title>
+    	<fields>
+        	<field name="statusDesc" alias="状态"/>
+    		<field name="statusUpdateTime" alias="状态更新时间" visible="true"/>
+	        <field name="statusLastedMinutes" alias="状态持续时间" visible="true"/>
+        	<field name="speed" alias="车速" visible="false"/>
+			<field name="queueLength" alias="拥堵长度" visible="false"/>
+			<field name="reason" alias="拥堵原因" visible="true"/>
+			<field name="description" alias="拥堵描述" visible="true"/>
+			<field name="issueSect"/>
+			<field name="gisStatus"/>
+<!-- 			<field name="isNotification"/> -->
+	    </fields>
+    	<showzoomtobutton>false</showzoomtobutton>
+    	<buttons>
+			<button label="跟踪" action="openDevice" type="updateBlock"/>
+			<button label="结案" action="openDevice" type="deleteBlock"/>
+			<button label="周边" action="bufferSearch" widgetname="周边搜索" type="block"/>
+		</buttons>
+	</popup>
+    
+    <uniquevaluerenderer field="gisStatus">
+    		<picturemarkersymbol url="assets/images/mapIcons/YongDu-blue.png" yoffset="13"/>
+		
+		<uniquevalueinfo value="畅通">
+			<picturemarkersymbol url="assets/images/mapIcons/YongDu-blue.png" yoffset="13"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="拥挤">
+			<picturemarkersymbol url="assets/images/mapIcons/YongDu-yellow.png" yoffset="13"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="堵塞">
+			<picturemarkersymbol url="assets/images/mapIcons/YongDu-red.png" yoffset="13"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="畅通-超时">
+			<picturemarkersymbol url="assets/images/mapIcons/YongDu-blue-overtime.png" yoffset="13"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="拥挤-超时">
+			<picturemarkersymbol url="assets/images/mapIcons/YongDu-yellow-overtime.png" yoffset="13"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="堵塞-超时">
+			<picturemarkersymbol url="assets/images/mapIcons/YongDu-red-overtime.png" yoffset="13"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="畅通-跟踪">
+			<picturemarkersymbol url="assets/images/mapIcons/YongDu-blue-alart.png" yoffset="13"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="拥挤-跟踪">
+			<picturemarkersymbol url="assets/images/mapIcons/YongDu-yellow-alart.png" yoffset="13"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="堵塞-跟踪">
+			<picturemarkersymbol url="assets/images/mapIcons/YongDu-red-alart.png" yoffset="13"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="已派警">
+			<picturemarkersymbol url="assets/images/mapIcons/YongDu-SendPolice.png" yoffset="13"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="已反馈">
+			<picturemarkersymbol url="assets/images/mapIcons/YongDu-Feedback.png" yoffset="13"/>
+		</uniquevalueinfo>		
+		
+	</uniquevaluerenderer>
+	
+    
+    <clickfunction>
+		<action>showInfoWindow</action>
+	</clickfunction>
+	
+</configuration>

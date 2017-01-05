@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{SDE.morph_fbd.DES}</title>
+	<fields>
+		<field name="SDE.morph_fbd.DES" />
+		<field name="SDE.morph_fbd.BM_CODE" alias="编号" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+	   <button label="人工发布" action="openDevice" type="FBD" idfield="SDE.morph_fbd.BM_CODE" />
+	</buttons>
+</configuration>

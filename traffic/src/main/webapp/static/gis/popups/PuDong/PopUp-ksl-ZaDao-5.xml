@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{SDE.匝道发布段_5级.DES}</title>
+	<fields>
+		<field name="SDE.匝道发布段_5级.DES" />
+		<field name="SDE.匝道发布段_5级.SECTIONID" alias="路段编号: " visible="true" />
+<!-- 		<field name="SDE.匝道发布段_5级.HWAYNAME" alias="路段名称: " visible="true" /> -->
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+	   <button label="人工发布" action="openDevice" type="FBD_KSL" idfield="SDE.匝道发布段_5级.SECTIONID" />
+	   <button label="关联事件" action="openDevice" type="RelateEvent" idfield="SDE.匝道发布段_5级.SECTIONID"/>
+	</buttons>
+</configuration>

@@ -1,0 +1,8 @@
+<configuration>
+	<type>policeEvent</type>
+	<showconfirmwindow>true</showconfirmwindow>
+	<confirmwindow>
+		<title>添加预案</title>
+		<text>是否添加预案？</text>
+	</confirmwindow>
+</configuration>

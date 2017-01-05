@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{NAME}</title>
+	<fields>
+		<field name="NAME" />
+		<field name="SECTIONID" alias="路段编号：" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+	   <button label="人工发布" action="openDevice" type="FBD_DM" idfield="SECTIONID" />
+	   <button label="关联事件" action="openDevice" type="RelateEvent" idfield="SECTIONID"/>
+	</buttons>
+</configuration>

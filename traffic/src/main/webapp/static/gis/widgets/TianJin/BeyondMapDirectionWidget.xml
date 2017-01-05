@@ -1,0 +1,3 @@
+<configuration>
+	<url>http://{beyondserverip}/gisapi/rest/networkservice/direction?startPoint={startX},{startY}&endPoint={endX},{endY}&weightType={weightType}&token=BF833A1145CB44669FB387DEA62AC464</url>
+</configuration>

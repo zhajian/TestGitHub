@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{STATIONNAME}-{LINECOUNT}条线路</title>
+	<fields>
+		<field name="STATIONNAME" />
+		<field name="LINECOUNT"/>
+		<field name="LINENUMBER" alias="公交线路: " visible="true"/>
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+<!-- 	<buttons> -->
+<!-- 		<button label="详细信息" action="openDevice" type="XHJ" idfield="devId" /> -->
+<!-- 	</buttons> -->
+</configuration>

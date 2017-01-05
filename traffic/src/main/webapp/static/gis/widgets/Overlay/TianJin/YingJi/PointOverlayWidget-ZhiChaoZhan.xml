@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<!-- 治超站 -->
+<configuration>
+	<type>ZhiChaoZhan</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify></widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify></widgetclosenotify>
+	
+	<needzoom>false</needzoom>
+	<zoomscale>48000</zoomscale>
+	
+	<initvisible>false</initvisible>
+	
+	
+	<popupskinclass>天津应急治超站</popupskinclass>
+	
+	<popup>
+		<showzoomtobutton>false</showzoomtobutton>
+	</popup>
+	
+	<simplerenderer>
+		<picturemarkersymbol url="assets/images/mapIcons/WuHu/ShiPinJianCeQi-blue.png" yoffset="18"/>
+	</simplerenderer>
+	
+	<clickfunction>
+		<action>showInfoWindow</action>
+	</clickfunction>
+</configuration>

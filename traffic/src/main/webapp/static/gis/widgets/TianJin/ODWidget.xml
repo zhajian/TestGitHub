@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<configuration>
+	<pointlayer>
+		<url>http://{serverip}/arcgis/rest/services/tianjing/tianjin_od/MapServer/4</url>
+		<idfield>FID_高速服</idfield>
+	</pointlayer>
+</configuration>

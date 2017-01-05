@@ -1,0 +1,32 @@
+<!--车牌识别 -->
+<configuration>
+	<layer>http://{serverip}/arcgis/rest/services/pudong/pd_device/MapServer/4</layer>
+	
+	<refreshrate>0</refreshrate>
+	<refreshneedquery>false</refreshneedquery>
+	
+	<widgetvisible>false</widgetvisible>
+	
+	<clickfunction>
+		<action>openDevice</action>
+		<type>CPSB</type>
+		<idfield>SDE.sb_cpsbsb.DEVICEID</idfield>
+	</clickfunction>
+	
+	<uniquevaluerenderer field="PD_PJ.LP_RTSTATE_VW.FSTR_STATE">
+		<defaultlabel>未知</defaultlabel>
+		<picturemarkersymbol url="assets/images/mapIcons/KaKou-grey.png" yoffset="13" />
+
+		<uniquevalueinfo value="normal" label="连接">
+			<picturemarkersymbol url="assets/images/mapIcons/KaKou-blue.png" yoffset="13" />
+		</uniquevalueinfo>
+
+		<uniquevalueinfo value="unnormal" label="异常">
+			<picturemarkersymbol url="assets/images/mapIcons/KaKou-yellow.png" yoffset="13" />
+		</uniquevalueinfo>
+
+		<uniquevalueinfo value="disconnect" label="中断">
+			<picturemarkersymbol url="assets/images/mapIcons/KaKou-red.png" yoffset="13" />
+		</uniquevalueinfo>
+	</uniquevaluerenderer>
+</configuration>

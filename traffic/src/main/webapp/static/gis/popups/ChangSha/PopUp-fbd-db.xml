@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{SDE.Issuesect.NAME}</title>
+	<fields>
+		<field name="SDE.Issuesect.NAME" />
+		<field name="SDE.Issuesect.BM_CODE" alias="编号" visible="true" />
+		<field name="SDE.Issuesect.车道数" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+	   <button label="人工发布" action="openDevice" type="FBD" idfield="SDE.Issuesect.BM_CODE" />
+	</buttons>
+</configuration>

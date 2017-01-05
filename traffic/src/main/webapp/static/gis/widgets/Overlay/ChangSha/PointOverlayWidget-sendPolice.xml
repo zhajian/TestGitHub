@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<!-- 派警时显示的警员 -->
+<configuration>
+	<type>police</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify>onSendPoliceOverlayRun</widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify>onSendPoliceOverlayClose</widgetclosenotify>
+	<popup>
+		<title>{policeName}</title>
+		<fields>
+			<field name="policeSn" alias="警员编号" visible="true" />
+			<field name="policeName"/>
+			<field name="departmentName" alias="所属部门" visible="true" />
+			<field name="dutyName" alias="职务" visible="true" />
+			<field name="highlight"/>
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+		<buttons>
+			<button label="选择" action="openDevice" type="policeClicked"
+				idfield="policeSn" />
+		</buttons>
+	</popup>
+
+	<uniquevaluerenderer field="highlight">
+		<picturemarkersymbol url="assets/images/mapIcons/JingCha-blue.png" yoffset="13"/>
+		
+		<uniquevalueinfo value="false">
+			<picturemarkersymbol url="assets/images/mapIcons/JingCha-blue.png" yoffset="13"/>
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="true">
+			<picturemarkersymbol url="assets/images/mapIcons/JingCha-blue-selected.png" yoffset="13"/>
+		</uniquevalueinfo>
+	</uniquevaluerenderer>
+    
+    <clickfunction>
+		<action>showInfoWindow</action>
+	</clickfunction>
+</configuration>

@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{HWAYNAME}({FROM1}-{TO1})</title>
+	<fields>
+		<field name="FROM1" />
+		<field name="TO1"/>
+		<field name="HWAYNAME"/>
+		<field name="SECTIONID" alias="编号" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+	   <button label="人工发布" action="openDevice" type="FBD_KSL" idfield="SECTIONID" />
+	   <button label="关联事件" action="openDevice" type="RelateEvent" idfield="SECTIONID"/>
+	</buttons>
+</configuration>

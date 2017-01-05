@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<configuration>
+	<pointlayer>
+		<url>http://{serverip}/arcgis/rest/services/shanghai/sh_points/MapServer/2</url>
+	</pointlayer>
+	
+	<polygonlayer>
+		<url>http://{serverip}/arcgis/rest/services/shanghai/sh_points/MapServer/3</url>
+	</polygonlayer>
+</configuration>

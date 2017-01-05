@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<configuration>
+	<type>schoolBusstationStart</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify>onSchoolBusStationStartOverlayRun</widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify>onSchoolBusStationStartOverlayClose</widgetclosenotify>
+	<popup>
+		<title>{name}</title>
+		<fields>
+			<field name="name" visible="false"/>
+			<field name="id" alias="线路" visible="true"/>
+			<field name="address" alias="地址" visible="true"/>
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+		<buttons>
+			<button label="详情" action="openDevice" type="schoolBusstationStart" />
+		</buttons>
+	</popup>
+	<simplerenderer>
+		<picturemarkersymbol url="assets/images/mapIcons/TianJin/GongJiao/bus_start.png" yoffset="21" />
+	</simplerenderer>
+</configuration>

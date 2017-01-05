@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{PARKINGNAME}</title>
+	<fields>
+		<field name="PARKINGNAME" />
+		<field name="ADDRESS" alias="进口地址: " visible="true"/>
+		<field name="TIMEPERIOD" alias="时间: " visible="true"/>
+		<field name="TOTALCOUNT" alias="车位数: " visible="true"/>
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+<!-- 	<buttons> -->
+<!-- 		<button label="详细信息" action="openDevice" type="XHJ" idfield="devId" /> -->
+<!-- 	</buttons> -->
+</configuration>

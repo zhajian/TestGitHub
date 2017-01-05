@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<configuration>
+	<type>fbd</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify></widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify></widgetclosenotify>
+	<simplerenderer>
+		<picturemarkersymbol url="assets/images/mapIcons/FaBuDuan-blue.png" yoffset="13"/>
+	</simplerenderer>
+    
+    <clickfunction>
+		<action>showInfoWindow</action>
+	</clickfunction>
+</configuration>

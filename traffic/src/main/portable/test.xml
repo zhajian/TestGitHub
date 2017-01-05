@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<portable-config>
+    <config-file path="WEB-INF/classes/logback.xml">
+        <replace xpath="/configuration/property[@name='LOG_DIR']/@value">/temp/logs/hgdf-adp/</replace>
+        <replace xpath="/configuration/root/@level">DEBUG</replace>
+    </config-file>
+    <config-file path="WEB-INF/classes/env.properties" type=".properties">
+        <replace key="jdbc.driverUrl">jdbc:oracle:thin:@192.168.3.11:1521:orcl</replace>
+        <replace key="jdbc.password">hgadp</replace>
+        <replace key="jdbc.password">hgadp</replace>
+    </config-file>
+</portable-config>

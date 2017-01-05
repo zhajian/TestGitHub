@@ -1,0 +1,5 @@
+<configuration>
+	<simplefillsymbol color="0x3E6FBC" alpha="0.2" style="solid">
+		<outline color="0x3E6FBC" width="2" alpha="1" style="solid"/>
+	</simplefillsymbol>
+</configuration>

@@ -1,0 +1,45 @@
+<!-- 重点车辆 -->
+<?xml version="1.0" ?>
+<configuration>
+	<type>ZhongDianCheLiang</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify></widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify></widgetclosenotify>
+	
+	<initvisible>false</initvisible>
+	
+	<popupskinclass>advanced</popupskinclass>
+	<popup>
+		<title>{hphm}</title>
+		<fields>
+			<field name="hphm"/>
+			<field name="cllx" alias="车辆类型：" visible="true"/>
+			<field name="csdw" alias="所属单位：" visible="true"/>
+			<field name="gpsno" alias="GPS编号：" visible="true"/>
+			<field name="clztColor" alias="车辆状态：" visible="true"/>
+			<field name="clzt"/>
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+		<buttons>
+			<button label="显示路线" action="openDevice" type="showPoliceCarRoute"/>
+			<button label="查看轨迹" action="openDevice" type="gpsPoliceCarTrack"/>
+		</buttons>
+	</popup>
+	
+	<uniquevaluerenderer field="clzt">
+		<picturemarkersymbol url="assets/images/mapIcons/JingChe-grey.png" yoffset="13"/>
+		
+		<uniquevalueinfo value="正常">
+			<picturemarkersymbol url="assets/images/mapIcons/JingChe-blue.png" yoffset="13" />
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="异常">
+			<picturemarkersymbol url="assets/images/mapIcons/JingChe-red.png" yoffset="13" />
+		</uniquevalueinfo>
+	</uniquevaluerenderer>
+	
+	<clickfunction>
+		<action>showInfoWindow</action>
+	</clickfunction>
+</configuration>

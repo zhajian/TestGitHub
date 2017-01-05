@@ -1,0 +1,82 @@
+@charset "utf-8";
+body,ul,li,dl,dt,dd,div { padding:0px; margin:0px;}
+.body_bj1 { background:#4199cc;}
+.body_bj2 { background:#fff;}
+.top_DivBox { width:100%; height:306px; background:url(../../images/top_ban_bj2.jpg) #fff repeat-x; position:relative;}
+.DivBox_main { width:1024px; height:236px; background:url(../../images/top_ban_bj.jpg) no-repeat; margin:0px auto; padding:0px; text-align:center; padding-top:70px;}
+.DengLu { width:513px; height:244px; background:url(../../images/body_bj.png) -2px -9px no-repeat;  position:absolute; top:188px; left:50%; margin-left:-254px; }
+.DengLu dl { position:relative;}
+.DengLu dt  { font-size:16px; color:#333;}
+.DengLu .dt1 { position:absolute; top:55px; left:65px;}
+.DengLu .dt2 {  position:absolute; top:109px; left:65px;}
+.DengLu .dt3 {  position:absolute; top:159px; left:65px;}
+.DengLu dd input { width:250px; height:36px; border:1px solid #ccc; line-height:36px; font-size:16px; color:#333;}
+.DengLu .dd1 { position:absolute; top:45px; left:135px;}
+.DengLu .dd2 {  position:absolute; top:100px; left:135px;}
+.DengLu .dd3 {  position:absolute; top:46px; left:400px;}
+.DengLu .wrong {  position:absolute; top:195px; left:135px; font-size:14px; color:#F00;}
+.DengLu .dd4 {  position:absolute; top:150px; left:135px;}
+.DengLu .dd5 {  position:absolute; top:150px; left:245px;}
+.DengLu .dd3 .btn { width:66px; height:94px;background:url(../../images/body_bj.png) -9px -266px no-repeat !important; overflow:hidden; border:none; cursor:pointer; outline:none;}
+.DengLu dl a { font-size:16px; text-decoration:none; color:#999;}
+.DengLu dl a:hover { font-size:16px; color:#2e8ae6; text-decoration:underline;}
+
+.bottom { width:1024px; margin:0px auto; text-align:center; clear:both; margin-top:280px; font-size:14px; }
+.font_color6 { font-size:14px; color:#666; margin-top:60px;}
+.top_ban_JiHuo {  width:100%; height:227px; background:url(../../images/top_ban2_bj2.jpg) #4199cc repeat-x; position:relative;}
+.logo_div { width:1024px; height:157px; background:url(../../images/top_ban2_bj.jpg) no-repeat; margin:0px auto; text-align:center; padding-top:70px;}
+.LiuCheng { width:488px; height:92px; position:absolute; top:184px; left:50%; margin-left:-244px;}
+.LiuCheng dl { width:91px; height:91px; overflow:hidden; float:left; margin-right:95px; z-index:9;}
+.LiuCheng dt { font-size:42px; font-family:微软雅黑;}
+.LiuCheng dd { font-size:14px;}
+.LiuCheng .Lan_BJ { background:url(../../images/body_bj.png) -6px -486px no-repeat; color:#fff;}
+.LiuCheng .Lan_BJ2 { background:url(../../images/body_bj.png) -6px -604px no-repeat; color:#585858;}
+.LiuCheng  .margin_0 { margin:0px;}
+.HengXian_lan { width:186px; height:6px; background:#006aa7; position:absolute; top:227px; left:50%; margin-left:-200px; }
+.HengXian_hui2 { width:186px; height:6px; background:#d9d9d9; position:absolute; top:227px; left:50%; margin-left:-200px; }
+.HengXian_hui { width:186px; height:6px; background:#d9d9d9; position:absolute; top:227px; left:50%;}
+.HengXian_lan2 { width:186px; height:6px; background:#006aa7; position:absolute; top:227px; left:50%;}
+
+/*激活页面*/
+.div_main_bj { width:490px; height:224px; background:url(../../images/body_bj.png) -8px -1060px no-repeat; margin:0px auto; margin-top:94px; position:relative;}
+.div_SanJiao { width:31px; height:22px; background:url(../../images/SanJiao.png) no-repeat; position:absolute; top:-22px; left:36px;}
+.div_SanJiao2 { width:31px; height:22px; background:url(../../images/SanJiao.png) no-repeat; position:absolute; top:-22px; left:220px;}
+.div_main_bj ul li { list-style:none;}
+.input_text { width:270px; height:40px; border:1px solid #ccc; font-size:16px; color:#333; line-height:40px;}
+.div_main_bj ul .li1 { position:absolute; top:30px; left:109px; font-size:16px; color:#333;}
+.div_main_bj ul .li2 { position:absolute; top:62px; left:109px; }
+.div_main_bj ul .li3 { position:absolute; top:112px; left:109px; font-size:14px; color:#e62e2e; }
+.div_main_bj ul .li4 { position:absolute; top:154px; left:188px; }
+.input_btn { width:108px; height:40px; background:url(../../images/body_bj.png) -7px -369px no-repeat; border:none; font-size:16px; color:#929292; cursor:pointer;}
+/*输入框被激活的样式*/
+.input_btn2 { width:108px; height:40px; background:url(../../images/body_bj.png) -7px -427px no-repeat; border:none; font-size:16px; color:#fff; cursor:pointer;}
+.XuanZhe { width:79px; height:79px; position:absolute; top:6px; left:5px; z-index:9; background:url(../../images/body_bj.png) -11px -722px no-repeat;}
+.XuanZhe2 { width:79px; height:79px; position:absolute; top:6px; left:190px; z-index:9; background:url(../../images/body_bj.png) -11px -722px no-repeat;}
+
+
+#JiHuoChengGong {}
+
+.dd4 .input{ width:100px;}
+.dd5 img{width:100px; height:40px}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

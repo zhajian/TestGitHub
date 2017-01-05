@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{MC}</title>
+	<fields>
+		<field name="MC" />
+		<field name="QDZ" alias="起点" visible="true" />
+		<field name="ZDZ" alias="终点" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+</configuration>

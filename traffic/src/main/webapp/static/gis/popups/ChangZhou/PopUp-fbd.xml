@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{fbd_ChangZhou.DES}</title>
+	<fields>
+		<field name="fbd_ChangZhou.DES" />
+		<field name="fbd_ChangZhou.FSTR_ISSUE" alias="编号" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+	   <button label="人工发布" action="openDevice" type="FBD" idfield="fbd_ChangZhou.FSTR_ISSUE" />
+	</buttons>
+</configuration>

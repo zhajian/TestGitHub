@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<configuration>
+	<type>schoolBusStation</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify>onSchoolBusStationOverlayRun</widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify>onSchoolBusStationOverlayClose</widgetclosenotify>
+	<popup>
+		<title>{name}</title>
+		<fields>
+			<field name="name" visible="false"/>
+			<field name="address" alias="地址" visible="true"/>
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+		<buttons>
+			<button label="详情" action="openDevice" type="schoolBusStation" />
+		</buttons>
+	</popup>
+	<simplerenderer>
+		<picturemarkersymbol url="assets/images/mapIcons/TianJin/GongJiao/GongJiaoZhanDian.png" yoffset="13" />
+	</simplerenderer>
+	<drawsymbol>
+		<picturemarkersymbol url="assets/images/mapIcons/TianJin/GongJiao/GongJiaoZhanDian.png" yoffset="13" />
+	</drawsymbol>
+</configuration>

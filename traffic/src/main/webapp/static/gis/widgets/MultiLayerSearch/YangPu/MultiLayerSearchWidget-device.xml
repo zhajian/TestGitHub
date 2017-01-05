@@ -1,0 +1,127 @@
+<configuration>
+	<showbuffersearch>false</showbuffersearch>
+	<showgraphicsearch>true</showgraphicsearch>
+	<sendresult>false</sendresult>
+	
+	<layerinfo>
+		<find>
+			<url>http://{serverip}/arcgis/rest/services/YangPu_device/MapServer</url>
+			<fields>STATIONNAME,PARKINGNAME,DEVICENAME,ROADNAME,ADDRESS,STATIONNAME,LOCATION </fields>
+		</find>
+
+		<uniquevaluerenderer field="layerName">
+			<simplemarkersymbol style="circle" color="0xFF0000" size="10"/>
+			
+			<uniquevalueinfo value="公交站点">
+				<picturemarkersymbol url="assets/images/mapIcons/TianJin/GongJiao/GongJiaoZhanDian.png" yoffset="13" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="停车场">
+				<picturemarkersymbol url="assets/images/mapIcons/YangPu/TingCheChang-blue.png"/>
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="停车场诱导板">
+				<picturemarkersymbol url="assets/images/mapIcons/YangPu/QingBaoBan.png"/>
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="出租车扬招点">
+				<picturemarkersymbol url="assets/images/mapIcons/ChuZuChe.png" yoffset="18"/>
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="微枢纽">
+				<picturemarkersymbol url="assets/images/mapIcons/ShuNiu.png" yoffset="13" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="公共自行车">
+				<picturemarkersymbol url="assets/images/mapIcons/ZiXingChe.png" yoffset="13" />
+			</uniquevalueinfo>
+			
+			<uniquevalueinfo value="公交车">
+				<picturemarkersymbol url="assets/images/mapIcons/TianJin/GongJiao/GongJiaoChe.png" yoffset="13" />
+			</uniquevalueinfo>
+		</uniquevaluerenderer>
+
+		<popups>
+			<popup layername="default">
+				<title>{DES}</title>
+				<fields>
+					<field name="DES" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+			<popup layername="公交站点">
+				<title>{STATIONNAME}-{LINECOUNT}条线路</title>
+				<fields>
+					<field name="STATIONNAME" />
+					<field name="LINECOUNT"/>
+					<field name="LINENUMBER" alias="公交线路: " visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+			<popup layername="停车场">
+				<title>{PARKINGNAME}</title>
+				<fields>
+					<field name="PARKINGNAME" />
+					<field name="ADDRESS" alias="进口地址: " visible="true"/>
+					<field name="TIMEPERIOD" alias="时间: " visible="true"/>
+					<field name="TOTALCOUNT" alias="车位数: " visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+			<popup layername="停车场诱导板">
+				<title>{ROADNAME}-{DIRECTION}</title>
+				<fields>
+					<field name="ROADNAME" />
+					<field name="DIRECTION"/>
+					<field name="ADDRESS" alias="地址: " visible="true"/>
+					<field name="DEVICETYPE" alias="类型: " visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+			<popup layername="出租车扬招点">
+				<title>{ADDRESS}</title>
+				<fields>
+					<field name="ADDRESS"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+			<popup layername="微枢纽">
+				<title>{STATIONNAME}</title>
+				<fields>
+					<field name="STATIONNAME"/>
+					<field name="ADDRESS" alias="位置: " visible="true"/>
+					<field name="CHANGETYPE" alias="换乘车类: " visible="true"/>
+					<field name="STATIONTYPE" alias="设置形式: " visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+			<popup layername="公共自行车">
+				<title>{LOCATION}【{ADDRESS}】</title>
+				<fields>
+					<field name="LOCATION" />
+					<field name="ADDRESS"/>
+					<field name="TOTALCOUNT" alias="车辆数: " visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+			<popup layername="公交车">
+				<title>{lineid}</title>
+				<fields>
+					<field name="lineid"/>
+					<field name="busid" alias="车牌号: " visible="true" />
+				</fields>
+			</popup>
+		</popups>
+	</layerinfo>
+	
+	<overlays>
+		<overlay name="公交车" label="公交车" titlefield="lineid" idfield="busid" defaultselected="true"/>
+	</overlays>
+</configuration>

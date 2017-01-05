@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<configuration>
+	<showresult>true</showresult>
+	<layers>
+		<layer>
+			<type>地面监控</type>
+			<url>http://{serverip}/arcgis/rest/services/wuxi/wx_device_edit/MapServer/0</url>
+			<idfield>DEVICEID</idfield>
+<!-- 			<simplefillsymbol color="0x3E6FBC" alpha="0.5" style="solid"> -->
+<!-- 				<outline color="0x3E6FBC" width="3" style="solid"/> -->
+<!-- 			</simplefillsymbol> -->
+		</layer>
+		<layer>
+			<type>信号灯</type>
+			<url>http://{serverip}/arcgis/rest/services/wuxi/wx_device_edit/MapServer/1</url>
+			<idfield>DEVICEID</idfield>
+<!-- 			<simplefillsymbol color="0x3E6FBC" alpha="0.5" style="solid"> -->
+<!-- 				<outline color="0x3E6FBC" width="3" style="solid"/> -->
+<!-- 			</simplefillsymbol> -->
+		</layer>
+		<layer>
+			<type>流量检测器</type>
+			<url>http://{serverip}/arcgis/rest/services/wuxi/wx_device_edit/MapServer/2</url>
+			<idfield>DEVICEID</idfield>
+<!-- 			<simplefillsymbol color="0x3E6FBC" alpha="0.5" style="solid"> -->
+<!-- 				<outline color="0x3E6FBC" width="3" style="solid"/> -->
+<!-- 			</simplefillsymbol> -->
+		</layer>
+		<layer>
+			<type>卡口</type>
+			<url>http://{serverip}/arcgis/rest/services/wuxi/wx_device_edit/MapServer/3</url>
+			<idfield>DEVICEID</idfield>
+<!-- 			<simplefillsymbol color="0x3E6FBC" alpha="0.5" style="solid"> -->
+<!-- 				<outline color="0x3E6FBC" width="3" style="solid"/> -->
+<!-- 			</simplefillsymbol> -->
+		</layer>
+		<layer>
+			<type>信号机</type>
+			<url>http://{serverip}/arcgis/rest/services/wuxi/wx_device_edit/MapServer/4</url>
+			<idfield>DEVICEID</idfield>
+<!-- 			<simplefillsymbol color="0x3E6FBC" alpha="0.5" style="solid"> -->
+<!-- 				<outline color="0x3E6FBC" width="3" style="solid"/> -->
+<!-- 			</simplefillsymbol> -->
+		</layer>
+		<layer>
+			<type>监控</type>
+			<url>http://{serverip}/arcgis/rest/services/wuxi/wx_device_edit/MapServer/5</url>
+			<idfield>DEVICEID</idfield>
+<!-- 			<simplefillsymbol color="0x3E6FBC" alpha="0.5" style="solid"> -->
+<!-- 				<outline color="0x3E6FBC" width="3" style="solid"/> -->
+<!-- 			</simplefillsymbol> -->
+		</layer>
+		<layer>
+			<type>情报板</type>
+			<url>http://{serverip}/arcgis/rest/services/wuxi/wx_device_edit/MapServer/6</url>
+			<idfield>DEVICEID</idfield>
+<!-- 			<simplefillsymbol color="0x3E6FBC" alpha="0.5" style="solid"> -->
+<!-- 				<outline color="0x3E6FBC" width="3" style="solid"/> -->
+<!-- 			</simplefillsymbol> -->
+		</layer>
+		<layer>
+			<type>电子警察</type>
+			<url>http://{serverip}/arcgis/rest/services/wuxi/wx_device_edit/MapServer/7</url>
+			<idfield>DEVICEID</idfield>
+<!-- 			<simplefillsymbol color="0x3E6FBC" alpha="0.5" style="solid"> -->
+<!-- 				<outline color="0x3E6FBC" width="3" style="solid"/> -->
+<!-- 			</simplefillsymbol> -->
+		</layer>
+		<layer>
+			<type>路口</type>
+			<url>http://{serverip}/arcgis/rest/services/wuxi/wx_device_edit/MapServer/8</url>
+			<idfield>DEVICEID</idfield>
+<!-- 			<simplefillsymbol color="0x3E6FBC" alpha="0.5" style="solid"> -->
+<!-- 				<outline color="0x3E6FBC" width="3" style="solid"/> -->
+<!-- 			</simplefillsymbol> -->
+		</layer>
+	</layers>
+</configuration>

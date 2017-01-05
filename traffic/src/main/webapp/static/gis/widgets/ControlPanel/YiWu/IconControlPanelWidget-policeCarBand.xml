@@ -1,0 +1,36 @@
+<configuration>
+	<layout direction="horizontal" gap="10" />
+	<groups>
+		<group>
+			<item id="LBD" name="绿波带" image="assets/images/i_camera.png">
+				<clickfunctions>
+					<clickfunction name="changewidget">
+						<params>
+							<param name="WidgetName"  value="绿波带" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="JCSSWZ" name="警车实时位置" image="assets/images/car_00ba0a.png">
+				<clickfunctions>
+					<clickfunction name="changewidget">
+						<params>
+							<param name="WidgetName"  value="警车实时位置" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			
+			<item id="JCLSGJ" name="车辆历史轨迹查询" image="assets/images/car_00baa3.png">
+				<clickfunctions>
+					<clickfunction name="changewidget">
+						<params>
+							<param name="WidgetName"  value="车辆历史轨迹查询" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</group>
+	</groups>
+</configuration>

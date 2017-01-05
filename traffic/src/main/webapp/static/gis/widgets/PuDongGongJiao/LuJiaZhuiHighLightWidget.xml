@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<configuration>
+	<layers>
+		<layer>http://{serverip}/arcgis/rest/services/PuDongGongJiao/PuDongGongJiao_LuJiaZui/MapServer/0</layer>
+		<layer>http://{serverip}/arcgis/rest/services/PuDongGongJiao/PuDongGongJiao_LuJiaZui/MapServer/1</layer>
+	</layers>	
+	<webmercator>true</webmercator>
+</configuration>

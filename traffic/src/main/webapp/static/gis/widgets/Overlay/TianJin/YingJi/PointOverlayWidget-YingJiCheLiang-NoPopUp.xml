@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<!-- 应急车辆 -->
+<configuration>
+	<type>YingJiCheLiang</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify></widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify></widgetclosenotify>
+	
+	<needzoom>false</needzoom>
+	<zoomscale>48000</zoomscale>
+	
+	<initvisible>true</initvisible>
+	
+	
+	<popupskinclass>天津应急车辆</popupskinclass>
+	
+	<popup>
+
+		<showzoomtobutton>false</showzoomtobutton>
+	</popup>
+	
+	<simplerenderer>
+		<picturemarkersymbol url="assets/images/mapIcons/WuHu/JingChe-blue.png" yoffset="18"/>
+	</simplerenderer>
+	
+	<clickfunction>
+		<action>openDevice</action>
+	</clickfunction>
+</configuration>

@@ -1,0 +1,18 @@
+<configuration>
+	<type>policePatrol</type>
+	
+	<!-- point/polyline/freeHandPolyline/polygon/freeHandPolygon/circle/ellipse -->
+	<drawtype>polyline</drawtype>
+<!-- 	<drawsymbol> -->
+<!-- 		<simplemarkersymbol color="0x3E6FBC" style="circle" size="10"/> -->
+<!-- 	</drawsymbol> -->
+	
+	<showbuffer>true</showbuffer>
+	<defaultbufferdistance>200</defaultbufferdistance>
+	
+	<showconfirmwindow>true</showconfirmwindow>
+	<confirmwindow>
+		<title>添加巡逻岗</title>
+		<text>是否在此路线添加巡逻岗？</text>
+	</confirmwindow>
+</configuration>

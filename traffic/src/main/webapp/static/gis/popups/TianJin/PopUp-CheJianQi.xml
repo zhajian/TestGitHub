@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{NAME}</title>
+	<fields>
+		<field name="NAME" />
+		<field name="ROADNAME" alias="所属公路：" visible="true"/>
+		<field name="DEVICEID"/>
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+		<button label="流量统计" action="openDevice" type="CheJianQi-LiuLiangTongJi" idfield="DEVICEID" />
+	</buttons>
+</configuration>

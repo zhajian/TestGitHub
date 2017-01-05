@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<configuration>
+    <!--  
+	<blockgradientcolor>0x006100,0x6ba100,0xdfeb00,0xffbb00,0xff6200</blockgradientcolor>
+	-->
+
+	
+	<blockgradientcolor>0xdcc6e0,0xbe90d4,0x9b59b6,0x704899,0x674172</blockgradientcolor>
+	
+	<popup>
+		<title>要素: {ISSUE_TYPE_nameS_} 来源: {DATASOURCE}</title>
+		<fields>
+			<field name="ISSUE_TYPE_nameS_" />
+			<field name="ACCUSED_NAME_" alias="投诉对象：" visible="true" />
+			<field name="PETITION_DATE_" alias="投诉时间: " visible="true"/>
+			<field name="ACCUSER_NAME_" alias="投诉人：" visible="true" />
+			<field name="person_num_" alias="人数：" visible="true" />
+			<field name="PETITION_TYPE_NAME_" alias="信访方式：" visible="true" />
+			<field name="ISSUE_UNIT_ADDRESS_" alias="投诉地址：" visible="true" />
+			<field name="ACCUSED_INDUSTRY_NAMES_" alias="所属行业：" visible="true" />
+			<field name="ISSUE_CONTENT_BLOB_" alias="投诉内容：" visible="true" />
+			<field name="RETURN_CONTENT_" alias="回复内容：" visible="true"/>
+			<field name="DATASOURCE" alias="数据来源：" visible="false"/>
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+	</popup>
+	
+	<uniquevaluerenderer field="ISSUE_TYPE_nameS_">
+		<simplemarkersymbol color="0x999999" size="7">
+			<outline width="1" color="0xffffff"/>
+		</simplemarkersymbol>
+		
+		<uniquevalueinfo value="餐饮噪声,">
+			<simplemarkersymbol color="0xff0f80" size="7">
+				<outline width="1" color="0xffffff"/>	
+			</simplemarkersymbol>
+		</uniquevalueinfo>
+	
+		<uniquevalueinfo value="餐饮废气,">
+			<simplemarkersymbol color="0x8000ff" size="7">
+				<outline width="1" color="0xffffff"/>
+			</simplemarkersymbol>
+		</uniquevalueinfo>
+	</uniquevaluerenderer>
+</configuration>

@@ -1,0 +1,132 @@
+<?xml version="1.0" ?>
+<configuration>
+	<type>od</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify>onODOverlayRun</widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify>onODOverlayClose</widgetclosenotify>
+
+	<popup>
+		<fields>
+			<field name="flowRate" alias="流量" visible="true" />
+		</fields>
+		<showzoomtobutton>false</showzoomtobutton>
+	</popup>
+
+	<kkQueryLayer>
+		<url>
+			http://jiaotong.seisys.cn:8399/arcgis/rest/services/wlmq/wlmq_device/MapServer/4
+		</url>
+		<ifield>sb_卡口.SBBH</ifield>
+	</kkQueryLayer>
+
+	<arrow enable="true">
+		<position>middle</position>
+		<length>20</length>
+		<simplerenderer>
+			<gradientfill linecolor="0x000000" linewidth="1">
+				<gradiententry color="0x006bcf" alpha="0.8" />
+				<gradiententry color="0x0084ff" alpha="0.8" />
+			</gradientfill>
+		</simplerenderer>
+	</arrow>
+
+
+	<classbreaksrenderer field="flowRate">
+		<simplelinesymbol style="solid" color="0xb0b0b0"
+			alpha="1" width="3" />
+
+		<classbreakinfo min="0" max="10">
+			<simplelinesymbol style="solid" color="0x84a183"
+				alpha="1" width="1" />
+		</classbreakinfo>
+
+		<classbreakinfo min="10.000001" max="20">
+			<simplelinesymbol style="solid" color="0x234920"
+				alpha="1" width="2" />
+		</classbreakinfo>
+
+		<classbreakinfo min="20.000001" max="40">
+			<simplelinesymbol style="solid" color="0xf8aa3d"
+				alpha="1" width="3" />
+		</classbreakinfo>
+
+		<classbreakinfo min="40.000001" max="80">
+			<simplelinesymbol style="solid" color="0xf8810d"
+				alpha="1" width="4" />
+		</classbreakinfo>
+
+		<classbreakinfo min="80.000001" max="160">
+			<simplelinesymbol style="solid" color="0xf6830e"
+				alpha="1" width="5" />
+		</classbreakinfo>
+
+		<classbreakinfo min="160.000001" max="320">
+			<simplelinesymbol style="solid" color="0xfe0501"
+				alpha="1" width="6" />
+		</classbreakinfo>
+
+		<classbreakinfo min="320.000001" max="640">
+			<simplelinesymbol style="solid" color="0xff0101"
+				alpha="1" width="7" />
+		</classbreakinfo>
+
+		<classbreakinfo min="640.000001" max="100000">
+			<simplelinesymbol style="solid" color="0xfe0000"
+				alpha="1" width="8" />
+		</classbreakinfo>
+	</classbreaksrenderer>
+
+
+	<overCrowdLayers>
+		<overCrowdLayer id="1">
+			<distace>3000</distace>
+			<buferPoint>87.585，43.864</buferPoint>
+			<layers layerName="小区1">
+				<layer>
+					<type>集点</type>
+					<idfield>SBBH</idfield>
+					<SBBH>650100100239</SBBH>
+					<simplefillsymbol color="0xFF0000" alpha="0.5"
+						style="solid">
+						<outline color="0xFF0000" width="3" style="solid" />
+					</simplefillsymbol>
+				</layer>
+				<layer>
+					<type>散点</type>
+					<idfield>SBBH</idfield>
+					<SBBH>650100100050 </SBBH>
+					<simplefillsymbol color="0x3E6FBC" alpha="0.5"
+						style="solid">
+						<outline color="0x3E6FBC" width="3" style="solid" />
+					</simplefillsymbol>
+				</layer>
+			</layers>
+		</overCrowdLayer>
+		
+		<overCrowdLayer id="2">
+		    <distace>2000</distace>
+			<buferPoint>87.645，43.829</buferPoint>
+			<layers layerName="小区2">
+				<layer>
+					<type>集点</type>
+					<idfield>SBBH</idfield>
+					<SBBH>650100100246 </SBBH>
+					<simplefillsymbol color="0xFF0000" alpha="0.5"
+						style="solid">
+						<outline color="0xFF0000" width="3" style="solid" />
+					</simplefillsymbol>
+				</layer>
+				<layer>
+					<type>散点</type>
+					<idfield>SBBH</idfield>
+					<SBBH>650100100169 </SBBH>
+					<simplefillsymbol color="0x3E6FBC" alpha="0.5"
+						style="solid">
+						<outline color="0x3E6FBC" width="3" style="solid" />
+					</simplefillsymbol>
+				</layer>
+			</layers>
+		</overCrowdLayer>
+	</overCrowdLayers>
+</configuration>

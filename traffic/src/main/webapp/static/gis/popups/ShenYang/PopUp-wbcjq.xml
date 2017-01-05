@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{POSITION}</title>
+	<fields>
+		<field name="POSITION" />
+		<field name="MWID" alias="编号" visible="true" />
+		<field name="BELONG" alias="所属道路" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+</configuration>

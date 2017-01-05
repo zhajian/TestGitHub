@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{PILECODE}</title>
+	<fields>
+		<field name="PILECODE"/>
+		<field name="ABA_TYPE" alias="标志类别：" visible="true" />
+		<field name="ABA_SIZE" alias="板面尺寸：" visible="true"/>
+		<field name="SIGNCODE" alias="标志代码：" visible="true"/>
+		<field name="PICTURE"/>
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+<!-- 	<buttons> -->
+<!-- 		<button label="详细信息" action="openDevice" type="XHJ" idfield="devId" /> -->
+<!-- 	</buttons> -->
+	<medias>
+		<media type="image" imagesource="PICTURE"/>
+	</medias>
+</configuration>

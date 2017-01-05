@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<configuration>
+	<type>SheXiangJi</type>
+	<bufferserviceurl>http://{beyondserverip}/gisapi/rest/featureservice/buffer?token=BF833A1145CB44669FB387DEA62AC464&needGeometry=true&targetLayerName=SP_SXJ&point={x},{y}&distance={distance}</bufferserviceurl>
+	
+	<popupskinclass>天津设备</popupskinclass>
+	
+	<popup>
+		<showzoomtobutton>false</showzoomtobutton>
+	</popup>
+	
+	<uniquevaluerenderer field="SPJR">
+		<picturemarkersymbol url="assets/images/mapIcons/SheXiangJi-grey.png" yoffset="13"/>
+		
+		<uniquevalueinfo value="1">
+			<picturemarkersymbol url="assets/images/mapIcons/SheXiangJi-blue.png" yoffset="13" />
+		</uniquevalueinfo>
+		
+		<uniquevalueinfo value="0">
+			<picturemarkersymbol url="assets/images/mapIcons/SheXiangJi-yellow.png" yoffset="13" />
+		</uniquevalueinfo>
+	</uniquevaluerenderer>
+</configuration>

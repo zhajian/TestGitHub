@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{PILE_STRAT}--{PILE_END}</title>
+	<fields>
+		<field name="PILE_STRAT"/>
+		<field name="PILE_END"/>
+		<field name="CODE" alias="路线信息：" visible="true" />
+		<field name="PILE_DIVIDE" alias="区县分界桩号：" visible="true"/>
+		<field name="LINE_XC" alias="行车线平米数：" visible="true"/>
+		<field name="LINE_YX" alias="异行线平米数：" visible="true"/>
+		<field name="ITEMCODE" alias="标线编码：" visible="true"/>
+		<field name="PICTURE"/>
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+<!-- 	<buttons> -->
+<!-- 		<button label="详细信息" action="openDevice" type="XHJ" idfield="devId" /> -->
+<!-- 	</buttons> -->
+	<medias>
+		<media type="image" imagesource="{PICTURE}"/>
+	</medias>
+</configuration>

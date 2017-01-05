@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{闵行发布段.路名}({闵行发布段.起点交叉路}-{闵行发布段.终点交叉路})</title>
+	<fields>
+		<field name="闵行发布段.路名" />
+		<field name="闵行发布段.起点交叉路" />
+		<field name="闵行发布段.终点交叉路" />
+		<field name="闵行发布段.BM_CODE"/>
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+		<button label="详细信息" action="openDevice" type="FBD" idfield="闵行发布段 .BM_CODE" />
+	</buttons>
+</configuration>

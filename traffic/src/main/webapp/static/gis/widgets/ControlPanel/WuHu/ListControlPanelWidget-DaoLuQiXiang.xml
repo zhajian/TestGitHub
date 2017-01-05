@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<configuration>
+	<menu>
+		<itemgroup label="道路气象">
+			<item label="气象站" initenable="true">
+				<clickfunctions>
+					<clickfunction name="ChangeOverlayVisible">
+						<params>
+							<param name="WidgetName" value="气象站Overlay"/>
+							<param name="OverlayType" value="QiXiangZhan" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+			<item label="能见度仪" initenable="true">
+				<clickfunctions>
+					<clickfunction name="ChangeOverlayVisible">
+						<params>
+							<param name="WidgetName" value="能见度仪Overlay"/>
+							<param name="OverlayType" value="NengJianDuYi" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</itemgroup>
+	</menu>
+</configuration>
+	

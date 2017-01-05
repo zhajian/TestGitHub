@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{路名}({起点交叉路}-{终点交叉路})</title>
+	<fields>
+		<field name="路名" />
+		<field name="起点交叉路" />
+		<field name="终点交叉路" />
+		<field name="SECTIONID" alias="路段编号：" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+	   <button label="人工发布" action="openDevice" type="FBD_DM" idfield="SECTIONID" />
+	   <button label="关联事件" action="openDevice" type="RelateEvent" idfield="SECTIONID"/>
+	</buttons>
+</configuration>

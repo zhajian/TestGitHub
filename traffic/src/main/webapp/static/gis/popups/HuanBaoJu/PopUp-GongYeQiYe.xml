@@ -1,0 +1,9 @@
+<!-- 工业企业 -->
+<?xml version="1.0" ?>
+<configuration>
+	<title>{ENTERNAME}</title>
+	<fields>
+		<field name="ENTERNAME" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+</configuration>

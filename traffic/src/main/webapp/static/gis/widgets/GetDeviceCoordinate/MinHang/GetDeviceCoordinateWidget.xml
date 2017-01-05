@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<configuration>
+	<showresult>true</showresult>
+	<needzoom>true</needzoom>
+	<layers>
+		<layer>
+			<type>SheXiangJi</type>
+			<zoomscale>48000</zoomscale>
+			<url>http://{serverip}/arcgis/rest/services/device/MapServer/0</url>
+			<idfield>CAMERAID</idfield>
+			<popup>
+				<title>{CAMERANAME}</title>
+				<fields>
+					<field name="CAMERANAME" />
+					<field name="CAMERAID" alias="摄像机编号：" visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		<layer>
+			<type>QingBaoBan</type>
+			<zoomscale>48000</zoomscale>
+			<url>http://{serverip}/arcgis/rest/services/device/MapServer/3</url>
+			<idfield>DEVICEID</idfield>
+			<popup>
+				<title>{DEVDESC}</title>
+				<fields>
+					<field name="DEVDESC" />
+					<field name="DEVICEID" alias="设备编号：" visible="true"/>
+					<field name=""/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</layer>
+		<layer>
+			<type>FaBuDuan</type>
+			<url>http://{serverip}/arcgis/rest/services/road/MapServer/0</url>
+			<idfield>高架发布段一级显示.BM_CODE</idfield>
+		</layer>
+		<layer>
+			<type>CheJianQi</type>
+			<zoomscale>48000</zoomscale>
+			<url>http://{serverip}/arcgis/rest/services/device/MapServer/4</url>
+			<idfield>cjq_mh.DETECTCODE</idfield>
+<!-- 			<popup> -->
+<!-- 				<title>{POS}</title> -->
+<!-- 				<fields> -->
+<!-- 					<field name="POS" /> -->
+<!-- 					<field name="DETECTCODE" alias="设备编号：" visible="true"/> -->
+<!-- 				</fields> -->
+<!-- 				<showzoomtobutton>false</showzoomtobutton> -->
+<!-- 			</popup> -->
+		</layer>
+	</layers>
+</configuration>

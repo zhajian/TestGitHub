@@ -1,0 +1,43 @@
+<configuration>
+	<type>Device</type>
+	
+	<showbuffersearch>false</showbuffersearch>
+	<showgraphicsearch>true</showgraphicsearch>
+	<showtextsearch>true</showtextsearch>
+	<showsendresult>false</showsendresult>
+	
+	<layerinfo>
+		<find>
+			<url>http://{serverip}/arcgis/rest/services/XinJiang/XinJiang_device/MapServer</url>
+			<fields>DEVICEID,FSTR_DESC</fields>
+			<layerids>0</layerids>
+		</find>
+
+		<uniquevaluerenderer field="layerName">
+			<simplemarkersymbol style="circle" color="0xFF0000" size="10"/>
+			<uniquevalueinfo value="摄像机">
+				<picturemarkersymbol url="assets/images/mapIcons/WuHu/SheXiangJi-blue.png" yoffset="18" />
+			</uniquevalueinfo>
+		</uniquevaluerenderer>
+
+		<popups>
+			<popup layername="default">
+				<title>{FSTR_DESC}</title>
+				<fields>
+					<field name="FSTR_DESC" />
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+			
+			<popup layername="摄像机">
+				<title>{FSTR_DESC}</title>
+				<idfieldname>DEVICEID</idfieldname>
+				<fields>
+					<field name="DEVICEID" alias="设备编号" visible="true"/>
+					<field name="FSTR_DESC" alias="设备描述" visible="true"/>
+				</fields>
+				<showzoomtobutton>false</showzoomtobutton>
+			</popup>
+		</popups>
+	</layerinfo>
+</configuration>

@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<!-- 高清卡口 -->
+<configuration>
+	<title>{MC}</title>
+	<fields>
+		<field name="MC" />
+		<field name="DW" alias="位置" visible="true" />
+		<field name="FX" alias="方向" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+</configuration>

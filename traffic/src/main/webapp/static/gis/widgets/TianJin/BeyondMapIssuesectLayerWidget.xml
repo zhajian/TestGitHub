@@ -1,0 +1,4 @@
+<?xml version="1.0" ?>
+<configuration>
+	<layerurl>http://{beyondserverip}/gisapi/rest/roadstateservice/roadCongestionByXY?token=BF833A1145CB44669FB387DEA62AC464</layerurl>
+</configuration>

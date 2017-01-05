@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{CP.NAME}</title>
+	<fields>
+		<field name="CP.NAME" />
+		<field name="CP.DEVICEID" alias="编号: " visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+	<buttons>
+	   <button label="实时状态" action="openDevice" type="KKInfo" idfield="CP.DEVICEID" />
+	   <button label="实时信息" action="openDevice" type="KKRt" idfield="CP.DEVICEID" />
+	</buttons>
+</configuration>

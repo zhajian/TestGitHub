@@ -1,0 +1,72 @@
+<configuration>
+	<layout direction="horizontal" gap="10" />
+	<groups>
+		<group>
+			<item id="HuanWangGui" name="环网柜" image="assets/images/buttons/FaBuDuan.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="设施设备" />
+							<param name="LayerId" value="1,2,3,4" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="KaiBiSuo" name="开闭所" image="assets/images/buttons/FaBuDuan.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="设施设备" />
+							<param name="LayerId" value="6,7,8,9" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="PeiDianFang" name="配电房" image="assets/images/buttons/FaBuDuan.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="设施设备" />
+							<param name="LayerId" value="11,12,13,14" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="XiangBian" name="箱变" image="assets/images/buttons/FaBuDuan.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="设施设备" />
+							<param name="LayerId" value="16,17,18,19" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="ZhuWangBianDianZhan" name="主网变电站" image="assets/images/buttons/FaBuDuan.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="设施设备" />
+							<param name="LayerId" value="21" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+
+			<item id="ZhuShangBian" name="柱上变" image="assets/images/buttons/FaBuDuan.png">
+				<clickfunctions>
+					<clickfunction name="ChangeLayer">
+						<params>
+							<param name="ServiceName" value="设施设备" />
+							<param name="LayerId" value="23,24,25,26" />
+						</params>
+					</clickfunction>
+				</clickfunctions>
+			</item>
+		</group>
+	</groups>
+</configuration>

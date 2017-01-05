@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<configuration>
+	<type>station-video</type>
+	<!-- 组件打开时通知页面 -->
+	<widgetrunnotify>onStationVideoOverlayRun</widgetrunnotify>
+	<!-- 组件关闭时通知页面 -->
+	<widgetclosenotify>onStationVideoOverlayClose</widgetclosenotify>
+	<popup>
+		<title>{name}</title>
+		<fields>
+			<field name="name" visible="false"/>
+			<field name="desc" alias="描述" visible="true"/>
+		</fields>
+		<buttons>
+			<button label="视频" action="openDevice" type="station-video" />
+		</buttons>
+		<showzoomtobutton>false</showzoomtobutton>
+	</popup>
+	<simplerenderer>
+		<picturemarkersymbol url="assets/images/mapIcons/TianJin/GongJiao/GongJiaoZhanDian_ShiPin.png" yoffset="13" />
+	</simplerenderer>
+</configuration>

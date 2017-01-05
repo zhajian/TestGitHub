@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<configuration>
+	<title>{SSLD}</title>
+	<fields>
+		<field name="SSLD" />
+		<field name="SSNR" alias="实施内容" visible="true"/>
+		<field name="ZXBM" alias="执行部门" visible="true"/>
+		<field name="SSSJ" alias="实施时间" visible="true"/>
+		<field name="SSFW" alias="实施范围" visible="true"/>
+		<field name="RWZT" alias="人物状态" visible="true" />
+	</fields>
+	<showzoomtobutton>false</showzoomtobutton>
+</configuration>

@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<configuration>
+	<needzoom>true</needzoom>
+	<needzoomeffect>false</needzoomeffect>
+	<popupskinclass></popupskinclass>
+	
+	<layers>
+		<layer>
+			<type>发布段</type>
+			<url>http://{serverip}/arcgis/rest/services/TianJin/tianjin_fbd/MapServer/0</url>
+			<idfield>SDE.FaBuDuan.ISSUESECT</idfield>
+			<zoomscale>96000</zoomscale>
+		</layer>
+	</layers>
+</configuration>
